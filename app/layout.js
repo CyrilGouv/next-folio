@@ -1,9 +1,7 @@
-import { Inter } from "next/font/google"
 import SmoothScrolling from "@/components/UI/SmoothScrolling/SmoothScrolling"
+import Header from "@/components/Layout/Header/Header"
 
-import "./globals.css"
-
-const inter = Inter({ subsets: ["latin"] })
+import "@/assets/styles/app.scss"
 
 export const metadata = {
   title: "Create Next App",
@@ -12,9 +10,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="fr">
+      <body>
         <SmoothScrolling>
+          <Header />
           { children }
         </SmoothScrolling>
       </body>
