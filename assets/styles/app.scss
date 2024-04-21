@@ -1,0 +1,297 @@
+/* 
+-----------------------------
+Fonts
+-----------------------------
+*/
+@font-face {
+    font-family: "TT-Firs-Neue-Var-Roman";
+    font-weight: normal;
+    src: url("../fonts/TT-Firs-Neue-Var-Roman.ttf") format('truetype');
+}
+
+/* 
+-----------------------------
+Variables
+-----------------------------
+*/
+:root {
+    // Font
+    --mainFont: "TT-Firs-Neue-Var-Roman";
+
+    // Colors
+    --darkThemeBoulder: #797979;
+    --darkThemeFontColor: #F2F2F2;
+    --darkThemeBgColor: #121315;
+    --darkThemeGrayColor: #262626;
+
+    // Dimensions
+    --paddingXL: 11.875rem;
+    --paddingL: 8.125rem;
+    --paddingM: 2.813rem;
+    --paddingS: 1.5rem;
+    --paddingXS: 1.25rem;
+    
+    // Heights
+    --mainHeroHeight: 65vh;
+
+    // Borders
+    --mainBorderRadius: .275rem;
+
+    // Transitions
+    --mainTransition: cubic-bezier(.25, .46, .45, .94);
+    --secondaryTransition: cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+
+/* 
+-----------------------------
+General styles
+-----------------------------
+*/
+* {
+    box-sizing: border-box;
+}
+  
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: var(--mainFont);
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    position: relative;
+    background-color: var(--darkThemeBgColor);
+    color: var(--darkThemeFontColor);
+    z-index: 2;
+}
+
+.container {
+    width: 96%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: var(--paddingXL) 0;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+-----------------------------
+Base Typography 
+-----------------------------
+*/
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 1;
+}
+
+h1 {
+    letter-spacing: -0.5vw;
+}
+
+h2,
+.title--h2 {
+    font-size: 5vw;
+    letter-spacing: normal;
+    line-height: 1.125;
+}
+
+h3 {
+    letter-spacing: -0.25vw;
+}
+
+p {
+    font-size: 0.813rem;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* 
+-----------------------------
+Utils Typo
+-----------------------------
+*/
+.text--lightTheme {
+    color: var(--lightThemeFontColor);
+}
+
+.text--gray {
+    color:  var(--darkThemeBoulder);
+}
+
+.text--opacity {
+    opacity: .35;
+}
+
+.text--regular {
+    font-size: clamp(13px, 1.125vw, 1.125rem);
+}
+
+.text--medium {
+    font-size: clamp(15px, 1.25vw, 1.25rem);
+}
+
+.text--large {
+    font-size: max(1.25rem, 1.85vw);
+}
+
+.text--XLarge {
+    font-size: clamp(2.75rem, 6vw, 7.5rem);
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    :root {
+        /* Padding && Margin */
+        --paddingXL: 12.5rem;
+        --paddingL: 8.75rem;
+        --paddingM: 3.125rem;
+        --paddingS: 1.563rem;
+        --paddingXS: 1.375rem;
+
+        /* Height */
+        --mainHeaderHeight: 90vh;
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    :root {
+        /* Padding && Margin */
+        --paddingXL: 14.063rem;
+        --paddingL: 10rem;
+        --paddingM: 3.75rem;
+        --paddingS: 1.875rem;
+        --paddingXS: 1.5rem;
+    }
+
+    h2,
+    .title--h2 {
+        line-height: 1.1;
+    }
+
+    p {
+        font-size: 0.813rem;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    :root {
+        /* Padding && Margin */
+        --paddingXL: 14.75rem;
+        --paddingL: 10.625rem;
+        --paddingM: 4.375rem;
+        --paddingS: 2.188rem;
+        --paddingXS: 1.625rem;
+    }
+
+    h2,
+    .title--h2 {
+        line-height: 1.05;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1200px
+//==========================================================
+*/
+@media (min-width: 1200px) {
+    :root {
+        /* Padding && Margin */
+        --paddingXL: 14.375rem;
+        --paddingL: 11.25rem;
+        --paddingM: 5rem;
+        --paddingS: 2.5rem;
+        --paddingXS: 1.75rem;
+    }
+
+    h2,
+    .title--h2 {
+        line-height: 1;
+    }
+
+    p {
+        font-size: 0.938rem;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    :root {
+        /* Padding && Margin */
+        --paddingXL: 15rem;
+        --paddingL: 11.875rem;
+        --paddingM: 5.625rem;
+        --paddingS: 2.813rem;
+        --paddingXS: 1.875rem;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    :root {
+        /* Padding && Margin */
+        --paddingXL: 15.625rem;
+        --paddingL: 12.5rem;
+        --paddingM: 6.25rem;
+        --paddingS: 3.125rem;
+        --paddingXS: 2rem;
+    }
+}
