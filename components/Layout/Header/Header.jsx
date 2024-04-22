@@ -1,5 +1,6 @@
-import Navigation from "@/components/Layout/Navigation/Navigation"
 import Logo from "@/components/UI/Elements/Logo/Logo"
+import Navigation from "@/components/Layout/Navigation/Navigation"
+import MenuToggle from "@/components/UI/Elements/Menu/MenuToggle"
 
 import styles from "./Header.module.scss"
 
@@ -15,6 +16,7 @@ const Header = () => {
           
           <div className={ styles.header__navigation }>
             <Navigation />
+            <MenuToggle />
           </div>
         </div>    
       </div>

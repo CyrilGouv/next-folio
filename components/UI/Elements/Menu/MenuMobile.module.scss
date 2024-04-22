@@ -1,0 +1,120 @@
+.menuMobile {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkThemeFontColor);
+    transform: scaleY(0);
+    transform-origin: 0% 0%;
+    transition: transform .525s var(--secondaryTransition);
+    z-index: 5;
+    overflow: hidden;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 100vh;
+    }
+
+    &__list {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &__item {
+        position: relative;
+
+        &__line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: var(--darkThemeBgColor);
+            transform-origin: 0% 0%;
+            
+            &__last {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: inline-block;
+                width: 100%;
+                height: 1px;
+                background-color: var(--darkThemeBgColor);
+                transform-origin: 0% 0%;
+            }
+        }
+
+        &__link {
+            display: inline-block;
+            width: 100%;
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
+            padding: var(--paddingXS) 0 0 0;
+            margin-bottom: var(--paddingXS);
+            color: var(--darkThemeBgColor);
+            text-decoration: none;
+            overflow: hidden;
+
+            &__inner {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: var(--paddingXS);
+        left: 0;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        color: var(--darkThemeBgColor);
+        text-transform: uppercase;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+
+        &__inner {
+            display: inline-block;
+        }
+    }
+
+
+    &__isOpened {
+        transform: scaleY(1);
+        
+        .menuMobile__bottom,
+        .menuMobile__list {
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .menuMobile__item {
+            &__line {
+                transform: scaleX(1);
+            }
+        }
+    }
+}
