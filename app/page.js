@@ -1,5 +1,5 @@
-import Hero from "@/components/Blocks/Hero/Hero";
-import styles from "./page.module.css";
+import Hero from "@/components/Blocks/Hero/Hero"
+import CoverParallax from "@/components/Blocks/Cover/CoverParallax"
 
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Hero page={ page } />
+      <CoverParallax />
     </>
   );
 }
