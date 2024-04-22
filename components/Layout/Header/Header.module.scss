@@ -1,0 +1,45 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    z-index: 8;
+
+    &__logo {
+        display: flex;
+    
+        &__link {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--paddingXS) 0;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        width: 50%;
+    }
+    
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .header__navigation {
+        width: 46%;
+    }
+}
