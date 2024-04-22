@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/link"
+import NavLink from "next/link"
 import { usePathname } from "next/navigation"
 import { menuTopItems } from "@/data/menus"
 
@@ -17,20 +17,20 @@ const Navigation = () => {
                 { menuTopItems.map(item => (
                     <li 
                         key={ item.id }
-                        className={ `${styles.navigation__item} ${pathname === item && styles.navigation__item__active} text--regular` }
+                        className={ `${styles.navigation__item} ${pathname === item.path ? styles.navigation__item__active : ''} text--regular` }
                     >
-                        <Link
+                        <NavLink
                             href={ item.path }
                             className={ `${styles.navigation__link} link--underline` }
                         >
                             <span>{ item.name }</span>
-                        </Link>
+                        </NavLink>
                     </li>
                 )) }
             </div>
 
             <li className={ `${styles.navigation__item} text--regular` }>
-                <Link
+                <NavLink
                     href="/contact"
                     className={ `${styles.navigation__link} ${styles.navigation__link__contact}` }
                 >
@@ -40,7 +40,7 @@ const Navigation = () => {
                     >
                         Contact
                     </span>
-                </Link>
+                </NavLink>
             </li>
         </ul>
     )

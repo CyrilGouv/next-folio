@@ -1,0 +1,50 @@
+.logo {
+    display: inline-block;
+    text-decoration: none;
+    overflow: hidden;
+
+    &__text {
+        font-size: clamp(1rem, 1.75vw, 1.25rem);
+        text-transform: uppercase;
+        color: var(--darkThemeFontColor);
+
+        &__inner {
+            position: relative;
+            display: inline-block;
+            transition: transform .275s var(--mainTransition);
+
+            &::before {
+                position: absolute;
+                content: attr(data-title);
+                left: 0;
+                transition: .275s var(--mainTransition);
+            }
+
+            &:first-of-type {
+                margin-right: .25rem;
+
+                &::before {
+                    top: -100%;
+                }
+            }
+
+            &:last-of-type {
+
+                &::before {
+                    top: 100%;
+                }
+            }
+        }
+
+    }
+
+    &:hover {
+        .logo__text__inner:first-of-type {
+            transform: translateY(100%);
+        }
+
+        .logo__text__inner:last-of-type {
+            transform: translateY(-100%);
+        }
+    }
+}

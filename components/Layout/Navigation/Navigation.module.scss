@@ -19,10 +19,10 @@
             margin-right: 0;
         }
 
-        &.active {
+        &__active {
             opacity: .35;
 
-            span::before {
+            .navigation__link span::before {
                 transform: scaleX(1);
             }
         }
@@ -32,7 +32,7 @@
     &__link {
         display: flex;
         align-items: center;
-        color: inherit;
+        color: var(--darkThemeFontColor);
         text-decoration: none;
         padding: 0;
 
@@ -58,7 +58,7 @@
             }
 
             &:hover {
-                .menuDesktop__link__contact__inner {
+                .navigation__link__contact__inner {
                     transform: translateY(-100%);
                 }
             }
@@ -69,5 +69,53 @@
             margin-right: 0.5rem;
             transform: scaleX(-1);
         }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .navigation {
+        display: flex;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1200px
+//==========================================================
+*/
+@media (min-width: 1200px) {
+    .navigation__item {
+        margin-right: 2.75rem;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .navigation__item {
+        margin-right: 3rem;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .navigation__item {
+        margin-right: 3.25rem;
     }
 }

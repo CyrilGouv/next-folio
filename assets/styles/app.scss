@@ -59,6 +59,7 @@ body {
 }
 
 body {
+    position: relative;
     font-family: var(--mainFont);
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
@@ -154,6 +155,35 @@ Utils Typo
 
 .text--XLarge {
     font-size: clamp(2.75rem, 6vw, 7.5rem);
+}
+
+
+/* 
+-----------------------------
+Utils Links
+-----------------------------
+*/
+.link--underline > span {
+    position: relative;
+    display: inline-block;
+  
+    &::before {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        transform: scaleX(0);
+        transform-origin: 100% 100%;
+        background-color: var(--darkThemeFontColor);
+        transition: transform .265s var(--mainTransition);
+    }
+    
+    &:hover::before {
+        transform: scaleX(1);
+        transform-origin: 0% 0%;
+    }
 }
 
 
