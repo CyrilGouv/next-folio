@@ -1,0 +1,20 @@
+.hero {
+    height: var(--mainHeaderHeight);
+
+    &__wrapper {
+        position: relative;
+        height: var(--mainHeaderHeight);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__desc {
+        margin-left: auto;
+        padding-bottom: var(--paddingL);
+    }
+
+    &__title {
+        padding-bottom: var(--paddingS);
+    }
+}
