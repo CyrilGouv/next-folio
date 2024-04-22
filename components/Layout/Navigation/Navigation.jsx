@@ -32,7 +32,7 @@ const Navigation = () => {
             <li className={ `${styles.navigation__item} text--regular` }>
                 <Link
                     href="/contact"
-                    className={ `${styles.navigation__link} menuDesktop__link__contact` }
+                    className={ `${styles.navigation__link} ${styles.navigation__link__contact}` }
                 >
                     <span 
                         className={ styles.navigation__link__contact__inner } 
