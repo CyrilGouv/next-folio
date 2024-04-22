@@ -1,0 +1,81 @@
+.title {
+    width: 100%;
+    font-size: clamp(4.25rem, 12.5vw, 220px);
+    line-height: 1;
+
+    &__line {
+        display: block;
+        overflow: hidden;
+
+        &:not(:first-of-type) {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__word {
+            display: inline-block;
+        }
+    }
+
+    &.title--h2 {
+        color: var(--darkThemeFontColor);
+        line-height: 1;
+        width: 85%;
+        padding-bottom: var(--paddingS);
+
+        .title__word {
+            span {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__contact__arrow,
+    &__mentions__arrow, 
+    &__contact__arrow, 
+    &__projects__arrow, 
+    &__about__arrow, 
+    &__testimonials__arrow, 
+    &__legales__arrow {
+        min-height: 1.625rem;
+        max-height: 95px;
+    }
+
+    &__contact,
+    &__about,
+    &__legales,
+    &__testimonials,
+    &__projects {
+        &--line {
+            display: flex;
+            align-items: center;
+        }
+
+        &__arrow {
+            height: 5vw;
+            margin-right: var(--paddingXS);
+
+            g {
+                stroke-width: 1.5px;
+            }
+        }
+    }
+
+    &__line:not(:first-of-type).title__testimonials--line {
+        width: 50%;
+        margin-left: auto;
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .title__line:not(:first-of-type).title__testimonials--line {
+        width: 46%;
+    }
+}

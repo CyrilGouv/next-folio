@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 import NavLink from "next/link"
 import gsap from "gsap"
 import { useGSAP } from "@gsap/react"
@@ -9,8 +9,6 @@ import styles from "./MenuMobile.module.scss"
 
 
 const MenuMobile = ({ show }) => {
-    // Register useGSAP plugin
-    gsap.registerPlugin(useGSAP)
 
     // Elements
     const menuItems = useRef(null)
