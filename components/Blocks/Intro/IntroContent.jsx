@@ -16,7 +16,7 @@ const IntroContent = ({ page }) => {
                             <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
                         </p>
                         <p className={ styles.intro__content__text }>
-                            <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
+                            <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." delay={ 0.375 } />
                         </p>
                     </div>
                 </div>
