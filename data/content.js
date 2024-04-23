@@ -1,0 +1,1 @@
+export const homepageIntroTitle = "Cyrilgouv is a nimble team working remote first from all around the world, with offices on the islands."

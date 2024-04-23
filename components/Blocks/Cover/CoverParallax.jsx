@@ -18,7 +18,7 @@ const CoverParallax = () => {
     const lastLine = useRef(null)
 
     // States
-    const [windowHeight, setWindowHeight] = useState(window && window?.innerHeight || 0)
+    const [windowHeight, setWindowHeight] = useState(window?.innerHeight || 0)
 
     // Hooks
     useGSAP(() => {
