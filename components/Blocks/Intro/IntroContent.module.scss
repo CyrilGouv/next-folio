@@ -1,0 +1,143 @@
+.intro__content {
+    padding: var(--paddingL) 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    &__wrapper {
+        width: 90%;
+        margin-left: auto;
+        margin-top: var(--paddingM);
+
+        .text--regular {
+            width: 90%;
+        }
+    }
+
+    &__text,
+    &__cta {
+        font-size: max(1.25rem, 1.85vw);
+    }
+
+    &__text {
+        margin-bottom: var(--paddingM);
+        line-height: 1.5;
+
+        &:first-of-type {
+            margin-bottom: var(--paddingS);
+        }
+
+        &__inner {
+            display: inline-block;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .intro__content {
+        &__wrapper {
+            width: 80%;
+
+            .text--regular {
+                width: 80%;
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .intro__content {
+        flex-direction: row;
+
+        &__wrapper {
+            width: 64%;
+            margin-top: 0;
+
+            .text--regular {
+                width: 73%;
+            }
+        }
+    }
+}
+
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .intro__content {
+        &__wrapper {
+            .text--regular {
+                width: 71%;
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1200px
+//==========================================================
+*/
+@media (min-width: 1200px) {
+    .intro__content {
+        &__wrapper {
+            .text--regular {
+                width: 69%;
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .intro__content {
+        &__wrapper {
+            width: 50%;
+
+            .text--regular {
+                width: 67%;
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .intro__content {
+        &__wrapper {
+            width: 48%;
+
+            .text--regular {
+                width: 65%;
+            }
+        }
+    }
+}

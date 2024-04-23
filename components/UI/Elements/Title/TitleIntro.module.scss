@@ -1,0 +1,16 @@
+.title {
+    width: 100%;
+
+    &__text {
+        width: 100%;
+        padding-top: var(--paddingL);
+
+        &__words {
+            display: inline-block;
+        }
+
+        &__letters {
+            opacity: .2;
+        }
+    }
+}

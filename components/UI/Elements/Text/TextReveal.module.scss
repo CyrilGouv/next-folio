@@ -1,0 +1,13 @@
+.text__reveal {
+    display: inline-block;
+
+    &__outer {
+        display: inline-block;
+        overflow: hidden;
+        line-height: 1;
+    }
+
+    &__inner {
+        display: inline-block;
+    }
+}
