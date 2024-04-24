@@ -8,10 +8,6 @@
         width: 90%;
         margin-left: auto;
         margin-top: var(--paddingM);
-
-        .text--regular {
-            width: 90%;
-        }
     }
 
     &__text,
@@ -26,10 +22,19 @@
         &:first-of-type {
             margin-bottom: var(--paddingS);
         }
+    }
 
-        &__inner {
+    &__bottom {
+        width: 90%;
+
+        &__text {
             display: inline-block;
         }
+    }
+
+    &__cta {
+        margin-bottom: 0;
+        margin-top: var(--paddingXS);
     }
 }
 
@@ -43,10 +48,10 @@
     .intro__content {
         &__wrapper {
             width: 80%;
+        }
 
-            .text--regular {
-                width: 80%;
-            }
+        &__bottom {
+            width: 80%;
         }
     }
 }
@@ -64,10 +69,10 @@
         &__wrapper {
             width: 64%;
             margin-top: 0;
+        }
 
-            .text--regular {
-                width: 73%;
-            }
+        &__bottom {
+            width: 73%;
         }
     }
 }
@@ -82,10 +87,8 @@
 */
 @media (min-width: 1024px) {
     .intro__content {
-        &__wrapper {
-            .text--regular {
-                width: 71%;
-            }
+        &__bottom {
+            width: 71%;
         }
     }
 }
@@ -98,10 +101,8 @@
 */
 @media (min-width: 1200px) {
     .intro__content {
-        &__wrapper {
-            .text--regular {
-                width: 69%;
-            }
+        &__bottom {
+            width: 69%;
         }
     }
 }
@@ -116,10 +117,10 @@
     .intro__content {
         &__wrapper {
             width: 50%;
+        }
 
-            .text--regular {
-                width: 67%;
-            }
+        &__bottom {
+            width: 67%;
         }
     }
 }
@@ -134,10 +135,10 @@
     .intro__content {
         &__wrapper {
             width: 48%;
+        }
 
-            .text--regular {
-                width: 65%;
-            }
+        &__bottom {
+            width: 65%;
         }
     }
 }
