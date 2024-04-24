@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useGSAP } from "@gsap/react"
 import animationsImageReveal from "@/animations/image/reveal"
+import animationsImageParallax from "@/animations/image/parallax"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
 import styles from "./CardProject.module.scss"
@@ -19,14 +20,19 @@ const CardProject = ({ title, slug, image, year, layout }) => {
     const figureEl = useRef(null)
     const revealEl = useRef(null)
     const figcaptionEl = useRef(null)
+    const imgEl = useRef(null)
     const titleEl = useRef(null)
     const yearEl = useRef(null)
 
     // Animations
     useGSAP(() => {
+        // Reveal
         animationsImageReveal(figureEl.current, revealEl.current)
         opacityAndTransformY(figcaptionEl.current, titleEl.current, 15, 0.85, 0.25)
         opacityAndTransformY(figcaptionEl.current, yearEl.current, 25, 0.85, 0.425)
+
+        // Parallax on scroll
+        animationsImageParallax(figureEl.current, imgEl.current)
     })
 
     return (
@@ -40,11 +46,12 @@ const CardProject = ({ title, slug, image, year, layout }) => {
                 <figure ref={ figureEl } className={ styles.card__figure }>
                     <div ref={ revealEl } className={ styles.card__figure__reveal }></div>
                     <Image 
+                        ref={ imgEl }
                         src={ image }
                         alt={ `Projet crée par Cyril Gouv - ${title}` }
                         fill
                         priority={ false }
-                        sizes="100vw"
+                        sizes="(min-width: 1024px) 50vw, 100vw"
                         className={ styles.card__image }
                     />
                 </figure>
