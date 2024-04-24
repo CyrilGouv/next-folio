@@ -20,6 +20,21 @@ const revealLettersOpacity = (section, letters, pinned = false) => {
             ease: 'none',
             stagger: 0.1
         })
+    } else {
+        gsap.set(letters, { autoAlpha: 0.2 })
+        
+        gsap.to(letters, {
+            scrollTrigger: {
+                trigger: section,
+                start: "top bottom",
+                end: "center center",
+                scrub: true,
+                invalidateOnRefresh: true,
+            },
+            autoAlpha: 1,
+            ease: "none",
+            stagger: 0.1
+        })
     }
 }
 
