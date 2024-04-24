@@ -1,0 +1,183 @@
+.card {
+    width: 100%;
+    border-radius: var(--mainBorderRadius);
+    display: inline-block;
+    margin-bottom: var(--paddingM);
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &__link,
+    &__figure {
+        width: 100%;
+    }
+
+    &__link {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__figure {
+        position: relative;
+        overflow: hidden;
+        border-radius: var(--mainBorderRadius);
+        min-height: 68vw;
+        max-height: 68vw;
+
+        &__reveal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--darkThemeGrayColor);
+            z-index: 3;
+        }
+    }
+
+    &__image {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    &__title {
+        justify-content: space-between;
+        align-items: center;
+        font-size: max(1.65rem, 1.85vw);
+        line-height: 1.3;
+        text-decoration: none;
+        color: var(--darkThemeFontColor);
+        letter-spacing: normal;
+        margin-top: var(--paddingXS);
+
+        &__inner {
+            display: inline-block;
+            overflow: hidden;
+        }
+    }
+
+    &__year {
+        margin: .5rem 0 0 0;
+        padding: 0;
+    }
+
+    &__title,
+    &__year {
+        &__inner {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+
+            span {
+                position: relative;
+                display: inline-block;
+                transition: transform .275s var(--mainTransition);
+
+                &::before {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    content: attr(data-text);
+                }
+            }
+        }
+    }
+
+    &__year {
+        &__inner span {
+            transition: transform .275s .055s var(--mainTransition);
+        }
+    }
+
+    &__figcaption__active {
+        .card__title__inner span,
+        .card__year__inner span {
+            transform: translateY(-100%);
+        }
+    }
+}
+
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .card {
+        &__figure {
+            min-height: 56vw;
+            max-height: 56vw;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .card {
+        width: 49.25%;
+
+        &:nth-last-of-type(2) {
+            margin-bottom: 0;
+        }
+
+        &__figure {
+            min-height: 34vw;
+            max-height: 34vw;
+        }
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .card {
+        width: 49%;
+
+        &__figure {
+            min-height: 32vw;
+            max-height: 32vw;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .card {
+
+        &__figure {
+            min-height: 560px;
+            height: 560px;
+            max-height: 560px;
+        }
+    }
+}
