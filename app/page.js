@@ -2,6 +2,7 @@ import Hero from "@/components/Blocks/Hero/Hero"
 import CoverParallax from "@/components/Blocks/Cover/CoverParallax"
 import Intro from "@/components/Blocks/Intro/Intro"
 import FeaturedProjects from "@/components/Blocks/Projects/FeaturedProjects"
+import TextParallax from "@/components/UI/Elements/Text/TextParallax"
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <CoverParallax />
       <Intro page={ page } />
       <FeaturedProjects />
+      <TextParallax text="Make you shine" layout="section" />
     </>
   );
 }
