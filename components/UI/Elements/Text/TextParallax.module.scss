@@ -1,0 +1,28 @@
+.text {
+    overflow: hidden;
+
+    &__section {
+        padding-bottom: var(--paddingL);
+    }
+    
+    &__content {
+        font-size: 18vw;
+        text-wrap: nowrap;
+        margin: 0;
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .text {
+        &__section {
+            padding-bottom: calc(var(--paddingXL) - var(--paddingS));
+        }
+    }
+}
