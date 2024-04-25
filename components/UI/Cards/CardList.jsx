@@ -1,20 +1,29 @@
 "use client"
 
 import { useRef } from "react"
+import { useGSAP } from "@gsap/react"
 import splitByWords from "@/utils/splitByWords"
+import animationsCardList from "@/animations/card/cardList"
 
 import styles from "./CardList.module.scss"
 
 
 const CardList = ({ item }) => {
-
+    // Props
     const { id, title, body } = item
+    
+    // Split prop text by words
     const words = splitByWords(body)
 
+    // Elements
     const contentEl = useRef(null)
     const titleEl = useRef(null)
     const wordEls = useRef([])
     const lineEl = useRef(null)
+
+    useGSAP(() => {
+        animationsCardList(contentEl.current, titleEl.current, wordEls.current, lineEl.current)
+    })
 
     return (
         <li ref={ contentEl } className={ styles.card }>
