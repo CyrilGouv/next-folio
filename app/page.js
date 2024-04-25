@@ -4,6 +4,7 @@ import Intro from "@/components/Blocks/Intro/Intro"
 import FeaturedProjects from "@/components/Blocks/Projects/FeaturedProjects"
 import TextParallax from "@/components/UI/Elements/Text/TextParallax"
 import SectionLists from "@/components/Blocks/SectionLists/SectionLists"
+import FeaturedTestimonials from "@/components/Blocks/Testimonials/FeaturedTestimonials"
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <FeaturedProjects />
       <TextParallax text="Make you shine" layout="section" />
       <SectionLists type="services" />
+      <FeaturedTestimonials />
     </>
   );
 }

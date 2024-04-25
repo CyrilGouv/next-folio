@@ -1,0 +1,21 @@
+.testimonials {
+    overflow: hidden;
+
+    &__title {
+        padding-bottom: calc(var(--paddingL) / 1.5);
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .testimonials {
+        &__title {
+            padding-bottom: var(--paddingL);
+        }
+    }
+}
