@@ -7,12 +7,19 @@ import { testimonials } from "@/data/testimonials"
 
 import "swiper/css"
 import styles from "./SliderTestimonials.module.scss"
+import { useGSAP } from "@gsap/react"
+import animationsSliderParallax from "@/animations/slider/parallax"
 
 
 const SliderTestimonials = () => {
 
     // Elements
     const sliderWrapperEl = useRef(null)
+
+    // Animations
+    useGSAP(() => {
+        animationsSliderParallax(sliderWrapperEl.current, 8, -8)
+    })
 
     return (
         <div 
