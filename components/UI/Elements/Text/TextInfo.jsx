@@ -7,7 +7,7 @@ import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 import styles from "./TextInfo.module.scss"
 
 
-const TextInfo = ({ body }) => {
+const TextInfo = ({ body, full = false }) => {
 
     // Elements
     const section = useRef(null)
@@ -20,7 +20,7 @@ const TextInfo = ({ body }) => {
     return (
         <div 
             ref={ section }
-            className={ styles.text__infos }
+            className={ `${styles.text__infos} ${full ? styles.text__infos__full : ""}` }
         >
             <p  
                 ref={ text }
