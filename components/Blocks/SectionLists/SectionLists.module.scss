@@ -1,0 +1,109 @@
+.lists {
+    &__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    &__infos {
+        width: 65%;
+        position: relative;
+        padding-bottom: var(--paddingM);
+    }
+
+    &__items {
+        margin-top: calc(var(--paddingL) / 1.5);
+        width: 90%;
+        margin-left: auto;
+
+        &__wrapper {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .lists {
+        &__infos {
+            width: 60%;
+        }
+
+        &__items {
+            margin-top: calc(var(--paddingL) / 1.5);
+            width: 80%;
+            margin-left: auto;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .lists {
+        &__wrapper {
+            flex-direction: row;
+        }
+
+        &__infos {
+            position: sticky;
+            width: 36%;
+            top: var(--paddingXS);
+        }
+
+        &__items {
+            width: 64%;
+            margin-top: 0;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .lists {
+        &__infos {
+            width: 38%;
+        }
+
+        &__items {
+            width: 62%;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .lists {
+        &__infos {
+            width: 30%;
+        }
+
+        &__items {
+            width: 60%;
+        }
+    }
+}
