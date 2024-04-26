@@ -10,6 +10,7 @@ import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 import { projects } from "@/data/projects"
 
 import styles from "./FeaturedProjects.module.scss"
+import Cta from "@/components/UI/Cta/Cta"
 
 
 const FeaturedProjects = () => {
@@ -43,19 +44,12 @@ const FeaturedProjects = () => {
                         />
                     )) }
                 </ul>
-
-                <div className={ styles.projects__cta }>
-                    <p className={ `${styles.projects__cta__text} text--regular` }>
-                        <Line />
-                        <span ref={ ctaText } className={ styles.projects__cta__text__inner }>
-                            We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs.
-                        </span>
-                    </p>
-
-                    <div ref={ ctaBtn } className={ styles.projects__cta__btn }>
-                        <Button text="Tous les projets" path="/realisations" />
-                    </div>
-                </div>
+                
+                <Cta 
+                    ctaText="We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
+                    btnText="Tous les projets"
+                    btnLink="/realisations"
+                />
             </div>
         </section>
     )
