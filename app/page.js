@@ -5,7 +5,7 @@ import FeaturedProjects from "@/components/Blocks/Projects/FeaturedProjects"
 import TextParallax from "@/components/UI/Elements/Text/TextParallax"
 import SectionLists from "@/components/Blocks/SectionLists/SectionLists"
 import FeaturedTestimonials from "@/components/Blocks/Testimonials/FeaturedTestimonials"
-
+import Footer from "@/components/Layout/Footer/Footer";
 
 export default function Home() {
 
@@ -20,6 +20,7 @@ export default function Home() {
       <TextParallax text="Make you shine" layout="section" />
       <SectionLists type="services" />
       <FeaturedTestimonials />
+      <Footer />
     </>
   );
 }
