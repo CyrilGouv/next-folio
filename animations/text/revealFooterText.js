@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 
-const animationsRevealFooterText = (trigger, letters) => {
+const animationsRevealFooterText = (startTrigger, letters) => {
     // Settings
     gsap.set(letters, { yPercent: -100 })
 
@@ -14,11 +14,13 @@ const animationsRevealFooterText = (trigger, letters) => {
         duration: 1,
         stagger: .05,
         scrollTrigger: {
-            trigger: trigger,
+            trigger: startTrigger,
             start: "top bottom",
             endTrigger: document.body,
             end: "bottom bottom",
             scrub: true,
+            invalidateOnRefresh: true,
+            invalidateOnResize: true,
         }
     })
 }
