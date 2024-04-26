@@ -35,7 +35,6 @@ const IntroContent = ({ page }) => {
                         <p className={ styles.intro__content__text }>
                             <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." delay={ 0.375 } />
                         </p>
-
                         <p className={ `${styles.intro__content__bottom} text--regular` }>
                             <Line />
 
