@@ -1,4 +1,5 @@
 import MenuFooter from "@/components/UI/Elements/Menu/MenuFooter"
+import Socials from "@/components/UI/Elements/Socials/Socials"
 
 import styles from "./Footer.module.scss"
 
@@ -6,9 +7,12 @@ import styles from "./Footer.module.scss"
 const Footer = () => {
     return (
         <footer className={ styles.footer }>
-            <div className="container">
-                <div className={ styles.footer__top }>
-                    <MenuFooter />
+            <div className={ styles.footer__top }>
+                <div className="container">
+                    <div className={ styles.footer__wrapper }>
+                        <MenuFooter />
+                        <Socials />
+                    </div>
                 </div>
             </div>
         </footer>

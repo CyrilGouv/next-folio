@@ -210,6 +210,10 @@ Utils Links
     }
 }
 
+.link--underline.link--underline__dark .link--underline__wrapper::before {
+    background-color: var(--lightThemeFontColor);
+}
+
 
 /* 
 -----------------------------
