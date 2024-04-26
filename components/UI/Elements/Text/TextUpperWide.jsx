@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef } from "react"
+import { forwardRef, useRef } from "react"
 import Link from "next/link"
 import { useGSAP } from "@gsap/react"
 import splitByLetters from "@/utils/splitByLetters"
@@ -10,7 +10,7 @@ import styles from "./TextUpperWide.module.scss"
 
 
 const TextUpperWide = ({ text, type }) => {
-
+    
     // Split text by letters
     const letters = splitByLetters(text)
 
