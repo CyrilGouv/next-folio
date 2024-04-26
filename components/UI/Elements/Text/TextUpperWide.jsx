@@ -1,20 +1,35 @@
+"use client"
+
+import { useRef } from "react"
 import Link from "next/link"
+import { useGSAP } from "@gsap/react"
 import splitByLetters from "@/utils/splitByLetters"
+import animationsRevealFooterText from "@/animations/text/revealFooterText"
 
 import styles from "./TextUpperWide.module.scss"
 
 
 const TextUpperWide = ({ text, type }) => {
 
-    const name = splitByLetters(text)
+    // Split text by letters
+    const letters = splitByLetters(text)
+
+    // Elements
+    const textEl = useRef(null)
+
+    // Animations
+    useGSAP(() => {
+        animationsRevealFooterText(textEl.current, textEl.current.children)
+    })
 
     if(type === "link") {
         return (
             <Link
+                ref={ textEl }
                 href="/contact"
                 className={ styles.text }
             >
-                { name.map((letter, idx) => (
+                { letters.map((letter, idx) => (
                     <span
                         key={ idx }
                         className={ styles.text__letter }
