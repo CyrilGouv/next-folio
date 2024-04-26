@@ -85,6 +85,12 @@ main {
     padding: var(--paddingXL) 0;
 }
 
+section {
+    position: relative;
+    background-color: var(--darkThemeBgColor);
+    z-index: 2;
+}
+
 figure {
     margin: 0;
     padding: 0;
