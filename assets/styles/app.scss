@@ -24,6 +24,9 @@ Variables
     --darkThemeBgColor: #121315;
     --darkThemeGrayColor: #262626;
 
+    --lightThemeFontColor: #09080E;
+    --lightThemeBgColor: #FFFFFF;
+
     // Dimensions
     --paddingXL: 11.875rem;
     --paddingL: 8.125rem;
@@ -198,6 +201,12 @@ Utils Links
     &:hover::before {
         transform: scaleX(1);
         transform-origin: 0% 0%;
+    }
+}
+
+.link--underline__dark > span {
+    &::before {
+        background-color: var(--lightThemeFontColor);
     }
 }
 
