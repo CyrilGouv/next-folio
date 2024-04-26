@@ -1,0 +1,45 @@
+.text {
+    display: inline-block;
+    font-size: clamp(5rem, 16.09vw, 12.05rem);
+    line-height: 1;
+    font-weight: bold;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    &__letter {
+        display: inline-block;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .text {
+        font-size: clamp(5rem, 16.09vw, 12.05rem);
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1200px
+//==========================================================
+*/
+@media (min-width: 1200px) {
+    .text {
+        font-size: clamp(5rem, 16.0935vw, 18.859rem);
+
+        &__letter {
+            display: inline-block;
+        }
+    }
+}
