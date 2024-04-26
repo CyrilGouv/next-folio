@@ -15,6 +15,9 @@
         top: var(--paddingM);
         right: 0;
         left: 0;
+    }
+
+    &__wrapper {
         display: flex;
         justify-content: flex-end;
     }
