@@ -1,0 +1,132 @@
+.cta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &__location {
+        display: none;
+    }
+
+    &__infos {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        line-height: 3.25;
+
+        &__body {
+            width: 60%;
+
+            &__title {
+                display: block;
+                text-transform: uppercase;
+                padding-bottom: 1.25rem;
+            }
+        }
+
+        &__email {
+            display: inline-block;
+            font-size: max(1.125rem, 1.625vw);
+            line-height: 1.125;
+            color: inherit;
+            text-decoration: none;
+            margin-top: 1.5rem;
+            margin-left: auto;
+            padding: 0.25rem 1.25rem;
+            border: 1px solid var(--lightThemeFontColor);
+            border-radius: 2rem;
+            overflow: hidden;
+
+            &__inner {
+                position: relative;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+
+                span {
+                    position: relative;
+                    display: inline-block;
+                    transition: .275s var(--mainTransition);
+
+                    &::before {
+                        position: absolute;
+                        content: attr(data-text);
+                        top: 100%;
+                        left: 0;
+                    }
+
+                }
+            }
+
+            &:hover {
+                .cta__infos__email__inner span {
+                    transform: translateY(-100%);
+                }
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .cta {
+
+        &__infos {
+            width: 100%;
+            flex-direction: row;
+            align-items: flex-end;
+
+            &__body {
+                margin: 0;
+            }
+        }
+        
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .cta {
+        
+        &__infos {
+            width: 72%;
+        }
+
+        &__location {
+            display: block;
+
+            &__content {
+                margin: 0;
+            }
+        }
+        
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1200px
+//==========================================================
+*/
+@media (min-width: 1200px) {
+    .cta {
+        &__location {
+            &__content {
+                line-height: 2.25;
+            }
+        }
+    }
+}

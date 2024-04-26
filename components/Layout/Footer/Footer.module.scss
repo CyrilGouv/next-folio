@@ -21,6 +21,19 @@
         display: flex;
         justify-content: flex-end;
     }
+
+    &__bottom {
+        width: 100%;
+
+        &__wrapper {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            padding-bottom: 2rem;
+            z-index: 2;
+        }
+    }
 }
 
 
