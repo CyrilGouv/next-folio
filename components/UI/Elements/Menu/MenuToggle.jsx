@@ -21,7 +21,7 @@ const MenuToggle = () => {
                 </span>
             </button>
 
-            <MenuMobile show={ open } />
+            <MenuMobile show={ open } handleMenu={ setOpen } />
         </div>
     )
 }

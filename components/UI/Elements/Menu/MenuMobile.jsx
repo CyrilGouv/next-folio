@@ -1,6 +1,7 @@
+"use client"
+
 import { useRef } from "react"
-import NavLink from "next/link"
-import gsap from "gsap"
+import Link from "next/link"
 import { useGSAP } from "@gsap/react"
 import { menuBottomItems } from "@/data/menus"
 import animationsMobileMenu from "@/animations/menu/mobile"
@@ -8,7 +9,7 @@ import animationsMobileMenu from "@/animations/menu/mobile"
 import styles from "./MenuMobile.module.scss"
 
 
-const MenuMobile = ({ show }) => {
+const MenuMobile = ({ show, handleMenu }) => {
 
     // Elements
     const menuItems = useRef(null)
@@ -35,14 +36,15 @@ const MenuMobile = ({ show }) => {
                         >
                             <span className={ styles.menuMobile__item__line }></span>
 
-                            <NavLink
+                            <Link
                                 href={ item.path }
                                 className={ styles.menuMobile__item__link }
+                                onClick={ () => handleMenu() }
                             >
                                 <span className={ styles.menuMobile__item__link__inner }>
                                     { item.name }
                                 </span>
-                            </NavLink>
+                            </Link>
 
                             { item.id === menuBottomItems.length - 1 && (
                                 <span ref={ menuLastLine } className={ styles.menuMobile__item__line__last }></span>

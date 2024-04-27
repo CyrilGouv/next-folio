@@ -30,35 +30,20 @@
         }
     }
 
-    &__contact__arrow,
-    &__mentions__arrow, 
-    &__contact__arrow, 
-    &__projects__arrow, 
-    &__about__arrow, 
-    &__testimonials__arrow, 
-    &__legales__arrow {
+    &__line__arrow {
         min-height: 1.625rem;
         max-height: 95px;
+        height: 5vw;
+        margin-right: var(--paddingXS);
+
+        g {
+            stroke-width: 1.5px;
+        }
     }
 
-    &__contact,
-    &__about,
-    &__legales,
-    &__testimonials,
-    &__projects {
-        &--line {
-            display: flex;
-            align-items: center;
-        }
-
-        &__arrow {
-            height: 5vw;
-            margin-right: var(--paddingXS);
-
-            g {
-                stroke-width: 1.5px;
-            }
-        }
+    &__line__alt {
+        display: flex;
+        align-items: center;
     }
 
     &__line:not(:first-of-type).title__testimonials--line {
