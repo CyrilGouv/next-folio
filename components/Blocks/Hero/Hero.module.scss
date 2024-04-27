@@ -1,9 +1,9 @@
 .hero {
-    height: var(--mainHeaderHeight);
+    height: var(--mainHeroHeight);
 
     &__wrapper {
         position: relative;
-        height: var(--mainHeaderHeight);
+        height: var(--mainHeroHeight);
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
