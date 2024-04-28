@@ -1,5 +1,8 @@
+// INTRO TITLES
 export const homepageIntroTitle = "Cyrilgouv is a nimble team working remote first from all around the world, with offices on the islands."
+export const aboutIntroTitle = "Whether you require help with strategy, web or product design, development, app creation, or innovative tech."
 
+// COVER ABOUT IMAGES
 export const aboutHeroText = "Développeur web indépendant passionné depuis 2017 et spécialiste en création de site web, design graphique et développement front-end."
 export const aboutCoverFirstImage = {
     img: "/images/projects/fake/project-01.webp",
