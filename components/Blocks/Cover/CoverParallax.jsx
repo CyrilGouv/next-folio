@@ -2,10 +2,10 @@
 
 import { useEffect, useRef, useState } from "react"
 import { useGSAP } from "@gsap/react"
-
-import styles from "./CoverParallax.module.scss"
 import animationsCoverReveal from "@/animations/cover/reveal"
 import animationsCoverParallax from "@/animations/cover/parallax"
+
+import styles from "./CoverParallax.module.scss"
 
 
 const CoverParallax = () => {
