@@ -1,13 +1,13 @@
 import TitleIntro from "@/components/UI/Elements/Title/TitleIntro"
 import IntroContent from "@/components/Blocks/Intro/IntroContent"
-import { homepageIntroTitle } from "@/data/content"
+import { homepageIntroTitle, aboutIntroTitle } from "@/data/content"
 
 import styles from "./Intro.module.scss"
 
 
 const Intro = ({ page }) => {
 
-    const pageTitle = page === "homepage" ? homepageIntroTitle : ""
+    const pageTitle = page === "homepage" ? homepageIntroTitle :  page === "about" ? aboutIntroTitle : ""
     
     return (
         <section className={ styles.intro }>

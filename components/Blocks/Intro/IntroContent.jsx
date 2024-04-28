@@ -55,6 +55,18 @@ const IntroContent = ({ page }) => {
                     </div>
                 </div>
             )
+        
+        case "about":
+            return (
+                <div className={ styles.intro__content }>
+                    <TextInfo body="(approche)" />
+                    <div className={ styles.intro__content__wrapper }>
+                        <p className={ styles.intro__content__text }>
+                            <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
+                        </p>
+                    </div>
+                </div>
+            )
     }
 }
 

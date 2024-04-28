@@ -1,5 +1,6 @@
 import Hero from "@/components/Blocks/Hero/Hero"
 import CoverColumns from "@/components/Blocks/Cover/CoverColumns"
+import Intro from "@/components/Blocks/Intro/Intro"
 import Footer from "@/components/Layout/Footer/Footer"
 
 
@@ -11,6 +12,7 @@ const page = () => {
         <>
             <Hero page={ page } withText={ true } />
             <CoverColumns />
+            <Intro page={ page } />
             <Footer />
         </>
     ) 
