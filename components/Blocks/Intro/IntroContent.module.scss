@@ -24,6 +24,12 @@
         }
     }
 
+    &__first {
+        .intro__content__text:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
     &__bottom {
         width: 90%;
 

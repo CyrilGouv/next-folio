@@ -11,8 +11,10 @@ const SectionLists = ({ type }) => {
     const textInfo = type === "services" ? servicesTextInfos : type === "approaches" ? approachTextInfos : ""
     const items = type === "services" ? servicesItems : type === "approaches" ? approachItems : ""
 
+    const classNames = type === "approaches" ? styles.lists__approaches : ""
+
     return (
-        <section className={ styles.lists }>
+        <section className={ `${styles.lists} ${classNames}` }>
             <div className="container">
                 <div className={ styles.lists__wrapper }>
                     <div className={ styles.lists__infos }>

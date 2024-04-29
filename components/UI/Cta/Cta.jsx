@@ -9,7 +9,7 @@ import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 import styles from "./Cta.module.scss"
 
 
-const Cta = ({ ctaText, btnText, btnLink }) => {
+const Cta = ({ ctaText, btnText, btnLink, fullWidth = false }) => {
 
     // Elements
     const ctaTextEl = useRef(null)
@@ -22,7 +22,7 @@ const Cta = ({ ctaText, btnText, btnLink }) => {
     })
 
     return (
-        <div className={ styles.cta }>
+        <div className={ `${styles.cta} ${fullWidth ? styles.cta__full : ""}` }>
             <p className={ `${styles.cta__text} text--regular` }>
                 <Line />
                 <span ref={ ctaTextEl } className={ styles.cta__text__inner }>
