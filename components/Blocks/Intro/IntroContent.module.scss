@@ -36,6 +36,10 @@
         margin-bottom: 0;
         margin-top: var(--paddingXS);
     }
+
+    &__last {
+        padding-bottom: var(--paddingXL);
+    }
 }
 
 

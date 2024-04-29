@@ -2,13 +2,13 @@
 
 import { useRef } from "react"
 import Image from "next/image"
+import { useGSAP } from "@gsap/react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import animationsSliderParallax from "@/animations/slider/parallax"
 import { testimonials } from "@/data/testimonials"
 
 import "swiper/css"
 import styles from "./SliderTestimonials.module.scss"
-import { useGSAP } from "@gsap/react"
-import animationsSliderParallax from "@/animations/slider/parallax"
 
 
 const SliderTestimonials = () => {
