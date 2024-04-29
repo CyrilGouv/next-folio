@@ -6,6 +6,7 @@ import TextInfo from "@/components/UI/Elements/Text/TextInfo"
 import TextReveal from "@/components/UI/Elements/Text/TextReveal"
 import Line from "@/components/UI/Elements/Line/Line"
 import Button from "@/components/UI/Elements/Button/Button"
+import Technos from "@/components/UI/Elements/Technos/Technos"
 import SliderNumbers from "@/components/UI/Sliders/SliderNumbers"
 import Cta from "@/components/UI/Cta/Cta"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
@@ -63,24 +64,36 @@ const IntroContent = ({ page }) => {
         case "about":
             return (
                 <>
-                    <div className={ styles.intro__content }>
-                        <TextInfo body="(approche)" />
+                    <div className={ `${styles.intro__content} ${styles.intro__content__first}` }>
+                        <TextInfo body="(à propos)" />
 
                         <div className={ styles.intro__content__wrapper }>
+                            <p className={ styles.intro__content__text }>
+                                <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
+                            </p>
                             <p className={ styles.intro__content__text }>
                                 <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
                             </p>
                         </div>
                     </div>
 
-                    <SliderNumbers />
+                    <div className={ `${styles.intro__content} ${styles.intro__content__last}` }>
+                        <TextInfo body="(technologies)" />
 
-                    <div className={ styles.intro__content__last }>
-                        <Cta 
-                            ctaText="We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
-                            btnText="Tous les témoignages"
-                            btnLink="/temoignages"
-                        />
+                        <div className={ styles.intro__content__wrapper }>
+                            <p className={ styles.intro__content__text }>
+                                <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech :" />
+                            </p>
+                            
+                            <Technos />
+
+                            <Cta 
+                                ctaText="We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
+                                btnText="Tous les témoignages"
+                                btnLink="/temoignages"
+                                fullWidth={ true }
+                            />
+                        </div>
                     </div>
                 </>
             )

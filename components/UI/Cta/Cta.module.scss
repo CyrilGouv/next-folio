@@ -3,6 +3,10 @@
     margin-top: calc(var(--paddingL) / 1.5);
     margin-left: auto;
 
+    &__full {
+        width: 100% !important;
+    }
+
     &__text {
         width: 90%;
         margin-bottom: var(--paddingS);
