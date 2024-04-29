@@ -226,6 +226,10 @@ Utils Links
 Swiper
 -----------------------------
 */
+.swiper-wrapper {
+    cursor: grab;
+}
+
 .swiper-wrapper,
 .swiper {
     overflow: visible !important;

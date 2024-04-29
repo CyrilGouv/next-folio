@@ -10,7 +10,7 @@ const page = () => {
 
     return (
         <>
-            <Hero page={ page } withText={ true } />
+            <Hero page={ page } />
             <CoverColumns />
             <Intro page={ page } />
             <Footer />

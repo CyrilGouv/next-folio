@@ -6,6 +6,8 @@ import TextInfo from "@/components/UI/Elements/Text/TextInfo"
 import TextReveal from "@/components/UI/Elements/Text/TextReveal"
 import Line from "@/components/UI/Elements/Line/Line"
 import Button from "@/components/UI/Elements/Button/Button"
+import SliderNumbers from "@/components/UI/Sliders/SliderNumbers"
+import Cta from "@/components/UI/Cta/Cta"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
 import styles from "./IntroContent.module.scss"
@@ -19,8 +21,10 @@ const IntroContent = ({ page }) => {
 
     // Animations
     useGSAP(() => {
-        opacityAndTransformY(introBottom.current, introBottom.current, 15, 0.85, 0.65)
-        opacityAndTransformY(introCta.current, introCta.current, 25, 0.85, 0.65)
+        if(page === "homepage") {
+            opacityAndTransformY(introBottom.current, introBottom.current, 15, 0.85, 0.65)
+            opacityAndTransformY(introCta.current, introCta.current, 25, 0.85, 0.65)
+        }
     })
 
     switch(page) {
@@ -58,14 +62,27 @@ const IntroContent = ({ page }) => {
         
         case "about":
             return (
-                <div className={ styles.intro__content }>
-                    <TextInfo body="(approche)" />
-                    <div className={ styles.intro__content__wrapper }>
-                        <p className={ styles.intro__content__text }>
-                            <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
-                        </p>
+                <>
+                    <div className={ styles.intro__content }>
+                        <TextInfo body="(approche)" />
+
+                        <div className={ styles.intro__content__wrapper }>
+                            <p className={ styles.intro__content__text }>
+                                <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
+                            </p>
+                        </div>
                     </div>
-                </div>
+
+                    <SliderNumbers />
+
+                    <div className={ styles.intro__content__last }>
+                        <Cta 
+                            ctaText="We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
+                            btnText="Tous les témoignages"
+                            btnLink="/temoignages"
+                        />
+                    </div>
+                </>
             )
     }
 }
