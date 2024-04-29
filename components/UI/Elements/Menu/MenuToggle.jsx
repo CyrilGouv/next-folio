@@ -14,7 +14,7 @@ const MenuToggle = () => {
         <div className={ styles.menuToggle }>
             <button 
                 onClick={ () => setOpen(!open) }
-                className={ styles.menuToggle__btn }
+                className={ `${styles.menuToggle__btn} ${open ? styles.menuToggle__btn__close : ""}` }
             >
                 <span className={ `${styles.menuToggle__btn__inner} ${open ? "text--black" : ""}` }>
                     { open ? "Fermer" : "Menu" }
