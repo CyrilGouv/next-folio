@@ -11,13 +11,13 @@ export const skillItems = [
     },
     {
         id: 2,
-        image: "/images/skills/Django.svg",
-        title: "Django",
+        image: "/images/skills/Node.js.svg",
+        title: "Node.js",
     },
     {
         id: 3,
-        image: "/images/skills/Wagtail-cms.svg",
-        title: "Wagtail cms",
+        image: "/images/skills/Strapi.svg",
+        title: "Strapi",
     },
     {
         id: 4,
