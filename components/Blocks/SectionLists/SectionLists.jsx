@@ -1,14 +1,15 @@
 import TextInfo from "@/components/UI/Elements/Text/TextInfo"
 import CardList from "@/components/UI/Cards/CardList"
 import { servicesTextInfos, servicesItems } from "@/data/services"
+import { approachTextInfos, approachItems } from "@/data/approches"
 
 import styles from "./SectionLists.module.scss"
 
 
 const SectionLists = ({ type }) => {
 
-    const textInfo = type === "services" ? servicesTextInfos : ""
-    const items = type === "services" ? servicesItems : ""
+    const textInfo = type === "services" ? servicesTextInfos : type === "approaches" ? approachTextInfos : ""
+    const items = type === "services" ? servicesItems : type === "approaches" ? approachItems : ""
 
     return (
         <section className={ styles.lists }>
