@@ -6,12 +6,17 @@
         z-index: 6;
         font-size: clamp(1rem, 1.75vw, 1.25rem);
         color: var(--darkThemeFontColor);
+        padding: 0.25rem 1.25rem;
+        border: 1px solid var(--darkThemeFontColor);
+        border-radius: 2rem;
         background: transparent;
         outline: none;
-        border: none;
-        padding: 0;
         margin: 0;
         cursor: pointer;
+
+        &__close {
+            border: 1px solid var(--darkThemeBgColor);
+        }
     }
 }
 
