@@ -9,7 +9,8 @@ const AllTestimonials = () => {
     return (
         <section className={ styles.testimonials }>
             <div className="container">
-                <Line type="inner" />
+                <Line type="outer" />
+                
                 <ul className={ styles.testimonials__wrapper }>
                     { testimonials.map(({ id, name, avatar, company, text }) => (
                         <CardTestimonial

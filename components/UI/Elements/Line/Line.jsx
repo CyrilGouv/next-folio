@@ -12,6 +12,10 @@ const Line = ({ type = null }) => {
     // Elements
     const line = useRef(null)
 
+    // Dynamic classes
+    const clx = type === "inner" ? styles.line__inner : type === "outer" ? styles.line__outer : ""
+
+    // Animations
     useGSAP(() => {
         animationsLineReveal(line.current)
     })
@@ -19,7 +23,7 @@ const Line = ({ type = null }) => {
     return (
         <span 
             ref={ line } 
-            className={ `${styles.line} ${type === "inner" ? styles.line__inner : ""}` }
+            className={ `${styles.line} ${clx}` }
         />
     )
 }
