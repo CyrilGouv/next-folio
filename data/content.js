@@ -12,3 +12,6 @@ export const aboutCoverLastImage = {
     img: "/images/projects/fake/project-02.webp",
     alt: "Cyril Gouv mon profil de développeur web"
 }
+
+// TESTIMONIALS
+export const testimonialsHeroText = "Qu’est-ce que mes clients disent de moi ? Parce qu’au bout du compte, c’est leur avis qui compte le plus, voici leur témoignage."
