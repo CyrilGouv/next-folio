@@ -6,6 +6,10 @@
     margin-bottom: var(--paddingS);
     opacity: .35;
     transform-origin: 0% 0%;
+
+    &__outer {
+        margin-bottom: 0;
+    }
     
     &__inner {
         position: absolute;
