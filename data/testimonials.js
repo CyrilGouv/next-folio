@@ -59,7 +59,7 @@ export const testimonials = [
         id: 8,
         name: "Elodie Bouillon",
         avatar: "/images/testimonials/temoignage-marlo.jpeg",
-        company: "Marlo",
+        company: "Agence Marlo",
         text: "Cyril est très réactif et très professionnel. La communication a été très fluide. Je n'hésiterai pas à travailler à nouveau avec lui si l'opportunité se présente.",
         featured: true,
     },

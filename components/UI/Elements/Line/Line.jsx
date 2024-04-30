@@ -7,7 +7,7 @@ import animationsLineReveal from "@/animations/line/reveal"
 import styles from "./Line.module.scss"
 
 
-const Line = () => {
+const Line = ({ type = null }) => {
 
     // Elements
     const line = useRef(null)
@@ -19,7 +19,7 @@ const Line = () => {
     return (
         <span 
             ref={ line } 
-            className={ styles.line }
+            className={ `${styles.line} ${type === "inner" ? styles.line__inner : ""}` }
         />
     )
 }
