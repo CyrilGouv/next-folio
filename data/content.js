@@ -15,3 +15,10 @@ export const aboutCoverLastImage = {
 
 // TESTIMONIALS
 export const testimonialsHeroText = "Qu’est-ce que mes clients disent de moi ? Parce qu’au bout du compte, c’est leur avis qui compte le plus, voici leur témoignage."
+
+// CONTACT
+export const contactHeroText = "We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
+export const contactAvatar = {
+    img: "/images/projects/fake/project-01.webp",
+    alt: "Vous avez un projet web ? Contactez Cyril Gouv !"
+}

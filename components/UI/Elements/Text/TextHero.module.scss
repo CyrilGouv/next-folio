@@ -3,6 +3,10 @@
     margin-left: auto;
     padding-bottom: var(--paddingM);
 
+    &__alt {
+        padding-bottom: var(--paddingS);
+    }
+
     &__avatar {
         width: 3.25rem;
         height: 3.25rem;
