@@ -1,0 +1,113 @@
+.infos {
+    &__email {
+        display: inline-block;
+        padding-top: 1rem;
+        text-transform: uppercase;
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &__socials {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-top: 1rem;
+
+        li {
+            margin-right: 1rem;
+            margin-bottom: 0.25rem;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            a {
+                text-transform: uppercase;
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .infos {
+        width: 40%;
+        padding-bottom: 0;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .infos {
+        width: 36%;
+        position: sticky;
+        top: var(--paddingS);
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .infos {
+        width: 38%;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .infos {
+        width: 40%;
+        padding-bottom: var(--paddingM);
+
+        &__email {
+            display: inline-block;
+            padding-top: 1rem;
+            text-transform: uppercase;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        &__socials {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            padding-top: 1rem;
+
+            li {
+                margin-right: 1rem;
+                margin-bottom: 0.25rem;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    color: inherit;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
