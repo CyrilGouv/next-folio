@@ -46,7 +46,7 @@
         align-items: center;
     }
 
-    &__line:not(:first-of-type).title__testimonials--line {
+    &__line__push:not(:first-of-type) {
         width: 50%;
         margin-left: auto;
     }
@@ -60,7 +60,7 @@
 //==========================================================
 */
 @media (min-width: 1400px) {
-    .title__line:not(:first-of-type).title__testimonials--line {
+    .title__line__push:not(:first-of-type) {
         width: 46%;
     }
 }
