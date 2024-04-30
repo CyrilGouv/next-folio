@@ -8,7 +8,7 @@ const page = () => {
 
     return (
         <>
-            <Hero page={ page } />
+            <Hero page={ page } withText={ true } />
             <Footer />
         </>
     ) 
