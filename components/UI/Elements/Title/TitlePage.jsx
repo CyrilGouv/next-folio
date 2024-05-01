@@ -41,7 +41,7 @@ const TitlePage = ({ page }) => {
             return (
                 <h1 className={ styles.title }>
                     <span className={ styles.title__line }>
-                        <span ref={ firstLine } className={ styles.title__line__word }>Quelques</span>
+                        <span ref={ firstLine } className={ styles.title__line__word }>Dernières</span>
                     </span>
                     <span ref={ lastLine } className={ `${styles.title__line} ${styles.title__line__alt}` }>
                         <svg className={ styles.title__line__arrow } version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
@@ -52,7 +52,7 @@ const TitlePage = ({ page }) => {
                             </g>
                             </g>
                         </svg>
-                        <span className={ styles.title__line__word }>Réalisations</span>
+                        <span className={ styles.title__line__word }>Créations</span>
                     </span>
                 </h1>
             )
