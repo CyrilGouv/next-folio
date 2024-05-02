@@ -18,7 +18,7 @@ const SliderTestimonials = () => {
 
     // Animations
     useGSAP(() => {
-        animationsSliderParallax(sliderWrapperEl.current, 8, -8)
+        animationsSliderParallax(sliderWrapperEl.current, 8, 0)
     })
 
     return (
