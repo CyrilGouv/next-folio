@@ -1,0 +1,36 @@
+.selects {
+    padding-bottom: var(--paddingS);
+
+    &__title {
+        font-size: 1.25rem;
+        letter-spacing: normal;
+        padding-top: var(--paddingS);
+    }
+
+    &__content {
+
+        &__input {
+            display: block;
+            width: 100%;
+            background: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid var(--darkThemeBoulder);
+            padding: 1.5rem 0;
+            font-family: var(--mainFont);
+            font-size: 1.25rem;
+            color: var(--darkThemeFontColor);
+            margin-bottom: 1.5rem;
+
+            &::placeholder {
+                font-family: var(--mainFont);
+                font-size: 1.25rem;
+                color: var(--darkThemeFontColor);
+            }
+
+            &:focus {
+                border-color: 1px solid var(--darkThemeBoulder);
+            }
+        }
+    }
+}

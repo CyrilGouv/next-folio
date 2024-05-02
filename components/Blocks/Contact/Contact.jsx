@@ -9,7 +9,9 @@ const Contact = () => {
     return (
         <section className={ styles.contact }>
             <div className="container">
-                <Line />
+                <div className={ styles.contact__line }>
+                    <Line type="inner" />
+                </div>
                 
                 <div className={ styles.contact__wrapper }>
                     <ContactInfos />
