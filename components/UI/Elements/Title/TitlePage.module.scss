@@ -1,6 +1,6 @@
 .title {
     width: 100%;
-    font-size: clamp(4.25rem, 12.5vw, 210px);
+    font-size: clamp(4.25rem, 11vw, 210px);
     line-height: 1;
 
     &__line {
@@ -35,7 +35,6 @@
         min-height: 1.625rem;
         max-height: 95px;
         height: 5vw;
-        margin-right: var(--paddingXS);
 
         g {
             stroke-width: 1.5px;
@@ -48,11 +47,26 @@
     }
 
     &__line__push:not(:first-of-type) {
-        width: 50%;
+        width: 54%;
         margin-left: auto;
     }
 }
 
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px)  {
+    .title {
+        &__line__push:not(:first-of-type) {
+            width: 50%;
+            margin-left: auto;
+        }
+    }
+}
 
 
 /* 
