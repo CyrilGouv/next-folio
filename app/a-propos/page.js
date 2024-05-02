@@ -12,7 +12,7 @@ const page = () => {
 
     return (
         <>
-            <Hero page={ page } />
+            <Hero page={ page } withText={ true } />
             <CoverColumns />
             <Intro page={ page } />
             <TextParallax text="Make you shine" layout="section" />

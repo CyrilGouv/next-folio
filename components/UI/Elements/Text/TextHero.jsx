@@ -26,7 +26,7 @@ const TextHero = ({ text, avatar = false }) => {
     })
 
     return (
-        <div ref={ sectionEl } className={ `${styles.text} ${styles.text__alt}` }>
+        <div ref={ sectionEl } className={ `${styles.text} ${avatar ? styles.text__alt : ""}` }>
             { avatar && (
                 <Image
                     ref={ avatarEl }
