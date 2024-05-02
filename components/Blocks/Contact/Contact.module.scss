@@ -9,6 +9,10 @@
         align-items: flex-start;
         padding-top: var(--paddingM);
     }
+
+    &__line {
+        position: relative;
+    }
 }
 
 
@@ -21,22 +25,6 @@
     .contact {
         &__wrapper {
             flex-direction: row;
-        }
-    }
-}
-
-
-/* 
-//==========================================================
-//  Responsive =>  > 1600px
-//==========================================================
-*/
-@media (min-width: 1600px) {
-    .contact {
-        padding-top: var(--paddingS);
-
-        &__wrapper {
-            padding-top: var(--paddingS);
         }
     }
 }

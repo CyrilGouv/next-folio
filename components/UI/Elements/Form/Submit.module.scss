@@ -1,0 +1,36 @@
+.submit {
+    padding-bottom: var(--paddingS);
+
+    &__button {
+        display: inline-flex;
+        align-items: center;
+        padding: 0.25rem 1.25rem;
+        border: 1px solid var(--darkThemeFontColor);
+        border-radius: 2rem;
+        overflow: hidden;
+        color: var(--darkThemeFontColor);
+        background: transparent;
+        text-decoration: none;
+        line-height: 1.5;
+        cursor: pointer;
+
+        &__inner {
+            position: relative;
+            display: inline-block;
+            transition: transform .275s var(--mainTransition);
+
+            &::before {
+                position: absolute;
+                content: attr(data-name);
+                top: 100%;
+                left: 0;
+            }
+        }
+
+        &:hover {
+            .submit__button__inner {
+                transform: translateY(-100%);
+            }
+        }
+    }
+}
