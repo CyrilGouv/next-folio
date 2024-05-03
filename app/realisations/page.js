@@ -9,7 +9,7 @@ export default function Portfolio() {
 
   return (
     <>
-      <Hero page={ page } />
+      <Hero page={ page } withText={ true } />
       <AllProjects />
       <Footer />
     </>
