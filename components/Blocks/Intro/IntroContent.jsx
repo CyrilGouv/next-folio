@@ -7,7 +7,6 @@ import TextReveal from "@/components/UI/Elements/Text/TextReveal"
 import Line from "@/components/UI/Elements/Line/Line"
 import Button from "@/components/UI/Elements/Button/Button"
 import Technos from "@/components/UI/Elements/Technos/Technos"
-import SliderNumbers from "@/components/UI/Sliders/SliderNumbers"
 import Cta from "@/components/UI/Cta/Cta"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
@@ -67,7 +66,7 @@ const IntroContent = ({ page }) => {
                     <div className={ `${styles.intro__content} ${styles.intro__content__first}` }>
                         <TextInfo body="(à propos)" />
 
-                        <div className={ styles.intro__content__wrapper }>
+                        <div className={ `${styles.intro__content__wrapper}  pb--large` }>
                             <p className={ styles.intro__content__text }>
                                 <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
                             </p>
