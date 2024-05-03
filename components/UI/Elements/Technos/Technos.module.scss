@@ -1,23 +1,12 @@
 .technos {
     margin: 0;
-    padding: var(--paddingS) 0 0 0;
+    padding: 0;
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
 
     &__item {
         position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1.5rem 0;
-        border-radius: var(--mainBorderRadius);
-        background-color: rgba(#262626, .5);
-        
-        &__title {
-            margin-top: 1rem;
-        }
+        font-size: max(1.25rem, 1.85vw);
+        line-height: 1.5;
     }
 }
 

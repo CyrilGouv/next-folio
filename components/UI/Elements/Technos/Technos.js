@@ -16,21 +16,19 @@ const Technos = () => {
 
   // Animations
   useGSAP(() => {
-    opacityAndTransformY(technosEl.current, technosEl.current.children, 25, .125)
+    opacityAndTransformY(technosEl.current, technosEl.current.children, 50, .125)
   })
 
   return (
     <ul ref={ technosEl } className={ styles.technos }>
-      { skillItems.map(({ id, image, title }) => (
-        <li key={ id } className={ styles.technos__item }>
-          <Image
-            className={ styles.technos__item__img }
-            width={ 100 }
-            height={ 40 }
-            src={ image }
-            alt={ `Services de création en utilisant ${title}` }
-            title={ title }
-          />
+      { skillItems.map(({ id, name }) => (
+        <li 
+          key={ id } 
+          className={ `${styles.technos__item} text--large` }
+        >
+          <span className={ styles.technos__item__name }>
+            { name }
+          </span>
         </li>
       )) }
     </ul>
