@@ -1,33 +1,41 @@
 .button {
-    display: inline-flex;
+    position: relative;
+    display: inline-block;
     align-items: center;
-    padding: 0.25rem 1.25rem;
     border: 1px solid var(--darkThemeFontColor);
     border-radius: 2rem;
+    padding: 0.45rem 1.25rem;
     overflow: hidden;
     color: var(--darkThemeFontColor);
     text-decoration: none;
-    line-height: 1.5;
+    line-height: 1;
 
     &.text--regular {
         width: auto;
     }
 
     &__text {
+        display: inline-flex;
         position: relative;
-        display: inline-block;
-        transition: transform .275s var(--mainTransition);
+        align-items: center;
+        overflow: hidden;
 
-        &::before {
-            position: absolute;
-            content: attr(data-name);
-            top: 100%;
-            left: 0;
+        &__inner {
+            position: relative;
+            display: inline-block;
+            transition: transform .275s var(--mainTransition);
+
+            &::before {
+                position: absolute;
+                content: attr(data-name);
+                top: 100%;
+                left: 0;
+            }
         }
     }
 
     &:hover {
-        .button__text {
+        .button__text__inner {
             transform: translateY(-100%);
         }
     }

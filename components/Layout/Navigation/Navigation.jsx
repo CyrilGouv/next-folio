@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation"
 import { menuTopItems } from "@/data/menus"
 
 import styles from "./Navigation.module.scss"
+import Button from "@/components/UI/Elements/Button/Button"
 
 
 const Navigation = () => {
@@ -30,17 +31,10 @@ const Navigation = () => {
             </div>
 
             <li className={ `${styles.navigation__item} text--regular` }>
-                <NavLink
-                    href="/contact"
-                    className={ `${styles.navigation__link} ${styles.navigation__link__contact}` }
-                >
-                    <span 
-                        className={ styles.navigation__link__contact__inner } 
-                        data-name="Contact"
-                    >
-                        Contact
-                    </span>
-                </NavLink>
+                <Button
+                    text="Contact"
+                    path="/contact"
+                />
             </li>
         </ul>
     )

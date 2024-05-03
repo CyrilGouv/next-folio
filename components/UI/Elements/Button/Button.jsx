@@ -11,11 +11,15 @@ const Button = ({ text, path, external = false }) => {
                 href={ path }
                 className={ `${styles.button} text--regular` }
             >
-                <span 
-                    data-name={ text }
+                <span
                     className={ styles.button__text } 
                 >
-                    { text }
+                    <span
+                        data-name={ text }
+                        className={ styles.button__text__inner } 
+                    >
+                        { text }
+                    </span>
                 </span>
             </Link>
         )
