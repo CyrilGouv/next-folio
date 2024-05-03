@@ -16,20 +16,18 @@ const CardList = ({ item }) => {
     const words = splitByWords(body)
 
     // Elements
-    const contentEl = useRef(null)
     const titleEl = useRef(null)
     const wordEls = useRef([])
     const lineEl = useRef(null)
 
     useGSAP(() => {
-        animationsCardList(contentEl.current, titleEl.current, wordEls.current, lineEl.current)
+        animationsCardList(titleEl.current, titleEl.current, wordEls.current, lineEl.current)
     })
 
     return (
-        <li ref={ contentEl } className={ styles.card }>
+        <li className={ styles.card }>
             <h4 ref={ titleEl } className={ `${styles.card__title} text--large` }>
-                <span className={ `${styles.card__title__id} text--opacity`}>0{ id + 1 }</span>
-                <span className={ styles.card__title__separator }></span> 
+                <span className={ `${styles.card__title__id} text--regular text--opacity`}>0{ id + 1 }</span>
                 <span className={ styles.card__title__content }>{ title }</span> 
             </h4>
             <p className={ `${styles.card__body} text--large` }>

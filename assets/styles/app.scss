@@ -38,7 +38,7 @@ Variables
     --mainHeroHeight: 65vh;
 
     // Borders
-    --mainBorderRadius: .5rem;
+    --mainBorderRadius: .625rem;
 
     // Transitions
     --mainTransition: cubic-bezier(.25, .46, .45, .94);
@@ -181,6 +181,15 @@ Text infos utils
     padding-bottom: 1rem;
 }
 
+
+/* 
+-----------------------------
+Padding && Margin utils
+-----------------------------
+*/
+.pb--large {
+    padding-bottom: var(--paddingL);
+}
 
 /* 
 -----------------------------
