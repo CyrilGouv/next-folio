@@ -2,6 +2,11 @@
 export const homepageIntroTitle = "Cyrilgouv is a nimble team working remote first from all around the world, with offices on the islands."
 export const aboutIntroTitle = "Whether you require help with strategy, web or product design, development, app creation, or innovative tech."
 
+
+// PROJETS
+export const projectsHeroText = "We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
+
+
 // COVER ABOUT IMAGES
 export const aboutHeroText = "Développeur web indépendant passionné depuis 2017 et spécialiste en création de site web, design graphique et développement front-end."
 export const aboutCoverFirstImage = {

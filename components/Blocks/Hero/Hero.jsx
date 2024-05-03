@@ -1,13 +1,13 @@
 import TitlePage from "@/components/UI/Elements/Title/TitlePage"
 import TextHero from "@/components/UI/Elements/Text/TextHero"
-import { aboutHeroText, testimonialsHeroText, contactHeroText } from "@/data/content"
+import { projectsHeroText, aboutHeroText, testimonialsHeroText, contactHeroText } from "@/data/content"
 
 import styles from "./Hero.module.scss"
 
 
 const Hero = ({ page, withText = false }) => {
 
-  const textHero = page === "about" ? aboutHeroText : page === "testimonials" ? testimonialsHeroText : page === "contact" ? contactHeroText : ""
+  const textHero = page === "works" ? projectsHeroText : page === "about" ? aboutHeroText : page === "testimonials" ? testimonialsHeroText : page === "contact" ? contactHeroText : ""
 
   return (
     <section className={ styles.hero }>

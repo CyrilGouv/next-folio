@@ -45,7 +45,7 @@ const TitlePage = ({ page }) => {
                     </span>
                     <span ref={ lastLine } className={ `${styles.title__line} ${styles.title__line__alt} ${styles.title__line__push}` }>
                     <span className={ `${styles.title__line__word} text--opacity` }>©</span>
-                        <span className={ styles.title__line__word }>17-24</span>
+                        <span className={ styles.title__line__word }>18-24</span>
                     </span>
                 </h1>
             )

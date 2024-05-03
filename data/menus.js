@@ -6,7 +6,7 @@ export const menuTopItems = [
     },
     {
         id: 1,
-        name: 'Réalisations',
+        name: 'Portfolio',
         path: '/realisations',
     },
     {
@@ -30,7 +30,7 @@ export const menuBottomItems = [
     },
     {
         id: 1,
-        name: 'Réalisations',
+        name: 'Portfolio',
         path: '/realisations',
     },
     {
