@@ -16,6 +16,14 @@
         &__word {
             display: inline-block;
         }
+
+        &__sub {
+            display: flex;
+
+            sub {
+                line-height: 0;
+            }
+        }
     }
 
     &.title--h2 {
