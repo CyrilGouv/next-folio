@@ -5,6 +5,7 @@
     background-color: var(--darkThemeGrayColor);
     pointer-events: none;
     overflow: hidden;
+    border-radius: var(--mainBorderRadius);
 
     &__reveal {
         position: absolute;
