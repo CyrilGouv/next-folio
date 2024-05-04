@@ -19,14 +19,14 @@ const Hero = ({ page, withText = false }) => {
         <div className="container">
             <div className={ styles.hero__wrapper }>
                 <div className={ styles.hero__title }>
-                    { withText && page !== "contact" && page !== "homepage" && (
+                    { withText && page !== "testimonials" && page !== "homepage" && (
                       <TextHero text={ textHero } />
                     ) }
                     { withText && page === "homepage" && (
                       <TextHero text={ textHero } layout={ page } />
                     ) }
-                    { withText && page === "contact" && (
-                      <TextHero text={ textHero } avatar={ true } />
+                    { withText && page === "testimonials" && (
+                      <TextHero text={ textHero } image={ true } />
                     ) }
                     <TitlePage page={ page } />
                 </div>
