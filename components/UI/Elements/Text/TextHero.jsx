@@ -3,25 +3,27 @@
 import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 import Image from "next/image"
-import { contactAvatar } from "@/data/content"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
-import animationsClipPath from "@/animations/image/clipPath"
+import animationsImageReveal from "@/animations/image/reveal"
+import animationsImageParallax from "@/animations/image/parallax"
 
 import styles from "./TextHero.module.scss"
 
 
-const TextHero = ({ text, layout = "default", avatar = false }) => {
+const TextHero = ({ text, layout = "default", image = false }) => {
 
     // Elements
     const sectionEl = useRef(null)
     const textEl = useRef(null)
     const locationEl = useRef(null)
-    const avatarEl = useRef(null)
+    const imageEl = useRef(null)
+    const overlayEl = useRef(null)
 
     // Animations
     useGSAP(() => {
-        if(avatar) {
-            animationsClipPath(sectionEl.current, avatarEl.current)
+        if(image) {
+            animationsImageReveal(sectionEl.current, overlayEl.current, true)
+            animationsImageParallax(sectionEl.current, imageEl.current)
         }
 
         if(layout === "homepage") {
@@ -34,17 +36,20 @@ const TextHero = ({ text, layout = "default", avatar = false }) => {
     // Render Default layout
     if(layout === "default") {
         return (
-            <div ref={ sectionEl } className={ `${styles.text} ${avatar ? styles.text__alt : ""}` }>
-                { avatar && (
-                    <Image
-                        ref={ avatarEl }
-                        src={ contactAvatar.img }
-                        alt={ contactAvatar.alt }
-                        width={ 68 }
-                        height={ 68 }
-                        priority={ false }
-                        className={ styles.text__avatar }
-                    />
+            <div ref={ sectionEl } className={ `${styles.text} ${image ? styles.text__alt : ""}` }>
+                { image && (
+                    <div className={ styles.text__image }>
+                        <div ref={ overlayEl } className={ styles.text__image__overlay }></div>
+                        <Image
+                            ref={ imageEl }
+                            src="/images/gifs/gif-testimonial.webp"
+                            alt="Merci à mes clients de la confiance qu'ils ont pu apporté à mes services de développement web."
+                            width={ 150 }
+                            height={ 100 }
+                            priority={ false }
+                            className={ styles.text__image__inner }
+                        />
+                    </div>
                 ) }
                 <p 
                     ref={ textEl } 
