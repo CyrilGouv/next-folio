@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <>
-      <Hero page={ page } />
+      <Hero page={ page } withText={ true } />
       <CoverParallax />
       <Intro page={ page } />
       <FeaturedProjects />

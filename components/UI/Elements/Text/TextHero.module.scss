@@ -7,6 +7,16 @@
         padding-bottom: var(--paddingS);
     }
 
+    &__location {
+        display: flex;
+        align-items: center;
+        padding-bottom: .65rem;
+
+        &__inner {
+            margin-left: .5rem;
+        }
+    }
+
     &__avatar {
         width: 3.25rem;
         height: 3.25rem;

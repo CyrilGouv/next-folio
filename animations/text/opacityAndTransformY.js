@@ -4,12 +4,12 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 
-const opacityAndTransformY = (section, text, fromYPercent = 25, duration = 0.85, delay = 0) => {
+const opacityAndTransformY = (section, text, fromYPercent = 25, duration = 0.85, delay = 0, toAutoAlpha = 1) => {
     gsap.set(text, { autoAlpha: 0, yPercent: fromYPercent })
 
     if (section) {
         gsap.to(text, {
-            autoAlpha: 1, 
+            autoAlpha: toAutoAlpha, 
             yPercent: 0, 
             duration: duration,
             delay: delay,
@@ -21,7 +21,7 @@ const opacityAndTransformY = (section, text, fromYPercent = 25, duration = 0.85,
         })
     } else {
         gsap.to(text, {
-            autoAlpha: 1, 
+            autoAlpha: toAutoAlpha, 
             yPercent: 0, 
             duration: 1,
             delay: .25,
