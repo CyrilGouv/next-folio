@@ -27,7 +27,7 @@ const CardList = ({ item }) => {
     return (
         <li className={ styles.card }>
             <h4 ref={ titleEl } className={ `${styles.card__title} text--large` }>
-                <span className={ `${styles.card__title__id} text--regular text--opacity`}>0{ id + 1 }</span>
+                <span className={ `${styles.card__title__id} text--regular text--opacity`}>(0{ id + 1 })</span>
                 <span className={ styles.card__title__content }>{ title }</span> 
             </h4>
             <p className={ `${styles.card__body} text--large` }>
