@@ -5,6 +5,7 @@
         
     &__item {
         margin-bottom: .85rem;
+        font-size: clamp(13px, 1.125vw, 1.25rem);
 
         &:last-of-type {
             margin-bottom: 0;

@@ -6,9 +6,9 @@ import MenuFooter from "@/components/UI/Elements/Menu/MenuFooter"
 import Socials from "@/components/UI/Elements/Socials/Socials"
 import CtaFooter from "@/components/UI/Cta/CtaFooter"
 import TextUpperWide from "@/components/UI/Elements/Text/TextUpperWide"
+import animationsFooterScroll from "@/animations/footer/parallax"
 
 import styles from "./Footer.module.scss"
-import animationsFooterScroll from "@/animations/footer/parallax"
 
 
 const Footer = () => {
