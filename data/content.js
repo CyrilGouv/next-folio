@@ -28,3 +28,18 @@ export const contactAvatar = {
     img: "/images/projects/fake/project-01.webp",
     alt: "Vous avez un projet web ? Contactez Cyril Gouv !"
 }
+
+
+// Mentions Légales
+export const mentionsContent = [
+    {
+        id: 0,
+        title: "(Informations)",
+        content: "informations"
+    },
+    {
+        id: 1,
+        title: "(Confidentialité)",
+        content: "confidentialite"
+    },
+]
