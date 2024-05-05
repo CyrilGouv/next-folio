@@ -23,7 +23,7 @@ const MenuFooter = () => {
 
             <li className={ styles.menu__item }>
                 <Link
-                    href="/mentions-legales"
+                    href="/legales/mentions-legales"
                     className={ `${styles.menu__item__link} link--underline link--underline__dark` }
                 >
                     <span>Mentions légales</span>
