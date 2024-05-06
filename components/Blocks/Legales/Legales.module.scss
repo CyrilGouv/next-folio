@@ -1,0 +1,36 @@
+.legales {
+
+    &__line {
+        position: relative;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: var(--paddingXL);
+    }
+
+    &__title {
+        padding-bottom: var(--paddingM);
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .legales {
+
+        &__line {
+            position: relative;
+        }
+    
+        &__wrapper {
+            flex-direction: row;
+        }
+    }
+}
