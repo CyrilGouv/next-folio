@@ -19,12 +19,13 @@
 
     &__image {
         position: relative;
+        display: inline-block;
         width: 9vw;
         min-width: 100px;
         max-width: 150px;
-        height: 6vw;
+        height: 7vw;
         min-height: 65px;
-        max-height: 110px;
+        max-height: 120px;
         margin-bottom: 2rem;
         border-radius: var(--secondaryBorderRadius);
         overflow: hidden;
