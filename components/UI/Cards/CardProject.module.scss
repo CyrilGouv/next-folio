@@ -23,7 +23,7 @@
     &__figure {
         position: relative;
         overflow: hidden;
-        border-radius: var(--mainBorderRadius);
+        border-radius: var(--secondaryBorderRadius);
         min-height: 68vw;
         max-height: 68vw;
 
@@ -35,7 +35,7 @@
             right: 0;
             width: 100%;
             height: 100%;
-            background-color: var(--darkThemeGrayColor);
+            background-color: var(--darkThemeBgColor);
             z-index: 3;
         }
     }
@@ -55,12 +55,13 @@
     &__title {
         justify-content: space-between;
         align-items: center;
-        font-size: max(1.65rem, 1.85vw);
+        font-size: max(1.65rem, 1.75vw);
         line-height: 1.3;
         text-decoration: none;
         color: var(--darkThemeFontColor);
         letter-spacing: normal;
         margin-top: var(--paddingXS);
+        text-transform: uppercase;
 
         &__inner {
             display: inline-block;

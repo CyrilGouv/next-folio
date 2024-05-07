@@ -12,7 +12,9 @@ const Intro = ({ page }) => {
     return (
         <section className={ styles.intro }>
             <div className="container">
-                <TitleIntro text={ pageTitle } />
+                { page !== "about" && (
+                    <TitleIntro text={ pageTitle } />
+                ) }
                 <IntroContent page={ page } />
             </div>
         </section>

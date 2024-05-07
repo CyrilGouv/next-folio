@@ -5,11 +5,11 @@ export const skillItems = [
     },
     {
         id: 1,
-        name: "Strapi / Sanity / Medusa.js",
+        name: "WordPress / Strapi / Medusa.js",
     },
     {
         id: 2,
-        name: "WordPress",
+        name: "Koa.js / Django",
     },
     {
         id: 3,
