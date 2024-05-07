@@ -10,7 +10,7 @@ import animationsImageParallax from "@/animations/image/parallax"
 import styles from "./TextHero.module.scss"
 
 
-const TextHero = ({ text, layout = "default", image = false }) => {
+const TextHero = ({ text, layout = "default", image = false, video = false }) => {
 
     // Elements
     const sectionEl = useRef(null)
@@ -21,7 +21,7 @@ const TextHero = ({ text, layout = "default", image = false }) => {
 
     // Animations
     useGSAP(() => {
-        if(image) {
+        if(image || video) {
             animationsImageReveal(sectionEl.current, overlayEl.current, true)
             animationsImageParallax(sectionEl.current, imageEl.current)
         }
@@ -36,7 +36,7 @@ const TextHero = ({ text, layout = "default", image = false }) => {
     // Render Default layout
     if(layout === "default") {
         return (
-            <div ref={ sectionEl } className={ `${styles.text} ${image ? styles.text__alt : ""}` }>
+            <div ref={ sectionEl } className={ `${styles.text} ${image || video ? styles.text__alt : ""}` }>
                 { image && (
                     <div className={ styles.text__image }>
                         <div ref={ overlayEl } className={ styles.text__image__overlay }></div>
@@ -50,6 +50,20 @@ const TextHero = ({ text, layout = "default", image = false }) => {
                             className={ styles.text__image__inner }
                         />
                     </div>
+                ) }
+                { video && (
+                    <figure className={ styles.text__image }>
+                        <div ref={ overlayEl } className={ styles.text__image__overlay }></div>
+                        <video 
+                            ref={ imageEl }
+                            className={ styles.text__image__inner } 
+                            src="/videos/video-biscarrosse.mp4"
+                            autoPlay
+                            loop
+                            muted
+                        >
+                        </video>
+                    </figure>
                 ) }
                 <p 
                     ref={ textEl } 
