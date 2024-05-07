@@ -9,16 +9,22 @@
         display: none;
     }
 
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1vw;
+        width: 100%;
+    }
+
     &__infos {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        line-height: 3.25;
 
         &__body {
-            width: 60%;
+            margin-bottom: var(--paddingXS);
 
             &__title {
                 display: block;
@@ -27,13 +33,19 @@
             }
         }
 
+        &__phone {
+            margin-right: 1vw;
+        }
+
+        &__phone,
         &__email {
             display: inline-block;
+            width: 100%;
             font-size: max(1.125rem, 1.625vw);
+            text-transform: uppercase;
             line-height: 1.125;
             color: inherit;
             text-decoration: none;
-            margin-top: 1.5rem;
             margin-left: auto;
             padding: 0.25rem 1.25rem;
             border: 1px solid var(--lightThemeFontColor);
@@ -44,6 +56,7 @@
                 position: relative;
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 overflow: hidden;
 
                 span {
@@ -62,6 +75,7 @@
             }
 
             &:hover {
+                .cta__infos__phone__inner span,
                 .cta__infos__email__inner span {
                     transform: translateY(-100%);
                 }
@@ -79,14 +93,13 @@
 @media (min-width: 640px) {
     .cta {
 
+        &__content {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 1vw;
+        }
+
         &__infos {
             width: 100%;
-            flex-direction: row;
-            align-items: flex-end;
-
-            &__body {
-                margin: 0;
-            }
         }
         
     }
@@ -102,7 +115,7 @@
     .cta {
         
         &__infos {
-            width: 72%;
+            width: 100%;
         }
 
         &__location {
@@ -113,6 +126,36 @@
             }
         }
         
+    }
+}
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .cta {
+        &__infos {
+            flex-direction: row;
+            align-items: flex-end;  
+            justify-content: flex-end;
+
+            &__body {
+                width: 60%;
+                margin-bottom: 0;
+            }
+
+            &__phone,
+            &__email {
+                width: auto;
+            }
+        }
+
+        &__content {
+            display: inline-block;
+            text-align: right;
+        }
     }
 }
 
