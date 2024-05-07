@@ -5,9 +5,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const animationsRevealFooterText = (startTrigger, letters) => {
-    // Settings
-    gsap.set(letters, { yPercent: -100 })
-
     // Animation
     gsap.to(letters, {
         yPercent: 100,
