@@ -1,24 +1,35 @@
 .cover {
     
-    &__wrapper {
+    &__wrapper:first-of-type {
         display: grid;
-        grid-template-columns: 1fr 1fr 47vw;
+        grid-template-columns: 1fr 1fr 47%;
+        column-gap: 1vw;
     }
 
-    &__left {
-        width: 62vw;
-        overflow: hidden;
-        border-top-right-radius: var(--mainBorderRadius);
-        border-bottom-right-radius: var(--mainBorderRadius);
+    &__wrapper:last-of-type {
+        width: 47%;
+        margin-left: auto;
+        padding-top: 1vw;
 
-        &__figure {
-            position: relative;
-            display: inline-block;
+        .cover__img {
             width: 100%;
-            padding-bottom: 66.66%;
+        }
+    }
+
+    &__img {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 600px;
+        overflow: hidden;
+        border-radius: var(--secondaryBorderRadius);
+
+        &:last-of-type {
+            width: 50%;
+            margin-left: auto;
         }
 
-        &__img {
+        &__inner {
             position: absolute;
             top: 0;
             left: 0;
@@ -26,36 +37,9 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-top-left-radius: var(--mainBorderRadius);
-            border-bottom-left-radius: var(--mainBorderRadius);
         }
     }
 
-    &__right {
-        width: 16vw;
-        border-top-left-radius: var(--mainBorderRadius);
-        border-bottom-left-radius: var(--mainBorderRadius);
-        overflow: hidden;
-
-        &__figure {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-            padding-bottom: 110%;
-        }
-
-        &__img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-top-left-radius: var(--mainBorderRadius);
-            border-bottom-left-radius: var(--mainBorderRadius);
-        }
-    }
 
     &__reveal {
         position: absolute;
