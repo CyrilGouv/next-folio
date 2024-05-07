@@ -8,7 +8,7 @@ import revealLettersOpacity from "@/animations/title/revealLettersOpacity"
 import styles from "./TitleIntro.module.scss"
 
 
-const TitleIntro = ({ text }) => {
+const TitleIntro = ({ text, options = {} }) => {
 
     // Splitting text by words && letters
     const words = splitByWords(text)
@@ -18,12 +18,17 @@ const TitleIntro = ({ text }) => {
     const lettersEls = useRef([])
 
     useGSAP(() => {
-        revealLettersOpacity(section.current, lettersEls.current, true)
+        if(Object.keys(options).length === 0) {
+            revealLettersOpacity(section.current, lettersEls.current, true)
+
+        } else if(Object.keys(options).length > 0 && !options.pinned) {
+            revealLettersOpacity(section.current, lettersEls.current, options.pinned)
+        }
     })
 
     return (
-        <div ref={ section } className={ styles.title }>
-            <h2 className={ `${styles.title__text} text--XLarge` }>
+        <div ref={ section } className={  `${styles.title} ${options?.className ? styles.title__alt : ""}` }>
+            <h2 className={ `${styles.title__text} ${options?.className ? options.className : "text--XLarge"}` }>
                 { words.map((word, idx) => {
                     return (
                         <span

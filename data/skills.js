@@ -1,15 +1,15 @@
 export const skillItems = [
     {
         id: 0,
-        name: "React / Remix / Next.js",
+        name: "React / Next.js",
     },
     {
         id: 1,
-        name: "WordPress / Strapi.js",
+        name: "Strapi / Sanity / Medusa.js",
     },
     {
         id: 2,
-        name: "Shopify / Hydrogen",
+        name: "WordPress",
     },
     {
         id: 3,

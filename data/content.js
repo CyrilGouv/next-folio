@@ -1,5 +1,5 @@
 // INTRO TITLES
-export const homepageHeroText = "Développeur web indépendant passionné depuis 2017 et spécialiste en création de site web, design graphique et développement front-end."
+export const homepageHeroText = "Créateur de sites et applications web sur-mesure dédiée à votre performance, votre visibilité et votre notoriété depuis 2018."
 export const homepageIntroTitle = "Cyrilgouv is a nimble team working remote first from all around the world, with offices on the islands."
 export const aboutIntroTitle = "Whether you require help with strategy, web or product design, development, app creation, or innovative tech."
 

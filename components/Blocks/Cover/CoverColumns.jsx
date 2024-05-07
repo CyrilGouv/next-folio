@@ -27,32 +27,45 @@ const CoverColumns = () => {
 
     return (
         <section ref={ sectionEl } className={ styles.cover }>
-            <div className={ styles.cover__left }>
-                <figure className={ styles.cover__left__figure }>
-                    <div ref={ revealFirstEl } className={ styles.cover__reveal }></div>
-                    <Image 
-                        ref={ firstImageEl }
-                        className={ styles.cover__left__img } 
-                        src={ aboutCoverFirstImage.img }
-                        alt={ aboutCoverFirstImage.alt }
-                        fill
-                        priority={ false }
-                        sizes="62vw"
-                    />
-                </figure>
-            </div>
-            <div className={ styles.cover__right }>
-                <figure ref={ lastFigureEl } className={ styles.cover__right__figure }>
-                    <div ref={ revealLastEl } className={ styles.cover__reveal }></div>
-                    <Image 
-                        className={ styles.cover__right__img } 
-                        src={ aboutCoverLastImage.img }
-                        alt={ aboutCoverLastImage.alt }
-                        fill
-                        priority={ false }
-                        sizes="16vw"
-                    />
-                </figure>
+            <div className="container">
+                <div className={ styles.cover__wrapper }>
+                    <figure className={ styles.cover__img }>
+                        <div ref={ revealFirstEl } className={ styles.cover__reveal }></div>
+                        <Image 
+                            ref={ firstImageEl }
+                            className={ styles.cover__img__inner } 
+                            src={ aboutCoverFirstImage.img }
+                            alt={ aboutCoverFirstImage.alt }
+                            fill
+                            priority={ false }
+                            sizes="62vw"
+                        />
+                    </figure>
+                    <figure className={ styles.cover__img }>
+                        <div ref={ revealFirstEl } className={ styles.cover__reveal }></div>
+                        <Image 
+                            ref={ firstImageEl }
+                            className={ styles.cover__img__inner } 
+                            src={ aboutCoverFirstImage.img }
+                            alt={ aboutCoverFirstImage.alt }
+                            fill
+                            priority={ false }
+                            sizes="62vw"
+                        />
+                    </figure>
+                    <figure className={ styles.cover__img }>
+                        <div ref={ revealFirstEl } className={ styles.cover__reveal }></div>
+                        <Image 
+                            ref={ firstImageEl }
+                            className={ styles.cover__img__inner } 
+                            src={ aboutCoverLastImage.img }
+                            alt={ aboutCoverLastImage.alt }
+                            fill
+                            priority={ false }
+                            sizes="62vw"
+                        />
+                    </figure>
+                </div>
             </div>
         </section>
     )
