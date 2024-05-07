@@ -20,7 +20,6 @@
         }
 
         &__active {
-            opacity: .35;
 
             .navigation__link span::before {
                 transform: scaleX(1);

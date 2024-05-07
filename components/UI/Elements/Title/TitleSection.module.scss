@@ -1,5 +1,6 @@
 .title {
-    font-size: clamp(6rem, 11vw, 210px);
+    font-size: clamp(6rem, 10vw, 150px);
+    text-transform: uppercase;
     overflow: hidden;
 
     &__letter {

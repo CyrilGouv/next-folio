@@ -54,11 +54,11 @@ const TitlePage = ({ page }) => {
             return (
                 <h1 className={ styles.title }>
                     <span className={ styles.title__line }>
-                        <span ref={ firstLine } className={ styles.title__line__word }>Passionné</span>
+                        <span ref={ firstLine } className={ styles.title__line__word }>Design</span>
                     </span>
                     <span ref={ lastLine } className={ `${styles.title__line} ${styles.title__line__alt} ${styles.title__line__push}` }>
                         <span className={ `${styles.title__line__word} text--opacity` }>&</span>
-                        <span className={ styles.title__line__word }>Expert</span>
+                        <span className={ styles.title__line__word }>Code</span>
                     </span>
                 </h1>
             )
@@ -87,7 +87,7 @@ const TitlePage = ({ page }) => {
             return (
                 <h1 className={ styles.title }>
                     <span className={ styles.title__line }>
-                        <span ref={ firstLine } className={ styles.title__line__word }>Parlons</span>
+                        <span ref={ firstLine } className={ styles.title__line__word }>Let's</span>
                     </span>
                     <span ref={ lastLine } className={ `${styles.title__line} ${styles.title__line__alt} ${styles.title__line__push}` }>
                         <svg className={ styles.title__line__arrow } version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
@@ -98,7 +98,7 @@ const TitlePage = ({ page }) => {
                             </g>
                             </g>
                         </svg>
-                        <span className={ styles.title__line__word }>Projet !</span>
+                        <span className={ styles.title__line__word }>Talk !</span>
                     </span>
                 </h1>
             )

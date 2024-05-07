@@ -14,6 +14,7 @@ const Hero = ({ page, withText = false }) => {
                     : page === "contact" ? contactHeroText 
                     : ""
 
+
   return (
     <section className={ styles.hero }>
         <div className="container">
