@@ -1,6 +1,6 @@
 "use client"
 
-import { forwardRef, useRef } from "react"
+import { useRef } from "react"
 import Link from "next/link"
 import { useGSAP } from "@gsap/react"
 import splitByLetters from "@/utils/splitByLetters"
