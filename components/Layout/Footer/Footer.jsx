@@ -27,7 +27,6 @@ const Footer = () => {
                 <div className="container">
                     <div className={ styles.footer__wrapper }>
                         <MenuFooter />
-                        <Socials />
                     </div>
                 </div>
             </div>
