@@ -23,7 +23,7 @@
     &__figure {
         position: relative;
         overflow: hidden;
-        border-radius: var(--secondaryBorderRadius);
+        border-radius: var(--mainBorderRadius);
         min-height: 68vw;
         max-height: 68vw;
 
@@ -40,6 +40,33 @@
         }
     }
 
+    &__tag {
+        position: absolute;
+        top: 3vw;
+        left: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.125rem 1rem;
+        background-color: var(--darkThemeFontColor);
+        transform-origin: 0% 0%;
+        z-index: 3;
+        border-radius: 20px;
+        transition: background-color .275s ease-out;
+
+        &__text {
+            display: inline-block;
+            text-transform: uppercase;
+            color: var(--darkThemeBgColor);
+            overflow: hidden;
+            transition: color .275s ease-out;
+
+            &__inner {
+                display: inline-block;
+            }
+        }
+    }
+
     &__image {
         display: inline-block;
         position: absolute;
@@ -50,6 +77,7 @@
         bottom: 0;
         left: 0;
         object-fit: cover;
+        opacity: .9;
     }
 
     &__title {
@@ -61,7 +89,6 @@
         color: var(--darkThemeFontColor);
         letter-spacing: normal;
         margin-top: var(--paddingXS);
-        text-transform: uppercase;
 
         &__inner {
             display: inline-block;
@@ -102,6 +129,17 @@
         }
     }
 
+
+    &__link__active {
+        .card__tag {
+            background-color: var(--darkThemeBgColor);
+
+            &__text {
+                color: var(--darkThemeFontColor);
+            }
+        }
+    }
+
     &__figcaption__active {
         .card__title__inner span,
         .card__year__inner span {
@@ -120,6 +158,12 @@
 */
 @media (min-width: 768px) {
     .card {
+
+        &__tag {
+            top: 2vw;
+            left: 2vw;
+        }
+
         &__figure {
             min-height: 56vw;
             max-height: 56vw;
@@ -176,9 +220,9 @@
     .card {
 
         &__figure {
-            min-height: 560px;
-            height: 560px;
-            max-height: 560px;
+            min-height: 580px;
+            height: 580px;
+            max-height: 580px;
         }
     }
 }

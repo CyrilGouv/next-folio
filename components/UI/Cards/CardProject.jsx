@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useGSAP } from "@gsap/react"
 import animationsImageReveal from "@/animations/image/reveal"
+import { animationsTagReveal } from "@/animations/tag/reveal"
 import animationsImageParallax from "@/animations/image/parallax"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
@@ -22,14 +23,15 @@ const CardProject = ({ title, slug, image, year, layout }) => {
     const figcaptionEl = useRef(null)
     const imgEl = useRef(null)
     const titleEl = useRef(null)
-    const yearEl = useRef(null)
+    const tagWrapperEl = useRef(null)
+    const tagTextEl = useRef(null)
 
     // Animations
     useGSAP(() => {
         // Reveal
         animationsImageReveal(figureEl.current, revealEl.current)
+        animationsTagReveal(figureEl.current, tagWrapperEl.current, tagTextEl.current, 1.125)
         opacityAndTransformY(figcaptionEl.current, titleEl.current, 15, 0.85, 0.25)
-        opacityAndTransformY(figcaptionEl.current, yearEl.current, 25, 0.85, 0.425)
 
         // Parallax on scroll
         animationsImageParallax(figureEl.current, imgEl.current)
@@ -41,10 +43,15 @@ const CardProject = ({ title, slug, image, year, layout }) => {
                 onMouseOver={ () => setIsActive(true) }
                 onMouseLeave={ () => setIsActive(false) }
                 href={ `/realisations/${slug}` }
-                className={ styles.card__link }
+                className={ `${styles.card__link} ${isActive ? styles.card__link__active : ""}` }
             >   
                 <figure ref={ figureEl } className={ styles.card__figure }>
                     <div ref={ revealEl } className={ styles.card__figure__reveal }></div>
+                    <div ref={ tagWrapperEl } className={ styles.card__tag }>
+                        <span className={ `${styles.card__tag__text} text--regular` }>
+                            <span ref={ tagTextEl } className={ styles.card__tag__text__inner }>{ year }</span>
+                        </span>
+                    </div>
                     <Image 
                         ref={ imgEl }
                         src={ image }
@@ -75,11 +82,6 @@ const CardProject = ({ title, slug, image, year, layout }) => {
                         </span>
                     </h2>
                 ) }
-                <p ref={ yearEl } className={ `${styles.card__year} text--medium` }>
-                    <span className={ styles.card__year__inner }>
-                        <span className="text--opacity" data-text={ `(${year})` }>({ year })</span>
-                    </span>
-                </p>
             </figcaption>
         </li>
     )
