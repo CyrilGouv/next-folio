@@ -106,8 +106,10 @@
 @media (min-width: 1400px) {
     .button {
         &__circle {
-            width: 0.45rem;
-            height: 0.45rem;
+            &__inner {
+                width: 0.45rem;
+                height: 0.45rem;
+            }
 
             svg {
                 width: 12px;
@@ -132,8 +134,10 @@
         }
 
         &__circle {
-            width: 0.6rem;
-            height: 0.6rem;
+            &__inner {
+                width: 0.6rem;
+                height: 0.6rem;
+            }
 
             svg {
                 width: 13px;
