@@ -41,7 +41,7 @@
         position: relative;
         align-items: center;
         overflow: hidden;
-        margin-right: 1.125vw;
+        margin-right: 1rem;
 
         &__inner {
             position: relative;
@@ -131,18 +131,6 @@
 
         &__text {
             margin-right: 1.25vw;
-        }
-
-        &__circle {
-            &__inner {
-                width: 0.6rem;
-                height: 0.6rem;
-            }
-
-            svg {
-                width: 13px;
-                height: 13px;
-            }
         }
     }
 }
