@@ -80,6 +80,39 @@
         opacity: .9;
     }
 
+    &__circle {
+        position: absolute;
+        bottom: 5vw;
+        right: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+
+        &__inner {
+            display: inline-block;
+            width: 0.25rem;
+            height: 0.25rem;
+            transform: scale(0);
+            transform-origin: 50% 50%;
+            transition: transform .305s var(--mainTransition) .005s;
+            background-color: var(--darkThemeFontColor);
+            border-radius: 50%;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-100%, 150%);
+            width: .75rem;
+            height: .75rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: transform .285s var(--mainTransition), opacity .225s ease-in;
+        }
+    }
+
     &__title {
         justify-content: space-between;
         align-items: center;
@@ -138,6 +171,18 @@
                 color: var(--darkThemeFontColor);
             }
         }
+
+        .card__circle {
+            &__inner {
+                transform: scale(8);
+            }
+
+            svg {
+                transform: translate(-50%, -50%);
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 
     &__figcaption__active {
@@ -164,6 +209,21 @@
             left: 2vw;
         }
 
+        &__circle {
+            bottom: 4vw;
+            right: 4vw;
+
+            &__inner {
+                width: 0.5rem;
+                height: 0.5rem;
+
+                svg {
+                    width: 1rem;
+                    height: 1rem;
+                }
+            }
+        }
+
         &__figure {
             min-height: 56vw;
             max-height: 56vw;
@@ -183,6 +243,11 @@
 
         &:nth-last-of-type(2) {
             margin-bottom: 0;
+        }
+
+        &__circle {
+            bottom: 3vw;
+            right: 3vw;
         }
 
         &__figure {
