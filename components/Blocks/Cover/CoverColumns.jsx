@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import Image from "next/image"
 import { useGSAP } from "@gsap/react"
+import Tags from "@/components/UI/Elements/Tags/Tags"
 import animationsCoverReveal from "@/animations/cover/reveal"
 import animationsImageParallax from "@/animations/image/parallax"
 import { aboutCoverFirstImage, aboutCoverLastImage } from "@/data/content"
@@ -29,6 +30,7 @@ const CoverColumns = () => {
                 <div className={ styles.cover__wrapper }>
                     <figure className={ styles.cover__img }>
                         <div ref={ revealFirstEl } className={ styles.cover__reveal }></div>
+                        <Tags text="Ça, c'est moi !" />
                         <Image 
                             ref={ firstImageEl }
                             className={ styles.cover__img__inner } 

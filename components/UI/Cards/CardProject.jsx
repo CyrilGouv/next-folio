@@ -5,7 +5,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useGSAP } from "@gsap/react"
 import animationsImageReveal from "@/animations/image/reveal"
-import { animationsTagReveal } from "@/animations/tag/reveal"
+import Tags from "../Elements/Tags/Tags"
 import animationsImageParallax from "@/animations/image/parallax"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
@@ -23,14 +23,11 @@ const CardProject = ({ title, slug, image, year, layout }) => {
     const figcaptionEl = useRef(null)
     const imgEl = useRef(null)
     const titleEl = useRef(null)
-    const tagWrapperEl = useRef(null)
-    const tagTextEl = useRef(null)
 
     // Animations
     useGSAP(() => {
         // Reveal
         animationsImageReveal(figureEl.current, revealEl.current)
-        animationsTagReveal(figureEl.current, tagWrapperEl.current, tagTextEl.current, 1.125)
         opacityAndTransformY(figcaptionEl.current, titleEl.current, 15, 0.85, 0.25)
 
         // Parallax on scroll
@@ -47,12 +44,8 @@ const CardProject = ({ title, slug, image, year, layout }) => {
             >   
                 <figure ref={ figureEl } className={ styles.card__figure }>
                     <div ref={ revealEl } className={ styles.card__figure__reveal }></div>
-                    <div ref={ tagWrapperEl } className={ styles.card__tag }>
-                        <span className={ `${styles.card__tag__text} text--regular` }>
-                            <span ref={ tagTextEl } className={ styles.card__tag__text__inner }>{ year }</span>
-                        </span>
-                    </div>
-
+                    
+                    <Tags text={ year } isActive={ isActive } />
                     <Image 
                         ref={ imgEl }
                         src={ image }
