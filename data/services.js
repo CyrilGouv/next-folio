@@ -1,4 +1,4 @@
-export const servicesTextInfos = "<span class='text--infos__title text--opacity'>(Services)</span>GRÂCE À NOTRE APPROCHE MULTIDISCIPLINAIRE INTÉGRÉE, NOUS OFFRONS UNE VALEUR AJOUTÉE À NOS PARTENAIRES." 
+export const servicesTextInfos = "GRÂCE À NOTRE APPROCHE MULTIDISCIPLINAIRE INTÉGRÉE, NOUS OFFRONS UNE VALEUR AJOUTÉE À NOS PARTENAIRES." 
 
 export const servicesItems = [
     {

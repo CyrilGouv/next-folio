@@ -1,4 +1,4 @@
-export const approachTextInfos = "<span class='text--infos__title text--opacity'>(Méthodologie)</span>GRÂCE À NOTRE APPROCHE MULTIDISCIPLINAIRE INTÉGRÉE, NOUS OFFRONS UNE VALEUR AJOUTÉE À NOS PARTENAIRES." 
+export const approachTextInfos = "GRÂCE À NOTRE APPROCHE MULTIDISCIPLINAIRE INTÉGRÉE, NOUS OFFRONS UNE VALEUR AJOUTÉE À NOS PARTENAIRES." 
 
 export const approachItems = [
     {
