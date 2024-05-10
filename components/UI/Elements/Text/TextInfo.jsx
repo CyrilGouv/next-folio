@@ -7,12 +7,13 @@ import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 import styles from "./TextInfo.module.scss"
 
 
-const TextInfo = ({ body, full = false }) => {
+const TextInfo = ({ body, full = false, className = null }) => {
 
     // Elements
     const section = useRef(null)
     const text = useRef(null)
 
+    // Animations
     useGSAP(() => {
         opacityAndTransformY(section.current, text.current)
     })
@@ -20,7 +21,7 @@ const TextInfo = ({ body, full = false }) => {
     return (
         <div 
             ref={ section }
-            className={ `${styles.text__infos} ${full ? styles.text__infos__full : ""}` }
+            className={ `${styles.text__infos} ${full ? styles.text__infos__full : ""} ${className ? className : ""}` }
         >
             <p  
                 ref={ text }

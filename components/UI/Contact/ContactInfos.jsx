@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
-import TextInfo from "../Elements/Text/TextInfo"
+import Tags from "../Elements/Tags/Tags"
 import { socialItems } from "@/data/socials"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 import animationsImageReveal from "@/animations/image/reveal"
@@ -32,9 +32,8 @@ const ContactInfos = () => {
     // Render
     return (
         <div className={ styles.infos }>
-            <TextInfo 
-                body="<span class='text--infos__title text--opacity'>(Contact)</span>"
-            />
+            
+            <Tags text="Contact" position="relative" animations={{ delay: .25 }} />
 
             <div 
                 ref={ phoneEl }

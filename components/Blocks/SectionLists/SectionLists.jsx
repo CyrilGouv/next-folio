@@ -1,4 +1,5 @@
 import TextInfo from "@/components/UI/Elements/Text/TextInfo"
+import Tags from "@/components/UI/Elements/Tags/Tags"
 import CardList from "@/components/UI/Cards/CardList"
 import { servicesTextInfos, servicesItems } from "@/data/services"
 import { approachTextInfos, approachItems } from "@/data/approches"
@@ -7,7 +8,7 @@ import styles from "./SectionLists.module.scss"
 
 
 const SectionLists = ({ type }) => {
-
+    const tagText = type === "services" ? "services" : type === "approaches" ? "approches" : ""
     const textInfo = type === "services" ? servicesTextInfos : type === "approaches" ? approachTextInfos : ""
     const items = type === "services" ? servicesItems : type === "approaches" ? approachItems : ""
 
@@ -18,7 +19,8 @@ const SectionLists = ({ type }) => {
             <div className="container">
                 <div className={ styles.lists__wrapper }>
                     <div className={ styles.lists__infos }>
-                        <TextInfo body={ textInfo } full={ true } />
+                        <Tags text={ tagText } position="relative" animations={{ delay: .25 }} />
+                        <TextInfo body={ textInfo } full={ true } className="pt--xSmall" />
                     </div>
 
                     <div className={ styles.lists__items }>

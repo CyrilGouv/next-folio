@@ -2,7 +2,7 @@
     position: absolute;
     top: 3vw;
     left: 3vw;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 0.125rem 1rem;
@@ -22,6 +22,12 @@
         &__inner {
             display: inline-block;
         }
+    }
+
+    &__relative {
+        position: relative;
+        top: unset;
+        left: unset;
     }
 
     &__active {

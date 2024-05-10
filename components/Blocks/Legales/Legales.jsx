@@ -1,9 +1,9 @@
-import TextInfo from "@/components/UI/Elements/Text/TextInfo"
 import LegalesContent from "./LegalesContent"
+import Line from "@/components/UI/Elements/Line/Line"
+import Tags from "@/components/UI/Elements/Tags/Tags"
 import { mentionsContent } from "@/data/content"
 
 import styles from "./Legales.module.scss"
-import Line from "@/components/UI/Elements/Line/Line"
 
 
 const Legales = () => {
@@ -15,16 +15,16 @@ const Legales = () => {
                     <Line type="inner" />
                 </div>
 
-                { mentionsContent.map(({ id, title, content }) => (
+                { mentionsContent.map(({ id, text }) => (
                     <div 
                         key={ id } 
                         className={ `${styles.legales__wrapper} ${id === 0 ? "pt--xLarge" : ""}` }
                     >
                         <div className={ styles.legales__title }>
-                            <TextInfo body={ title } />
+                            <Tags text={ text } position="relative" animations={{ delay: .25 }} />
                         </div>
                         
-                        <LegalesContent body={ content } />
+                        <LegalesContent body={ text } />
                     </div>
                 )) }
 

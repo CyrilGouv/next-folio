@@ -2,11 +2,11 @@
 
 import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
-import TextInfo from "@/components/UI/Elements/Text/TextInfo"
 import TextReveal from "@/components/UI/Elements/Text/TextReveal"
 import Line from "@/components/UI/Elements/Line/Line"
 import Button from "@/components/UI/Elements/Button/Button"
 import Technos from "@/components/UI/Elements/Technos/Technos"
+import Tags from "@/components/UI/Elements/Tags/Tags"
 import Cta from "@/components/UI/Cta/Cta"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
@@ -31,7 +31,9 @@ const IntroContent = ({ page }) => {
         case "homepage":
             return (
                 <div className={ styles.intro__content }>
-                    <TextInfo body="(à propos)" />
+                    <div>
+                        <Tags text="à propos" position="relative" animations={{ delay: .25 }} />
+                    </div>
                     <div className={ styles.intro__content__wrapper }>
                         <p className={ styles.intro__content__text }>
                             <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
@@ -75,7 +77,9 @@ const IntroContent = ({ page }) => {
                     </div>
 
                     <div className={ `${styles.intro__content} ${styles.intro__content__last}` }>
-                        <TextInfo body="(technologies)" />
+                        <div>
+                            <Tags text="technologies" position="relative" animations={{ delay: .25 }} />
+                        </div>
 
                         <div className={ styles.intro__content__wrapper }>
                             <p className={ styles.intro__content__text }>

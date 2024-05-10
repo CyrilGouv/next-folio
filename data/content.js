@@ -34,12 +34,10 @@ export const contactAvatar = {
 export const mentionsContent = [
     {
         id: 0,
-        title: "(Informations)",
-        content: "informations"
+        text: "informations",
     },
     {
         id: 1,
-        title: "(Confidentialité)",
-        content: "confidentialite"
+        text: "confidentialite",
     },
 ]

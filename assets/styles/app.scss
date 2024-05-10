@@ -188,6 +188,10 @@ Text infos utils
 Padding && Margin utils
 -----------------------------
 */
+.pt--xSmall {
+    padding-top: var(--paddingXS);
+}
+
 .pt--xLarge {
     padding-top: var(--paddingXL);
 }
