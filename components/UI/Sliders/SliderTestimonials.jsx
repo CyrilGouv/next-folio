@@ -1,10 +1,11 @@
 "use client"
 
 import { useRef } from "react"
-import Image from "next/image"
 import { useGSAP } from "@gsap/react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import CardSliderTestimonial from "../Cards/CardSliderTestimonial"
 import animationsSliderParallax from "@/animations/slider/parallax"
+
 import { testimonials } from "@/data/testimonials"
 
 import "swiper/css"
@@ -31,7 +32,7 @@ const SliderTestimonials = () => {
                 spaceBetween={ 40 }
                 breakpoints={{
                     0: {
-                        slidesPerView: 1,
+                        slidesPerView: 1.25,
                         spaceBetween: 20
                     },
                     768: {
@@ -45,37 +46,16 @@ const SliderTestimonials = () => {
                 }}
             >
         
-            { testimonials.map((testimonial, idx) => (
-                <SwiperSlide key={ idx }>
-                    <div className={ styles.slider__slide }>
-                        <Image 
-                            width={ 65 }
-                            height={ 65 }
-                            className={ styles.slider__slide__avatar } 
-                            src={ testimonial.avatar } 
-                            alt={`Témoignage de ${testimonial.name} pour ${testimonial.company}`} 
-                        />
-                        <div className={ styles.slider__slide__content }>
-                            <p className={ styles.slider__slide__text }>{ testimonial.text }</p>
-                            <span className={ styles.slider__slide__name }>
-                                <span 
-                                    className={ styles.slider__slide__name__inner } 
-                                    data-text={ testimonial.name }
-                                >
-                                    { testimonial.name }
-                                </span>
-                            </span>
-                            <span className={ styles.slider__slide__separator }></span>
-                            <span className={ `${styles.slider__slide__company} text--opacity` }>
-                                <span 
-                                    className={ styles.slider__slide__company__inner } 
-                                    data-text={ testimonial.company }
-                                >
-                                    { testimonial.company }
-                                </span>
-                            </span>
-                        </div>
-                    </div>
+            { testimonials.map(({ avatar, name, text, company }, idx) => (
+                <SwiperSlide 
+                    key={ idx }
+                >
+                    <CardSliderTestimonial 
+                        avatar={ avatar }
+                        name={ name }
+                        testimonial={ text }
+                        company={ company }
+                    />
                 </SwiperSlide>
             )) }
         
