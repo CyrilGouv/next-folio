@@ -1,0 +1,160 @@
+.card {
+    position: relative;
+    padding: 2.25rem 2.75rem;
+    border: 1px solid var(--darkThemeFontColor);
+    border-radius: var(--mainBorderRadius);
+    height: 100%;
+    transition: background-color .2825s, border .2825s;
+    overflow: hidden;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--darkThemeFontColor);
+        transform: scaleY(0);
+        transform-origin: 0% 0%;
+        transition: transform .325s var(--secondaryTransition);
+    }
+
+    &:hover {
+        .card__overlay {
+            transform-origin: 100% 100%;
+            transform: scaleY(1);
+        }
+
+        .card__text {
+            color: var(--darkThemeBgColor);
+        }
+    }
+
+    &__avatar {
+        position: relative;
+        width: 4.063rem;
+        height: 4.063rem;
+        border-radius: 50%;
+        z-index: 3;
+    }
+
+    &__content,
+    &__text {
+        font-size: max(1.0125rem, 1.25vw);
+    }
+
+    &__content {
+        position: relative;
+        padding-top: var(--paddingS);
+        z-index: 3;
+    }
+
+    &__text {
+        padding-bottom: var(--paddingXS);
+    }
+
+    &__name,
+    &__company {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    &__name {
+        margin-right: .5rem;
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .card {
+        &__slide {
+            padding: 2.5rem 3rem;
+
+            &__avatar {
+                width: 4.563rem;
+                height: 4.563rem;
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .card {
+        &__slide {
+            padding: 3rem 5rem;
+
+            &__avatar {
+                width: 4.688rem;
+                height: 4.688rem;
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1200px
+//==========================================================
+*/
+@media (min-width: 1200px) {
+    .card {
+        
+        padding: 3.25rem 5.5rem;
+
+        &__avatar {
+            width: 4.813rem;
+            height: 4.813rem;
+        }
+        
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .card {
+        padding: 3.375rem 5.625rem;
+
+        &__avatar {
+            width: 4.875rem;
+            height: 4.875rem;
+        }
+        
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .card {
+        padding: 3.5rem 5.75rem;
+
+        &__avatar {
+            width: 5rem;
+            height: 5rem;
+        }
+        
+    }
+}
