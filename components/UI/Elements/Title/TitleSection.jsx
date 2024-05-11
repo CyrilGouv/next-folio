@@ -2,40 +2,35 @@
 
 import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
-import splitByLetters from "@/utils/splitByLetters"
+import revealByWords from "@/animations/text/revealByWords"
 
 import styles from "./TitleSection.module.scss"
-import revealLettersOpacity from "@/animations/title/revealLettersOpacity"
 
 
 const TitleSection = ({ text }) => {
 
-    // Split the text title by letter
-    const letters = splitByLetters(text)
-
     // Elements
-    const title = useRef(null)
+    const sectionEl = useRef(null)
+    const titleEl = useRef(null)
 
     // Animations
     useGSAP(() => {
-        revealLettersOpacity(title.current, title.current.children)
+        revealByWords(sectionEl.current, titleEl.current)
     })
 
     return (
         <h3 
-            ref={ title }
+            ref={ sectionEl }
             className={ styles.title }
         >
 
-            { letters.map((letter, idx) => (
-                <span 
-                    key={ idx }
-                    className={ styles.title__letters }
-                >
-                    { letter }
-                </span>
-            )) }
-
+            <span 
+                ref={ titleEl }
+                className={ styles.title__inner }
+            >
+                { text }
+            </span>
+            
         </h3>
     )
 }

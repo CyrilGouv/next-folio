@@ -1,8 +1,8 @@
 .title {
-    font-size: clamp(3.25rem, 10vw, 172px);
+    font-size: clamp(3.75rem, 10vw, 172px);
     overflow: hidden;
 
-    &__letter {
+    &__inner {
         display: inline-block;
     }
 }
