@@ -10,7 +10,12 @@
     &__location {
         display: flex;
         align-items: center;
-        padding-bottom: .65rem;
+        padding-bottom: .875rem;
+
+        svg {
+            width: .85rem;
+            height: .85rem;
+        }
 
         &__inner {
             margin-left: .5rem;
@@ -111,8 +116,17 @@
 @media (min-width: 768px) {
 
     .text {
+        padding-bottom: var(--paddingS);
+
         &__inner {
             width: 70%;
+        }
+
+        &__location {
+            svg {
+                width: 1rem;
+                height: 1rem;
+            }
         }
 
         &__avatar {
@@ -164,6 +178,13 @@
 @media (min-width: 1400px) {
     .text {
         width: 47%;
+
+        &__location {
+            svg {
+                width: 1.125rem;
+                height: 1.125rem;
+            }
+        }
 
         &__avatar {
             width: 4.188rem;
