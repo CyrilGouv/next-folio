@@ -9,6 +9,7 @@ import animationsClipPath from "@/animations/image/clipPath"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
 import styles from "./CardTestimonial.module.scss"
+import Tags from "../Elements/Tags/Tags"
 
 
 const CardTestimonial = ({ count, name, avatar, company, body }) => {
@@ -53,15 +54,14 @@ const CardTestimonial = ({ count, name, avatar, company, body }) => {
                     <TextReveal text={ body } />
                 </h2>
 
-                <p ref={ titleTrigger } className={ `${styles.card__title} text--medium`}>
-                    <span ref={ nameEl } className={ styles.card__title__name }>
-                        <span className={ styles.card__title__inner }>{ name }</span>
-                    </span>
-                    
-                    <span ref={ companyEl } className={ styles.card__title__company }>
-                        <span className={ styles.card__title__inner }>{ company }</span>
-                    </span>
-                </p>
+                <div ref={ titleTrigger } className={ styles.card__title }>
+                    <div className={ styles.card__title__name }>
+                        <Tags text={ name } position="relative" animations={{ delay: 1.125 }} />
+                    </div>
+                    <div className={ styles.card__title__company }>
+                        <Tags text={ company } position="relative" animations={{ delay: 1.325 }} />
+                    </div>
+                </div>
             </div>
 
             <div className={ styles.card__line }>
