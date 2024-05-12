@@ -38,19 +38,6 @@
         &__name {
             margin-right: 1rem;
         }
-
-        &__company,
-        &__name {
-            display: inline-block;
-            overflow: hidden;
-            padding: 0.25rem 1.25rem;
-            border: 1px solid var(--darkThemeFontColor);
-            border-radius: 2rem;
-        }
-
-        &__inner {
-            display: inline-block;
-        }
     }
 
     &__num {

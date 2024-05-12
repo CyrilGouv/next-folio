@@ -1,7 +1,8 @@
 .cover {
     position: relative;
     width: 100vw;
-    height: 82vh;
+    height: 100vw;
+    max-height: 82vh;
     background-color: var(--darkThemeGrayColor);
     pointer-events: none;
     overflow: hidden;
@@ -36,7 +37,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 52vw;
+        width: 66vw;
         height: 100%;
         white-space: nowrap;
 
@@ -86,11 +87,7 @@
 */
 @media (min-width: 640px) {
     .cover {
-        height: 105vh;
-
-        &__line {
-            width: 50vw;
-        }
+        max-height: 105vh;
     }
 }
 
@@ -102,10 +99,10 @@
 */
 @media (min-width: 768px) {
     .cover {
-        height: 115vh;
+        max-height: 125vh;
 
         &__line {
-            width: 48vw;
+            width: 60vw;
         }
     }
 }
@@ -119,7 +116,24 @@
 @media (min-width: 1024px) {
     .cover {
         &__line {
-            width: 46vw;
+            width: 52vw;
+        
+            &:first-of-type {
+                top: -145%;
+            }
+    
+            &:nth-of-type(2) {
+                top: 0;
+            }
+            
+            &:last-of-type {
+                top: -145%;
+            }
+        }
+
+        &__figure {
+            height: 70vh;
+            min-height: 70vh;
         }
     }
 }
