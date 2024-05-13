@@ -5,7 +5,7 @@ export const skillItems = [
     },
     {
         id: 1,
-        name: "WordPress / Strapi / Medusa.js",
+        name: "WordPress / Strapi.js",
     },
     {
         id: 2,

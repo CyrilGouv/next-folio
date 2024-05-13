@@ -52,6 +52,8 @@ const ButtonWithIcon = ({ text, href, type, className = null }) => {
                     </span>
                 </a>
             )
+        default:
+            return null
     }
 
     
