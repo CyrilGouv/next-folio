@@ -3,13 +3,13 @@ import Link from "next/link"
 import styles from "./Button.module.scss"
 
 
-const Button = ({ text, path, external = false }) => {
+const Button = ({ text, path, isActive = false, external = false }) => {
 
     if(!external) {
         return (
             <Link
                 href={ path }
-                className={ `${styles.button} text--regular` }
+                className={ `${styles.button} ${isActive ? styles.button__active : ""} text--regular` }
             >
                 <span
                     className={ styles.button__text } 

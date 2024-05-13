@@ -32,6 +32,15 @@
         }
     }
 
+    &__active {
+        color: var(--darkThemeBgColor);
+
+        &::before {
+            transform: scaleY(1);
+            transform-origin: 100% 100%;
+        }
+    }
+
     &.text--regular {
         width: auto;
     }
@@ -80,6 +89,7 @@
         }
     }
 
+    &__active,
     &:hover {
         .button__circle {
 
