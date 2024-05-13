@@ -196,6 +196,10 @@ Padding && Margin utils
     padding-top: var(--paddingXL);
 }
 
+.mr--xSmall {
+    margin-right: var(--paddingXS);
+}
+
 .pb--large {
     padding-bottom: var(--paddingL);
 }
