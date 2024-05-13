@@ -10,9 +10,8 @@
     }
 
     &__content {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 1vw;
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
 
@@ -92,10 +91,9 @@
 */
 @media (min-width: 640px) {
     .cta {
-
         &__content {
-            grid-template-columns: 1fr 1fr;
-            column-gap: 1vw;
+            flex-direction: row;
+            justify-content: flex-end;
         }
 
         &__infos {
