@@ -21,7 +21,9 @@ const TitlePage = ({ page }) => {
 
     // Animations
     useGSAP(() => {
+        
         animationsTitlePage(firstLine.current, lastLine.current)
+        
 
         if(page === "testimonials" || page === "contact" || page === "mentions") {
             animationsTitleArrow(lastLine.current)

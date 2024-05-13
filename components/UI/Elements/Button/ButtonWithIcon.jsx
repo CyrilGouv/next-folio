@@ -43,8 +43,8 @@ const ButtonWithIcon = ({ text, href, type, className = null }) => {
                     <span className={ styles.button__icon }>
                         {/* Email icon by Syauqi Rusydi from Noun Project */}
                         <svg version="1.1" viewBox="0 0 88 64" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                            <g fill="#09080E" fill-rule="nonzero">
+                            <g fill="none" fillRule="evenodd">
+                            <g fill="#09080E" fillRule="nonzero">
                             <path d="m13 7-6.9062-5.5625c1.1211-0.45312 2.3203-0.6875 3.5312-0.6875h68.75c1.2109 0 2.4102 0.23438 3.5312 0.6875l-6.8438 5.5625-31.062 25-31-25zm73.594-1.3125-5.0938 4.1562-33.656 27.062c-2.2461 1.7305-5.3789 1.7305-7.625 0l-33.719-27.062-5.0938-4.1562c-0.74609 1.3594-1.1445 2.8867-1.1562 4.4375v43.75c0 5.1758 4.1992 9.375 9.375 9.375h68.75c5.1758 0 9.375-4.1992 9.375-9.375v-43.75c-0.011719-1.5508-0.41016-3.0781-1.1562-4.4375z"/>
                             </g>
                             </g>

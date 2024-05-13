@@ -8,7 +8,7 @@ const CtaFooter = () => {
         <div className={ styles.cta }>
 
             <div className={ styles.cta__infos }>
-                <p className={ `${styles.cta__infos__body } text--large` }>
+                <div className={ `${styles.cta__infos__body } text--large` }>
                     <Tags 
                         text="Travaillons ensemble"
                         position="relative"
@@ -19,7 +19,7 @@ const CtaFooter = () => {
                     <span className={ `${styles.cta__infos__body__inner} pt--xSmall` }>
                         Vous avez un projet ou <br />souhaitez collaborer avec moi ?
                     </span>
-                </p>
+                </div>
 
                 <div className={ styles.cta__content }>
                     <ButtonWithIcon
