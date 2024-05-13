@@ -1,0 +1,15 @@
+.title {
+    width: 100%;
+    letter-spacing: -.25vw;
+
+    &__word {
+        display: inline-block;
+        overflow: hidden;
+    
+        &__inner {
+            display: inline-block;
+            font-size: clamp(4rem, 9vw, 11.563rem);
+            line-height: 1;
+        }
+    }
+}
