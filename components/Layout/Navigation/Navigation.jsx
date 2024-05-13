@@ -18,7 +18,7 @@ const Navigation = () => {
                 { menuTopItems.map(item => (
                     <li 
                         key={ item.id }
-                        className={ `${styles.navigation__item} ${pathname === item.path ? styles.navigation__item__active : ''} text--regular` }
+                        className={ `${styles.navigation__item} ${pathname === item.path ? styles.navigation__item__active : ""} text--regular` }
                     >
                         <NavLink
                             href={ item.path }
@@ -34,6 +34,7 @@ const Navigation = () => {
                 <Button
                     text="Contact"
                     path="/contact"
+                    isActive={ pathname === "/contact" }
                 />
             </li>
         </ul>
