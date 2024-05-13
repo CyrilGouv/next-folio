@@ -17,16 +17,11 @@ const CardTestimonial = ({ count, name, avatar, company, body }) => {
     // Elements
     const avatarEl = useRef(null)
     const numEl = useRef(null)
-    const titleTrigger = useRef(null)
-    const nameEl = useRef(null)
-    const companyEl = useRef(null)
 
     // Animations
     useGSAP(() => {
         animationsClipPath(avatarEl.current, avatarEl.current)
         opacityAndTransformY(numEl.current, numEl.current, 25, .85, .25)
-        opacityAndTransformY(titleTrigger.current, nameEl.current, 25, .725, .75)
-        opacityAndTransformY(titleTrigger.current, companyEl.current, 25, .725, .85)
     })
 
     return (
@@ -54,7 +49,7 @@ const CardTestimonial = ({ count, name, avatar, company, body }) => {
                     <TextReveal text={ body } />
                 </h2>
 
-                <div ref={ titleTrigger } className={ styles.card__title }>
+                <div className={ styles.card__title }>
                     <div className={ styles.card__title__name }>
                         <Tags text={ name } position="relative" animations={{ delay: 1.125 }} />
                     </div>

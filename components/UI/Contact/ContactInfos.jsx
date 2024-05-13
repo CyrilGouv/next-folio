@@ -15,17 +15,12 @@ const ContactInfos = () => {
     // Elements
     const emailEl = useRef(null)
     const socialsEl = useRef(null)
-    const locationSectionEl = useRef(null)
-    const overlayEl = useRef(null)
-    const addressEl = useRef(null)
     const phoneEl = useRef(null)
 
     // Animations
     useGSAP(() => {
         opacityAndTransformY(emailEl.current, emailEl.current, 35, .85, .25)
-        animationsImageReveal(locationSectionEl.current, overlayEl.current)
         opacityAndTransformY(phoneEl.current, phoneEl.current, 25, .85, .25)
-        opacityAndTransformY(addressEl.current, addressEl.current, 25, .85, .25)
         opacityAndTransformY(socialsEl.current, socialsEl.current, 15, .85, .25)
     })
 
