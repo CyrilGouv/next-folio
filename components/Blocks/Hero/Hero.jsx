@@ -27,10 +27,10 @@ const Hero = ({ page, withText = false }) => {
                       <TextHero text={ textHero } layout={ page } />
                     ) }
                     { withText && page === "testimonials" && (
-                      <TextHero text={ textHero } image={ true } />
+                      <TextHero text={ textHero } />
                     ) }
                     { withText && page === "contact" && (
-                      <TextHero text={ textHero } video={ true } />
+                      <TextHero text={ textHero } />
                     ) }
                     <TitlePage page={ page } />
                 </div>
