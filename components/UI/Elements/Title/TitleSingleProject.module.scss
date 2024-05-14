@@ -1,6 +1,27 @@
 .title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     letter-spacing: -.25vw;
+    overflow: hidden;
+
+    &__arrow {
+        display: inline-block;
+        margin-right: 2vw;
+
+        svg {
+            min-height: 1.625rem;
+            max-height: 80px;
+            height: 5vw;
+            transform-origin: 50% 50%;
+        
+            g {
+                stroke-width: 1.5px;
+            }
+        }
+
+    }
 
     &__word {
         display: inline-block;
@@ -8,7 +29,7 @@
     
         &__inner {
             display: inline-block;
-            font-size: clamp(4rem, 9vw, 11.563rem);
+            font-size: clamp(4rem, 9vw, 10.5rem);
             line-height: 1;
         }
     }

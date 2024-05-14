@@ -13,5 +13,17 @@
 
     &__title {
         padding-bottom: var(--paddingS);
+
+        &__tags {
+            display: inline-flex;
+            width: 100%;
+            padding-bottom: var(--paddingM);
+
+            &__wrapper {
+               &:first-of-type {
+                margin-right: 2vw;
+               }
+            }
+        }
     }
 }
