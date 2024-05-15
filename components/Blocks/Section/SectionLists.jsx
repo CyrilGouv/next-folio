@@ -14,6 +14,7 @@ const SectionLists = ({ type }) => {
 
     const classNames = type === "approaches" ? styles.lists__approaches : ""
 
+    
     return (
         <section className={ `${styles.lists} ${classNames}` }>
             <div className="container">
@@ -37,6 +38,7 @@ const SectionLists = ({ type }) => {
             </div>
         </section>
     )
+    
 }
 
 export default SectionLists

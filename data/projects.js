@@ -28,7 +28,7 @@ export const projects = [
             },
             {
                 id: 1,
-                title: "Python framework",
+                title: "Framework",
                 text: "Django",
             },
             {
@@ -73,7 +73,7 @@ export const projects = [
             {
                 id: 0,
                 title: "Languages",
-                text: "JavaScript / PHP",
+                text: "PHP / JavaScript",
             },
             {
                 id: 1,
@@ -89,12 +89,7 @@ export const projects = [
                 id: 3,
                 title: "Hébergement",
                 text: "1&1 Ionos",
-            },
-            {
-                id: 4,
-                title: "Outils",
-                text: "Google Workspace / Calendly",
-            },
+            }
         ]
     },
     {

@@ -1,0 +1,22 @@
+.item {
+    position: relative;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--paddingXS) 0;
+    }
+
+    &:first-of-type {
+        .item__content {
+            padding-top: 0;
+        }
+    }
+
+    &__text,
+    &__label {
+        letter-spacing: 0;
+        line-height: .8;
+    }
+}
