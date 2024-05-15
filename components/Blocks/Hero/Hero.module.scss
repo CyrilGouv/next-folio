@@ -2,6 +2,16 @@
     height: var(--mainHeroHeight);
     min-height: 765px;
 
+    &__full {
+        height: 100vh;
+        min-height: 100vh;
+
+        .hero__wrapper {
+            height: 100vh;
+            min-height: 100vh;
+        }
+    }
+
     &__wrapper {
         position: relative;
         height: var(--mainHeroHeight);

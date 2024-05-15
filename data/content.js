@@ -28,7 +28,7 @@ export const contactAvatar = {
     img: "/images/projects/fake/project-01.webp",
     alt: "Vous avez un projet web ? Contactez Cyril Gouv !"
 }
-
+export const contactHeroConfirmationText = "Nous vous remercions de votre email, et faisons notre possible pour vous contacter dans les meilleurs délais."
 
 // Mentions Légales
 export const mentionsContent = [
