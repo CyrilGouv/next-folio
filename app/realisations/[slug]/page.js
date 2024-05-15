@@ -6,6 +6,7 @@ import TestimonialProject from "@/components/Blocks/Testimonials/TestimonialProj
 import Footer from "@/components/Layout/Footer/Footer"
 import { getProjectBySlug } from "@/utils/projects/getProjectBySlug"
 import { projects } from "@/data/projects"
+import GalleryProjects from "@/components/Blocks/Projects/GalleryProjects"
 
 
 export default async function SinglePortfolio({ params }) {
@@ -28,6 +29,7 @@ export default async function SinglePortfolio({ params }) {
             { testimonial && (
                 <TestimonialProject testimonial={ testimonial } />
             ) }
+            <GalleryProjects images={ gallery } />
             <Footer />
         </>
     )

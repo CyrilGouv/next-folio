@@ -3,11 +3,11 @@
 import { useRef } from "react"
 import Image from "next/image"
 import Tags from "@/components/UI/Elements/Tags/Tags"
-
-import styles from "./TestimonialProject.module.scss"
 import TextReveal from "@/components/UI/Elements/Text/TextReveal"
 import { useGSAP } from "@gsap/react"
 import animationsClipPath from "@/animations/image/clipPath"
+
+import styles from "./TestimonialProject.module.scss"
 
 
 const TestimonialProject = ({ testimonial }) => {

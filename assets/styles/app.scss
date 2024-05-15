@@ -188,6 +188,10 @@ Text infos utils
 Padding && Margin utils
 -----------------------------
 */
+.mt--medium {
+    margin-top: var(--paddingM) !important;
+}
+
 .pt--xSmall {
     padding-top: var(--paddingXS);
 }
@@ -202,6 +206,18 @@ Padding && Margin utils
 
 .pb--large {
     padding-bottom: var(--paddingL);
+}
+
+.pb--xSmall {
+    padding-bottom: var(--paddingXS);
+}
+
+.pb--small {
+    padding-bottom: var(--paddingS);
+}
+
+.pb--medium {
+    padding-bottom: var(--paddingM);
 }
 
 /* 
