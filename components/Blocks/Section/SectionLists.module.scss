@@ -8,6 +8,10 @@
         padding-top: 0;
     }
 
+    &__technos {
+        padding-top: var(--paddingXL);
+    }
+
     &__infos {
         width: 65%;
         position: relative;

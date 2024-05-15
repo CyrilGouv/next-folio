@@ -3,7 +3,7 @@ import CoverParallax from "@/components/Blocks/Cover/CoverParallax"
 import Intro from "@/components/Blocks/Intro/Intro"
 import FeaturedProjects from "@/components/Blocks/Projects/FeaturedProjects"
 import TextParallax from "@/components/UI/Elements/Text/TextParallax"
-import SectionLists from "@/components/Blocks/SectionLists/SectionLists"
+import SectionLists from "@/components/Blocks/Section/SectionLists"
 import FeaturedTestimonials from "@/components/Blocks/Testimonials/FeaturedTestimonials"
 import Footer from "@/components/Layout/Footer/Footer";
 

@@ -2,7 +2,7 @@ import Hero from "@/components/Blocks/Hero/Hero"
 import CoverColumns from "@/components/Blocks/Cover/CoverColumns"
 import Intro from "@/components/Blocks/Intro/Intro"
 import TextParallax from "@/components/UI/Elements/Text/TextParallax"
-import SectionLists from "@/components/Blocks/SectionLists/SectionLists"
+import SectionLists from "@/components/Blocks/Section/SectionLists"
 import Footer from "@/components/Layout/Footer/Footer"
 
 
