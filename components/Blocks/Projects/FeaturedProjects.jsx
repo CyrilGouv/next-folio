@@ -17,13 +17,14 @@ const FeaturedProjects = () => {
                 <TitleSection text="Projets" />
 
                 <ul className={ styles.projects__wrapper }>
-                    { featuredWorks.map(({ id, name, slug, src, year }) => (
+                    { featuredWorks.map(({ id, name, slug, src, year, bgColor }) => (
                         <CardProject 
                             key={ id }
                             title={ name }
                             slug={ slug }
                             image={ src }
                             year={ year }
+                            bgColor={ bgColor }
                             layout="featured"
                         />
                     )) }

@@ -89,6 +89,7 @@ main {
 section {
     position: relative;
     background-color: var(--darkThemeBgColor);
+    transition: background-color .225s ease-in;
     z-index: 2;
 }
 

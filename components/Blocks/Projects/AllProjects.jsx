@@ -9,13 +9,14 @@ const AllProjects = () => {
         <section className={ styles.projects }>
             <div className="container">
                 <ul className={ styles.projects__wrapper }>
-                    { projects.map(({ id, name, slug, src, year }) => (
+                    { projects.map(({ id, name, slug, src, year, bgColor }) => (
                         <CardProject
                             key={ id }
                             title={ name }
                             slug={ slug }
                             image={ src }
                             year={ year }
+                            bgColor={ bgColor }
                             layout="default"
                         />
                     )) }

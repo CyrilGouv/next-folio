@@ -107,6 +107,7 @@
             transform: translate(-100%, 150%);
             width: .75rem;
             height: .75rem;
+            fill: var(--darkThemeBgColor);
             opacity: 0;
             visibility: hidden;
             transition: transform .285s var(--mainTransition), opacity .225s ease-in;

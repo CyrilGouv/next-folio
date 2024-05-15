@@ -5,9 +5,9 @@ import { useGSAP } from "@gsap/react"
 import splitByWords from "@/utils/splitByWords"
 import revealByWords from "@/animations/text/revealByWords"
 import animationsTitleArrow from "@/animations/title/arrow"
+import animationsTitleArrowReveal from "@/animations/title/arrowReveal"
 
 import styles from "./TitleSingleProject.module.scss"
-import animationsTitleArrowReveal from "@/animations/title/arrowReveal"
 
 
 const TitleSingleProject = ({ title }) => {
@@ -30,10 +30,10 @@ const TitleSingleProject = ({ title }) => {
 
     return (
         <h1 ref={ titleEl } className={ styles.title }>
-            <span ref={ arrowEl } className={ styles.title__arrow }>
+            <span ref={ arrowEl } className={ `${styles.title__arrow} text--opacity` }>
                 <svg version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fillRule="evenodd">
-                    <g transform="translate(8 6) rotate(45) translate(-5 -5)" stroke="#797979" strokeWidth="1.5">
+                    <g transform="translate(8 6) rotate(45) translate(-5 -5)" stroke="inherit" strokeWidth="1.5">
                     <polyline points="2.306 0 9.9927 0 9.9927 7.6867"/>
                     <path d="m9.9927 0-9.9927 9.9927"/>
                     </g>

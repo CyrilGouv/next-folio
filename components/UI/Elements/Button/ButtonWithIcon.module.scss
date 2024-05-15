@@ -61,7 +61,12 @@
             position: relative;
             width: 0.875rem;
             height: 0.875rem;
+            fill: var(--lightThemeFontColor);
             z-index: 3;
+
+            g {
+                fill: var(--lightThemeFontColor);
+            }
         }
     }
 
