@@ -7,7 +7,7 @@ export const projects = [
         src: "/images/projects/fake/project-01.webp",
         year: 2023,
         industry: "Cabinet de recrutement",
-        color: "#155740",
+        bgColor: "#218c74",
         featured: true,
         testimonial: {
             name: "Stéphanie Legaz",
@@ -56,7 +56,7 @@ export const projects = [
         src: "/images/projects/fake/project-02.webp",
         year: 2022,
         industry: "Cabinet de recrutement",
-        color: "#111827",
+        bgColor: "#102E4A",
         featured: true,
         testimonial: {
             name: "Stéphanie Legaz",
@@ -101,7 +101,7 @@ export const projects = [
         website: "https://lesgitesdelalumineuse.fr",
         year: 2022,
         industry: "Gîtes touristique",
-        color: "#001E31",
+        bgColor: "#082f49",
         featured: true,
         testimonial: {
             name: "Stéphanie Legaz",
@@ -150,7 +150,7 @@ export const projects = [
         src: "/images/projects/fake/project-04.webp",
         year: 2022,
         industry: "Sellerie",
-        color: "#AF8C6E",
+        bgColor: "#e1b12c",
         featured: true,
         testimonial: {
             name: "Pierre De Jean",
@@ -162,6 +162,28 @@ export const projects = [
             "/images/projects/fake/project-02.webp",
             "/images/projects/fake/project-03.webp",
             "/images/projects/fake/project-04.webp"
+        ],
+        technologies: [
+            {
+                id: 0,
+                title: "Languages",
+                text: "JavaScript / PHP",
+            },
+            {
+                id: 1,
+                title: "CMS",
+                text: "WordPress",
+            },
+            {
+                id: 2,
+                title: "Hébergement",
+                text: "1&1 Ionos",
+            },
+            {
+                id: 3,
+                title: "Librairies",
+                text: "GSAP / Swiper",
+            }
         ]
     },
     {
@@ -172,7 +194,7 @@ export const projects = [
         src: "/images/projects/fake/project-01.webp",
         year: 2022,
         industry: "Commerce de véhicules automobiles",
-        color: "#EDAF42",
+        bgColor: "#000000",
         featured: false,
         gallery: [
             "/images/projects/fake/project-01.webp",
@@ -211,7 +233,7 @@ export const projects = [
         src: "/images/projects/fake/project-02.webp",
         year: 2021,
         industry: "Restauration",
-        color: "#FB6566",
+        bgColor: "#f53b57",
         featured: false,
         testimonial: {
             name: "Mikaru Saijo",
@@ -223,6 +245,28 @@ export const projects = [
             "/images/projects/fake/project-02.webp",
             "/images/projects/fake/project-03.webp",
             "/images/projects/fake/project-04.webp"
+        ],
+        technologies: [
+            {
+                id: 0,
+                title: "Languages",
+                text: "JavaScript / PHP",
+            },
+            {
+                id: 1,
+                title: "CMS",
+                text: "WordPress",
+            },
+            {
+                id: 2,
+                title: "Hébergement",
+                text: "1&1 Ionos",
+            },
+            {
+                id: 3,
+                title: "Librairies",
+                text: "GSAP / Swiper",
+            }
         ]
     },
 ]
