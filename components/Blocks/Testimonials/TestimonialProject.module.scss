@@ -1,0 +1,137 @@
+.testimonial {
+    padding-bottom: var(--paddingXL);
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-top: 0;
+    }
+
+    &__content {
+        margin: 0;
+        margin-top: var(--paddingM);
+        margin-left: auto;
+        padding: 0;
+        list-style: none;
+        width: 90%;
+    }
+
+    &__avatar {
+        width: 3.438rem;
+        height: 3.438rem;
+        border-radius: 50%;
+    }
+
+    &__text {
+        padding-top: var(--paddingS);
+        padding-bottom: var(--paddingS);
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .testimonial {
+        &__wrapper {
+            flex-direction: row;
+        }
+
+        &__content {
+            margin: 0;
+            width: 50%;
+        }
+
+        &__avatar {
+            width: 3.75rem;
+            height: 3.75rem;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .testimonial {
+        &__avatar {
+            width: 3.875rem;
+            height: 3.875rem;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .testimonial {
+        &__avatar {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1200px
+//==========================================================
+*/
+@media (min-width: 1200px) {
+    .testimonial {
+        &__avatar {
+            width: 4.125rem;
+            height: 4.125rem;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .testimonial {
+        &__content {
+            width: 47%;
+        }
+
+        &__avatar {
+            width: 4.25rem;
+            height: 4.25rem;
+        }
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .testimonial {
+        &__avatar {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+    }
+}
