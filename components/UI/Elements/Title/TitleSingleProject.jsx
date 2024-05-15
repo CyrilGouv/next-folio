@@ -13,7 +13,7 @@ import animationsTitleArrowReveal from "@/animations/title/arrowReveal"
 const TitleSingleProject = ({ title }) => {
 
     // Split the title by words
-    const words = splitByWords(title)
+    const words = splitByWords(title, false)
 
     // Reference elements
     const wordEls = useRef([])
