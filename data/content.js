@@ -29,6 +29,7 @@ export const contactAvatar = {
     alt: "Vous avez un projet web ? Contactez Cyril Gouv !"
 }
 export const contactHeroConfirmationText = "Je vous remercie de votre email, et fais tout mon possible pour vous contacter dans les meilleurs délais."
+export const contactHeroErrorText = "Oups, une erreur est apparue lors de l'envoie de votre email... N'hésitez pas à me contacter via hello@cyrlgouv.com pour me la signaler !"
 
 // Mentions Légales
 export const mentionsContent = [
