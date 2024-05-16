@@ -29,7 +29,7 @@ const TitlePage = ({ page }) => {
             animationsTitleArrow(lastLine.current)
         }
 
-        if(page === "contact" || page === "testimonials" || page === "confirmation") {
+        if(page === "contact" || page === "testimonials" || page === "confirmation" || page === "error") {
             animationsImageReveal(firstLine.current, overlayEl.current, true)
             animationsImageParallax(firstLine.current, imageEl.current)
         }
@@ -174,6 +174,41 @@ const TitlePage = ({ page }) => {
                             </g>
                         </svg>
                         <span className={ styles.title__line__word }>Envoyé</span>
+                    </span>
+                </h1>
+            )
+
+        case "error":
+            return (
+                <h1 className={ styles.title }>
+                    <span className={ `${styles.title__line} ${styles.title__line__split}` }>
+                        <span ref={ firstLine } className={ styles.title__line__word }>Oups...</span>
+                        <span className={ styles.title__line__right }>
+                            <figure className={ styles.title__line__image }>
+                                <div ref={ overlayEl } className={ styles.title__line__image__overlay }></div>
+                                <Image
+                                    ref={ imageEl }
+                                    src="/images/gifs/sending-error.webp"
+                                    alt="Oups, une erreur est apparue lors de l'envoie de votre email"
+                                    fill={ true }
+                                    sizes="300"
+                                    priority={ false }
+                                    unoptimized
+                                    className={ styles.title__line__image__inner }
+                                />
+                            </figure>
+                        </span>
+                    </span>
+                    <span ref={ lastLine } className={ `${styles.title__line} ${styles.title__line__alt} ${styles.title__line__push}` }>
+                        <svg className={ `${styles.title__line__arrow} text--opacity` } version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fillRule="evenodd">
+                            <g transform="translate(8 6) rotate(45) translate(-5 -5)" stroke="inherit" strokeWidth="1.5">
+                            <polyline points="2.306 0 9.9927 0 9.9927 7.6867"/>
+                            <path d="m9.9927 0-9.9927 9.9927"/>
+                            </g>
+                            </g>
+                        </svg>
+                        <span className={ styles.title__line__word }>Erreur !</span>
                     </span>
                 </h1>
             )
