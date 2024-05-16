@@ -29,7 +29,7 @@ const TitlePage = ({ page }) => {
             animationsTitleArrow(lastLine.current)
         }
 
-        if(page === "contact" || page === "testimonials") {
+        if(page === "contact" || page === "testimonials" || page === "confirmation") {
             animationsImageReveal(firstLine.current, overlayEl.current, true)
             animationsImageParallax(firstLine.current, imageEl.current)
         }
@@ -146,8 +146,23 @@ const TitlePage = ({ page }) => {
         case "confirmation":
             return (
                 <h1 className={ styles.title }>
-                    <span className={ styles.title__line }>
+                    <span className={ `${styles.title__line} ${styles.title__line__split}` }>
                         <span ref={ firstLine } className={ styles.title__line__word }>Email</span>
+                        <span className={ styles.title__line__right }>
+                            <figure className={ styles.title__line__image }>
+                                <div ref={ overlayEl } className={ styles.title__line__image__overlay }></div>
+                                <Image
+                                    ref={ imageEl }
+                                    src="/images/gifs/confirmation.webp"
+                                    alt="Je vous remercie de votre email, et fais tout mon possible pour vous contacter dans les meilleurs délais."
+                                    fill={ true }
+                                    sizes="300"
+                                    priority={ false }
+                                    unoptimized
+                                    className={ styles.title__line__image__inner }
+                                />
+                            </figure>
+                        </span>
                     </span>
                     <span ref={ lastLine } className={ `${styles.title__line} ${styles.title__line__alt} ${styles.title__line__push}` }>
                         <svg className={ `${styles.title__line__arrow} text--opacity` } version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
