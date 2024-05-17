@@ -20,7 +20,6 @@
             font-family: var(--mainFont);
             font-size: 1.25rem;
             color: var(--darkThemeFontColor);
-            margin-bottom: 1.5rem;
 
             &::placeholder {
                 font-family: var(--mainFont);
@@ -40,5 +39,9 @@
             min-height: 10vw;
             max-height: 12.5rem;
         }  
+    }
+
+    &__honeypot {
+        display: none;
     }
 }

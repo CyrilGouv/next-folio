@@ -1,22 +1,19 @@
 import styles from "./Submit.module.scss"
 
 
-const Submit = ({ text }) => {
+const Submit = ({ text, isLoading }) => {
     return (
         <div className={ styles.submit }>
             <button 
                 type="submit" 
-                className={ `${styles.submit__button} text--medium` }
+                className={ `${styles.submit__button} ${isLoading ? styles.submit__button__active : ""} text--medium` }
             >
 
                 <span
                     className={ styles.submit__button__text } 
                 >
-                    <span
-                        data-name={ text }
-                        className={ styles.submit__button__text__inner } 
-                    >
-                        { text }
+                    <span className={ styles.submit__button__text__inner }>
+                        { !isLoading ? text : "En cours d'envoi..." }
                     </span>
                 </span>
 
