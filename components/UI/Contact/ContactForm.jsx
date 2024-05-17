@@ -96,7 +96,6 @@ const ContactForm = () => {
 
         if (fullname && email && subject && budget && brief && !honeypot) {
             setIsLoading(true)
-            console.log("sending")
             let data = {
                 fullname,
                 email,

@@ -89,7 +89,8 @@
                 transition: transform .285s var(--mainTransition);
             }
         }
-    
+        
+        &__active,
         &:hover {
             .submit__button__circle {
     
