@@ -21,20 +21,11 @@ const Hero = ({ page, withText = false, className = null }) => {
         <div className="container">
             <div className={ styles.hero__wrapper }>
                 <div className={ styles.hero__title }>
-                    { withText && page !== "testimonials" && page !== "homepage" && page !== "contact" && page !== "confirmation" && (
+                    { withText && page !== "homepage" && (
                       <TextHero text={ textHero } />
                     ) }
                     { withText && page === "homepage" && (
                       <TextHero text={ textHero } layout={ page } />
-                    ) }
-                    { withText && page === "testimonials" && (
-                      <TextHero text={ textHero } />
-                    ) }
-                    { withText && page === "contact" && (
-                      <TextHero text={ textHero } />
-                    ) }
-                    { withText && page === "confirmation" && (
-                      <TextHero text={ textHero } />
                     ) }
                     <TitlePage page={ page } />
                 </div>
