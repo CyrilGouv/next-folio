@@ -1,24 +1,31 @@
 export const projects = [
     {
         id: 0,
-        name: "La Féenomène du recrutement",
-        slug: "la-feenomene-du-recrutement",
+        name: "Le Féenomène du recrutement",
+        slug: "le-feenomene-du-recrutement",
         description: "Convaincu de l'enjeu d'obtenir une présence web professionnelle et de qualité en vue de promouvoir ses services.",
-        src: "/images/projects/fake/project-01.webp",
+        src: "/images/projects/lefeenomenedurecrutement/featured/lefeenomenedurecrutement-featured.webp",
         year: 2023,
         industry: "Cabinet de recrutement",
         bgColor: "#218c74",
         featured: true,
         testimonial: {
-            name: "Stéphanie Legaz",
-            avatar: "/images/testimonials/temoignage-cabinet-sl-consulting.jpg",
-            text: "Cyril a été professionnel et très efficace. Il a pris le temps de me poser des questions, de me répondre et de m'expliquer chaque point détail par détail. Le premier visuel a été le bon. Il a tout à fait compris ce que je souhaitais. Le suivi a été irréprochable et les délais respectés. Je recommanderais Cyril à mon entourage.",
+            name: "Laurie-Anne Le Fée",
+            avatar: "/images/testimonials/temoignage-lefeenomenedurecrutement.webp",
+            text: "Réactif, patient, disponible, souriant. Cyril a compris immédiatement mes attentes. J'adore le résultat !!! Merci encore et à bientôt :D",
         },
         gallery: [
-            "/images/projects/fake/project-01.webp",
-            "/images/projects/fake/project-02.webp",
-            "/images/projects/fake/project-03.webp",
-            "/images/projects/fake/project-04.webp"
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-01.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-02.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-03.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-04.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-05.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-06.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-07.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-08.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-09.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-10.webp",
+            "/images/projects/lefeenomenedurecrutement/desktop/lefeenomenedurecrutement.com-11.webp"
         ],
         technologies: [
             {

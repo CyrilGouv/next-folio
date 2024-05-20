@@ -16,7 +16,7 @@ const GalleryProjects = ({ images }) => {
                         key={ `project-${idx}` }
                         image={ image }
                         altText="Etude de cas du projet"
-                        className="pb--medium"
+                        className="mb--medium"
                     />
                 )) }
 
