@@ -10,7 +10,7 @@ export const testimonials = [
     {
         id: 2,
         name: "Stéphanie Legaz",
-        avatar: "/images/testimonials/temoignage-cabinet-sl-consulting.jpg",
+        avatar: "/images/testimonials/temoignage-cabinet-sl-consulting.webp",
         company: "Cabinet SL Consulting",
         text: "Cyril a été professionnel et très efficace. Il a pris le temps de me poser des questions, de me répondre et de m'expliquer chaque point détail par détail. Le premier visuel a été le bon. Il a tout à fait compris ce que je souhaitais. Le suivi a été irréprochable et les délais respectés. Je recommanderais Cyril à mon entourage.",
         featured: true,
