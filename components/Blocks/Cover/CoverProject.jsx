@@ -4,12 +4,13 @@ import styles from "./CoverProject.module.scss"
 
 
 const CoverProject = ({ image, altText, className = null }) => {
+    
     return (
         <section className={ styles.cover }>
             <div className="container">
-                <div className={ styles.cover__wrapper }>
+                <div className={ `${styles.cover__wrapper} ${className ? className : ""}` }>
                     <Image
-                        className={ `${styles.cover__img} ${className ? className : ""}` } 
+                        className={ styles.cover__img } 
                         src={ image }
                         alt={ altText }
                         width={ 1920 } 

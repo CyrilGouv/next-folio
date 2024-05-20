@@ -193,6 +193,10 @@ Padding && Margin utils
     margin-top: var(--paddingM) !important;
 }
 
+.mb--medium {
+    margin-bottom: var(--paddingM);
+}
+
 .pt--xSmall {
     padding-top: var(--paddingXS);
 }

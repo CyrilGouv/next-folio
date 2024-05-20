@@ -1,6 +1,14 @@
 export const testimonials = [
     {
         id: 1,
+        name: "Laurie-Anne Le Fée",
+        avatar: "/images/testimonials/temoignage-lefeenomenedurecrutement.webp",
+        company: "Le féenomène du recrutement",
+        text: "Réactif, patient, disponible, souriant. Cyril a compris immédiatement mes attentes. J'adore le résultat !!! Merci encore et à bientôt :D",
+        featured: true,
+    },
+    {
+        id: 2,
         name: "Stéphanie Legaz",
         avatar: "/images/testimonials/temoignage-cabinet-sl-consulting.jpg",
         company: "Cabinet SL Consulting",
@@ -8,7 +16,7 @@ export const testimonials = [
         featured: true,
     },
     {
-        id: 2,
+        id: 3,
         name: "Claire Caillaud",
         avatar: "/images/testimonials/temoignage-les-gites-de-la-lumineuse.jpg",
         company: "SARL Caillaud Derout",
@@ -16,7 +24,7 @@ export const testimonials = [
         featured: true,
     },
     {
-        id: 3,
+        id: 4,
         name: "Michelle Tsadik",
         avatar: "/images/testimonials/temoignage-idealpack.jpeg",
         company: "IdealPack",
@@ -24,7 +32,7 @@ export const testimonials = [
         featured: true,
     },
     {
-        id: 4,
+        id: 5,
         name: "Laurent Di Raimondo",
         avatar: "/images/testimonials/temoignage-laurent-di-raimondo-translate4me.jpg",
         company: "Translate4me",
@@ -32,7 +40,7 @@ export const testimonials = [
         featured: true,
     },
     {
-        id: 5,
+        id: 6,
         name: "Sophie Phelippeau",
         avatar: "/images/testimonials/temoignage-philosophiedevie.jpeg",
         company: "Philosophiedevie",
@@ -40,7 +48,7 @@ export const testimonials = [
         featured: true,
     },
     {
-        id: 6,
+        id: 7,
         name: "Aurélie Ferrière",
         avatar: "/images/testimonials/temoignage-saxrecords.jpeg",
         company: "Saxrecords",
@@ -48,7 +56,7 @@ export const testimonials = [
         featured: true,
     },
     {
-        id: 7,
+        id: 8,
         name: "Lorenzo Brocchi",
         avatar: "/images/testimonials/temoignage-smartinvestingideas.png",
         company: "Smart Investing Ideas",
@@ -56,7 +64,7 @@ export const testimonials = [
         featured: true,
     },
     {
-        id: 8,
+        id: 9,
         name: "Elodie Bouillon",
         avatar: "/images/testimonials/temoignage-marlo.jpeg",
         company: "Agence Marlo",
