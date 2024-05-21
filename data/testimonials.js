@@ -18,7 +18,7 @@ export const testimonials = [
     {
         id: 3,
         name: "Claire Caillaud",
-        avatar: "/images/testimonials/temoignage-les-gites-de-la-lumineuse.jpg",
+        avatar: "/images/testimonials/gites-de-la-lumineuse-claire-et-yann.webp",
         company: "SARL Caillaud Derout",
         text: "Cyril est très réactif. Il a su être à l'écoute de notre projet et se mettre à notre portée. Les guides mis à notre disposition pour prendre en main notre site sont très appréciables. Merci.",
         featured: true,
