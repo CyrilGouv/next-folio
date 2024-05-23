@@ -177,6 +177,55 @@ export const projects = [
     },
     {
         id: 3,
+        name: "AJ Prestiges Cars",
+        slug: "aj-prestiges-cars",
+        description: "AJ Prestiges Cars est le spécialiste de la location de véhicules de marques haut de gammes dans la région parisienne. Après une étude de la concurrence et de l'objectif en terme d'image, j'ai choisi la technologie Jamstack pour créer un site moderne, évolutif et sécurisé.",
+        src: "/images/projects/ajprestigescars/featured/ajprestigescars-featured.webp",
+        year: 2022,
+        industry: "Location de véhicules",
+        bgColor: "#2d55ff",
+        featured: false,
+        testimonial: {
+            name: "Alexandre Jacquot",
+            avatar: "/images/testimonials/temoignage-ajprestigescars.webp",
+            text: "Très fort et à l'écoute je le recommande fortement :)",
+        },
+        gallery: [
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-01.webp",
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-02.webp",
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-03.webp",
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-04.webp",
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-05.webp",
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-06.webp",
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-07.webp",
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-08.webp",
+            "/images/projects/ajprestigescars/desktop/ajprestigescars.com-09.webp",
+        ],
+        technologies: [
+            {
+                id: 0,
+                title: "Languages",
+                text: "JavaScript",
+            },
+            {
+                id: 1,
+                title: "JS librairies",
+                text: "React/Next.js",
+            },
+            {
+                id: 2,
+                title: "CMS",
+                text: "Strapi",
+            },
+            {
+                id: 3,
+                title: "Hébergement",
+                text: "OVH Cloud",
+            }
+        ]
+    },
+    {
+        id: 4,
         name: "Cheval d'Or",
         slug: "cheval-d-or",
         description: "La société m'a confié l'objectif de repenser le design général de leur site internet afin de le rendre plus moderne et attrayant.",
@@ -220,7 +269,7 @@ export const projects = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         name: "XclusiveAuto",
         slug: "xclusiveauto",
         description: "La société m'a mandaté pour leur établir une solution digitale afin de rendre consultable en ligne leur stock de véhicules disponibles à la vente.",
@@ -259,7 +308,7 @@ export const projects = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         name: "Yamitsu",
         slug: "yamitsu",
         description: "L'établissement m'a délégué la création d'un site one page afin d'assurer une première présence en ligne rapidement.",
