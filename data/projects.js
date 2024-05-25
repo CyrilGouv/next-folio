@@ -226,6 +226,54 @@ export const projects = [
     },
     {
         id: 4,
+        name: "IdéalPack",
+        slug: "idealpack",
+        description: "IdealPack m'a mandaté pour établir une première présence en ligne afin de promouvoir leurs services d'emballage publicitaire.",
+        src: "/images/projects/idealpack/featured/idealpack-featured.webp",
+        year: 2022,
+        industry: "Emballage publicitaire",
+        bgColor: "#798E7B",
+        featured: false,
+        testimonial: {
+            name: "Michelle Tsadik",
+            avatar: "/images/testimonials/temoignage-idealpack.jpeg",
+            text: "Très belle expérience, très contente du résultat, je ne pouvais pas tomber mieux. Cyril est très à l'écoute, très disponible, de bon conseil, patient, il a bien compris mon activité et a été très créatif. Je recommande Cyril et n'hésiterai pas à travailler avec lui de nouveau.",
+        },
+        gallery: [
+            "/images/projects/idealpack/desktop/idealpack-01.webp",
+            "/images/projects/idealpack/desktop/idealpack-02.webp",
+            "/images/projects/idealpack/desktop/idealpack-03.webp",
+            "/images/projects/idealpack/desktop/idealpack-04.webp",
+            "/images/projects/idealpack/desktop/idealpack-05.webp",
+            "/images/projects/idealpack/desktop/idealpack-06.webp",
+            "/images/projects/idealpack/desktop/idealpack-07.webp",
+            "/images/projects/idealpack/desktop/idealpack-08.webp"
+        ],
+        technologies: [
+            {
+                id: 0,
+                title: "Languages",
+                text: "JavaScript",
+            },
+            {
+                id: 1,
+                title: "JS librairies",
+                text: "React/Next.js",
+            },
+            {
+                id: 2,
+                title: "CMS",
+                text: "Strapi",
+            },
+            {
+                id: 3,
+                title: "Hébergement",
+                text: "Hostinger",
+            }
+        ]
+    },
+    {
+        id: 5,
         name: "Cheval d'Or",
         slug: "cheval-d-or",
         description: "La société m'a confié l'objectif de repenser le design général de leur site internet afin de le rendre plus moderne et attrayant.",
@@ -269,7 +317,7 @@ export const projects = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         name: "XclusiveAuto",
         slug: "xclusiveauto",
         description: "La société m'a mandaté pour leur établir une solution digitale afin de rendre consultable en ligne leur stock de véhicules disponibles à la vente.",
@@ -308,7 +356,7 @@ export const projects = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         name: "Yamitsu",
         slug: "yamitsu",
         description: "L'établissement m'a délégué la création d'un site one page afin d'assurer une première présence en ligne rapidement.",
