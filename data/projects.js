@@ -277,21 +277,23 @@ export const projects = [
         name: "Cheval d'Or",
         slug: "cheval-d-or",
         description: "La société m'a confié l'objectif de repenser le design général de leur site internet afin de le rendre plus moderne et attrayant.",
-        src: "/images/projects/fake/project-04.webp",
+        src: "/images/projects/cheval-dor/featured/chevaldor-featured.webp",
         year: 2022,
         industry: "Sellerie",
         bgColor: "#e1b12c",
         featured: true,
         testimonial: {
-            name: "Pierre De Jean",
-            avatar: "/images/testimonials/temoignage-cabinet-sl-consulting.jpg",
+            name: "Caroline De Jean",
+            avatar: "/images/testimonials/temoignage-cheval-dor.webp",
             text: "Cyril a été professionnel et très efficace. Il a pris le temps de me poser des questions, de me répondre et de m'expliquer chaque point détail par détail. Le premier visuel a été le bon. Il a tout à fait compris ce que je souhaitais. Le suivi a été irréprochable et les délais respectés. Je recommanderais Cyril à mon entourage.",
         },
         gallery: [
-            "/images/projects/fake/project-01.webp",
-            "/images/projects/fake/project-02.webp",
-            "/images/projects/fake/project-03.webp",
-            "/images/projects/fake/project-04.webp"
+            "/images/projects/cheval-dor/desktop/cheval-dor.com-01.webp",
+            "/images/projects/cheval-dor/desktop/cheval-dor.com-02.webp",
+            "/images/projects/cheval-dor/desktop/cheval-dor.com-03.webp",
+            "/images/projects/cheval-dor/desktop/cheval-dor.com-04.webp",
+            "/images/projects/cheval-dor/desktop/cheval-dor.com-05.webp",
+            "/images/projects/cheval-dor/desktop/cheval-dor.com-06.webp",
         ],
         technologies: [
             {
