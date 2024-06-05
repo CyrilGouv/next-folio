@@ -11,7 +11,7 @@ import { projects } from "@/data/projects"
 
 export default async function SinglePortfolio({ params }) {
 
-    const { name, year, industry, description, gallery, technologies, testimonial, bgColor } = await getProjectBySlug(params)
+    const { name, year, industry, description, gallery, technologies, testimonial, bgColor } = getProjectBySlug(params)
 
     return (
         <>

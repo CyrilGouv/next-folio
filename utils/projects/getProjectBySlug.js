@@ -1,6 +1,6 @@
 import { projects } from "@/data/projects"
 
-export async function getProjectBySlug(params) {
+export function getProjectBySlug(params) {
     const project = projects.filter(project => project.slug === params.slug)
     return project[0]
 }
