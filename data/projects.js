@@ -367,19 +367,26 @@ export const projects = [
     },
     {
         id: 7,
-        name: "XclusiveAuto",
-        slug: "xclusiveauto",
-        description: "La société m'a mandaté pour leur établir une solution digitale afin de rendre consultable en ligne leur stock de véhicules disponibles à la vente.",
-        src: "/images/projects/fake/project-01.webp",
+        name: "Myfitmetz",
+        slug: "myfitmetz",
+        description: "Une salle de sport messine, spécialisée en musculation et fitness, m'a contacté pour établir une présence en ligne. Leur objectif principal était de créer un site internet attrayant et fonctionnel afin de mieux servir leurs membres actuels et attirer de nouveaux clients.",
+        src: "/images/projects/myfitmetz/featured/myfitmetz-featured.webp",
         year: 2022,
-        industry: "Commerce de véhicules automobiles",
-        bgColor: "#000000",
+        industry: "Salle de remise en forme",
+        bgColor: "#FFCC00",
         featured: false,
         gallery: [
-            "/images/projects/fake/project-01.webp",
-            "/images/projects/fake/project-02.webp",
-            "/images/projects/fake/project-03.webp",
-            "/images/projects/fake/project-04.webp"
+            "/images/projects/myfitmetz/desktop/myfitmetz-01.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-02.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-03.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-03.5.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-04.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-04.5.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-05.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-06.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-07.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-08.webp",
+            "/images/projects/myfitmetz/desktop/myfitmetz-09.webp"
         ],
         technologies: [
             {

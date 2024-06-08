@@ -9,7 +9,7 @@ const GalleryProjects = ({ images }) => {
     images.shift()
 
     return (
-        <section className={ `${styles.gallery} section` }>
+        <section className={ styles.gallery }>
             <div className="container">
                 { images.map((image, idx) => (
                     <CoverProject 
