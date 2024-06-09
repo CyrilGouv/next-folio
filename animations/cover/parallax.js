@@ -24,9 +24,9 @@ const animationsCoverParallax = (windowHeight, sectionTrigger, firstEl, secondEl
         })
 
         tl
-            .to(firstEl, { y: windowHeight * 2 }, 0)
-            .to(secondEl, { y: - windowHeight * .75 }, 0)
-            .to(thirdEl, { y: windowHeight * 2 }, 0)
+            .to(firstEl, { y: windowHeight * 2, ease: "none" }, 0)
+            .to(secondEl, { y: - windowHeight * .75, ease: "none" }, 0)
+            .to(thirdEl, { y: windowHeight * 2, ease: "none" }, 0)
       
     })
 
@@ -43,9 +43,9 @@ const animationsCoverParallax = (windowHeight, sectionTrigger, firstEl, secondEl
         })
 
         tl
-            .to(firstEl, { y: windowHeight * 3.25 }, 0)
-            .to(secondEl, { y: - windowHeight * 1.025 }, 0)
-            .to(thirdEl, { y: windowHeight * 3.25 }, 0)
+            .to(firstEl, { y: windowHeight * 3.25, ease: "none" }, 0)
+            .to(secondEl, { y: - windowHeight * 1.025, ease: "none" }, 0)
+            .to(thirdEl, { y: windowHeight * 3.25, ease: "none" }, 0)
       
     })
 
