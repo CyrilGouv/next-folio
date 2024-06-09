@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     height: 100vw;
-    max-height: 82vh;
+    max-height: 100vh;
     background-color: var(--darkThemeGrayColor);
     pointer-events: none;
     overflow: hidden;
@@ -29,7 +29,7 @@
         left: -50%;
         right: 50%;
         height: 150vh;
-        top: -12vh;
+        top: 0;
         gap: 1vw;
     }
 
@@ -42,15 +42,15 @@
         white-space: nowrap;
 
         &:first-of-type {
-            top: -145%;
+           top: -360vw;
         }
 
         &:nth-of-type(2) {
-            top: 0;
+            top: 20vw;
         }
         
         &:last-of-type {
-            top: -145%;
+           top: -360vw;
         }
     }
 
@@ -59,8 +59,8 @@
         margin: 0;
         padding: 0;
         display: inline-block;
-        height: 70vh;
-        min-height: 70vh;
+        height: auto;
+        padding-top: 56.25%;
         margin-bottom: 1vw;
         border-radius: 5px;
         overflow: hidden;
@@ -72,8 +72,13 @@
 
     &__image {
         display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         width: 100%;
-        object-fit: cover;
+        height: 100%;
     }
 }
 
@@ -88,6 +93,21 @@
 @media (min-width: 640px) {
     .cover {
         max-height: 105vh;
+
+        &__line {
+            &:first-of-type {
+                top: -210vw;
+            }
+    
+            &:nth-of-type(2) {
+                top: 0;
+            }
+            
+            &:last-of-type {
+                top: -210vw;
+            }
+        }
+
     }
 }
 
@@ -117,9 +137,9 @@
     .cover {
         &__line {
             width: 52vw;
-        
+
             &:first-of-type {
-                top: -145%;
+                top: -215vw;
             }
     
             &:nth-of-type(2) {
@@ -127,13 +147,8 @@
             }
             
             &:last-of-type {
-                top: -145%;
+                top: -215vw;
             }
-        }
-
-        &__figure {
-            height: 70vh;
-            min-height: 70vh;
         }
     }
 }
