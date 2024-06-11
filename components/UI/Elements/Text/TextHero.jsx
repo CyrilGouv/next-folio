@@ -42,7 +42,7 @@ const TextHero = ({ text, layout = "default", image = false, video = false }) =>
                         <div ref={ overlayEl } className={ styles.text__image__overlay }></div>
                         <Image
                             ref={ imageEl }
-                            src="/images/gifs/gif-testimonial.webp"
+                            src="/images/gifs/gif-testimonials.webp"
                             alt="Merci à mes clients de la confiance qu'ils ont pu apporté à mes services de développement web."
                             width={ 150 }
                             height={ 100 }

@@ -27,7 +27,7 @@ const CoverParallax = () => {
     // Hooks
     useGSAP(() => {
         animationsCoverReveal(revealEl.current)
-        animationsCoverScale(windowHeight, section.current, wrapperEl.current)
+        // animationsCoverScale(windowHeight, section.current, wrapperEl.current)
         animationsCoverParallax(windowHeight, section.current, firstLine.current, middleLine.current, lastLine.current)
     })
 

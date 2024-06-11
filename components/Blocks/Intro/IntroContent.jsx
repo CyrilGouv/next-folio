@@ -36,10 +36,10 @@ const IntroContent = ({ page }) => {
                     </div>
                     <div className={ styles.intro__content__wrapper }>
                         <p className={ styles.intro__content__text }>
-                            <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
+                            <TextReveal text="Que vous ayez besoin d'aide en stratégie, web design, développement ou création d'applications, je possède l'expertise et l'expérience pour offrir des solutions interactives et uniques pour votre audience. Chaque projet est une opportunité de créer une expérience qui reflète fidèlement votre marque et engage vos clients de manière authentique." />
                         </p>
                         <p className={ styles.intro__content__text }>
-                            <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." delay={ 0.375 } />
+                            <TextReveal text="En travaillant ensemble, je transformerai vos idées en réalités numériques percutantes. De la conception à la réalisation, je m'engage à fournir des solutions sur mesure qui non seulement répondent à vos besoins, mais surpassent vos attentes." />
                         </p>
                         <p className={ `${styles.intro__content__bottom} text--regular` }>
                             <Line />
@@ -48,7 +48,7 @@ const IntroContent = ({ page }) => {
                                 ref={ introBottom } 
                                 className={ styles.intro__content__bottom__text }
                             >
-                                We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs.
+                                Faites confiance à mon savoir-faire pour améliorer votre présence en ligne et faire briller votre image de marque.
                             </span>
                         </p>
 
@@ -68,10 +68,10 @@ const IntroContent = ({ page }) => {
                     <div className={ `${styles.intro__content} ${styles.intro__content__first}` }>
                         <div className={ styles.intro__content__wrapper }>
                             <p className={ styles.intro__content__text }>
-                                <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
+                                <TextReveal text="En tant qu'indépendant passionné et développeur web depuis plusieurs années, je crée avec dévouement des sites internet à la fois accueillants et professionnels. Chaque projet est une nouvelle opportunité d'excellence où je mets en œuvre mon savoir-faire avec minutie et fierté, pour offrir à mes clients des réalisations à la hauteur de leurs attentes." />
                             </p>
                             <p className={ styles.intro__content__text }>
-                                <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech, we have the expertise and experience to deliver uniquely branded and interactive solutions for your audience." />
+                                <TextReveal text="Fort d'un amour pour l'esthétisme, je conçois chacun de mes projets sur-mesure avec une attention particulière à la qualité sous toutes ses formes." />
                             </p>
                         </div>
                     </div>
@@ -83,15 +83,15 @@ const IntroContent = ({ page }) => {
 
                         <div className={ styles.intro__content__wrapper }>
                             <p className={ styles.intro__content__text }>
-                                <TextReveal text="Whether you require help with strategy, web or product design, development, app creation, or innovative tech :" />
+                                <TextReveal text="Pour mener à bien votre projet, je m'appuie sur un ensemble de technologies modernes et performantes :" />
                             </p>
                             
                             <Technos />
 
                             <Cta 
-                                ctaText="We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
-                                btnText="Tous les témoignages"
-                                btnLink="/temoignages"
+                                ctaText="Vous avez un projet web en tête ? Ne cherchez plus ! Contactez-moi dès aujourd'hui et laissez-moi transformer votre vision en réalité. Ensemble, nous pouvons créer un site web qui correspond parfaitement à vos besoins et dépasse vos attentes."
+                                btnText="Prendre contact"
+                                btnLink="/contact"
                                 fullWidth={ true }
                             />
                         </div>
