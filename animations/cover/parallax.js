@@ -16,7 +16,7 @@ const animationsCoverParallax = (windowHeight, sectionTrigger, firstEl, secondEl
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: sectionTrigger,
-                start: "top bottom",
+                start: "top " + windowHeight * .9,
                 end: "bottom top",
                 scrub: true,
                 invalidateOnRefresh: true,

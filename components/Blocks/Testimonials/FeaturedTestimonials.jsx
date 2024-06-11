@@ -33,7 +33,7 @@ const FeaturedTestimonials = () => {
                 <div className={ styles.testimonials__wrapper }>
                     <SliderTestimonials />
                     <Cta
-                        ctaText="We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
+                        ctaText="Explorez dès maintenant les témoignages de mes clients pour vous inspirer et découvrir comment nous avons aidé d'autres entreprises à réaliser leurs objectifs."
                         btnText="Tous les témoignages"
                         btnLink="/temoignages"
                     />

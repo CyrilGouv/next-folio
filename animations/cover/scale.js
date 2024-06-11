@@ -20,6 +20,7 @@ const animationsCoverScale = (windowHeight, sectionTrigger, elementToScale) => {
         elementToScale, 
         { 
             scale: 1.25,
+            ease: "none",
             scrollTrigger: {
                 trigger: sectionTrigger,
                 start: "top bottom",

@@ -85,11 +85,12 @@ const TitlePage = ({ page }) => {
                                 <div ref={ overlayEl } className={ styles.title__line__image__overlay }></div>
                                 <Image
                                     ref={ imageEl }
-                                    src="/images/gifs/gif-testimonial.webp"
+                                    src="/images/gifs/gif-testimonials.webp"
                                     alt="Merci à mes clients de la confiance qu'ils ont pu apporté à mes services de développement web."
                                     fill={ true }
                                     sizes="300"
                                     priority={ false }
+                                    unoptimized={ true }
                                     className={ styles.title__line__image__inner }
                                 />
                             </figure>

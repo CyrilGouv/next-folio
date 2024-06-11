@@ -31,7 +31,7 @@ const FeaturedProjects = () => {
                 </ul>
                 
                 <Cta 
-                    ctaText="We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
+                    ctaText="Chaque projet est réalisé avec soin et inventivité. Plus qu’une simple volonté, c’est une vision commune que nous partageons. Découvrez mon portfolio et laissez-vous inspirer par les solutions créatives et personnalisées que j'ai développées pour mes clients."
                     btnText="Tous les projets"
                     btnLink="/realisations"
                 />
