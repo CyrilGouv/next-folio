@@ -1,6 +1,6 @@
 .card {
     position: relative;
-    padding: 2.25rem 2.75rem;
+    padding: 1.75rem 2rem;
     border: 1px solid var(--darkThemeFontColor);
     border-radius: var(--mainBorderRadius);
     height: 100%;
@@ -32,15 +32,15 @@
 
     &__avatar {
         position: relative;
-        width: 4.063rem;
-        height: 4.063rem;
+        width: 3.75rem;
+        height: 3.75rem;
         border-radius: 50%;
         z-index: 3;
     }
 
     &__content,
     &__text {
-        font-size: max(1.0125rem, 1.25vw);
+        font-size: max(1rem, 1.25vw);
     }
 
     &__content {

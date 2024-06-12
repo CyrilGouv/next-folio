@@ -4,12 +4,12 @@ import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 import Image from "next/image"
 import Line from "../Elements/Line/Line"
+import Tags from "../Elements/Tags/Tags"
 import TextReveal from "../Elements/Text/TextReveal"
 import animationsClipPath from "@/animations/image/clipPath"
 import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
 import styles from "./CardTestimonial.module.scss"
-import Tags from "../Elements/Tags/Tags"
 
 
 const CardTestimonial = ({ count, name, avatar, company, body }) => {
@@ -51,10 +51,10 @@ const CardTestimonial = ({ count, name, avatar, company, body }) => {
 
                 <div className={ styles.card__title }>
                     <div className={ styles.card__title__name }>
-                        <Tags text={ name } position="relative" animations={{ delay: 1.125 }} />
+                        <Tags text={ name } position="relative" className="text--small" animations={{ delay: 1.125 }} />
                     </div>
                     <div className={ styles.card__title__company }>
-                        <Tags text={ company } position="relative" animations={{ delay: 1.325 }} />
+                        <Tags text={ company } position="relative" className="text--small" animations={{ delay: 1.325 }} />
                     </div>
                 </div>
             </div>
