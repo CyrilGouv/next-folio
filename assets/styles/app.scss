@@ -156,6 +156,10 @@ Utils Typo
     opacity: .35;
 }
 
+.text--small {
+    font-size: clamp(11px, 1.125vw, 1.125rem);
+}
+
 .text--regular {
     font-size: clamp(13px, 1.125vw, 1.125rem);
 }

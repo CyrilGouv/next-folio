@@ -27,10 +27,10 @@ const CardSliderTestimonial = ({ avatar, testimonial, name, company }) => {
             <div className={ styles.card__content }>
                 <p className={ styles.card__text }>{ testimonial }</p>
                 <div className={ styles.card__name }>
-                    <Tags text={ name } position="relative" isActive={ isActive } animations={{ delay: .25 }} />
+                    <Tags text={ name } position="relative" isActive={ isActive } className="text--small" animations={{ delay: .25 }} />
                 </div>
                 <div className={ styles.card__company }>
-                    <Tags text={ company } position="relative" isActive={ isActive } animations={{ delay: .325 }} />
+                    <Tags text={ company } position="relative" isActive={ isActive } className="text--small" animations={{ delay: .325 }} />
                 </div>
             </div>
         </div>
