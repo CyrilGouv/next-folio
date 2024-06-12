@@ -19,7 +19,7 @@ const animationsCoverScale = (windowHeight, sectionTrigger, elementToScale) => {
     gsap.from(
         elementToScale, 
         { 
-            scale: 1.25,
+            scale: 1.125,
             ease: "none",
             scrollTrigger: {
                 trigger: sectionTrigger,

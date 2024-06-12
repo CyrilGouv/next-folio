@@ -9,8 +9,6 @@ const animationsCoverParallax = (windowHeight, sectionTrigger, firstEl, secondEl
     // Responsive animations
     let mm = gsap.matchMedia();
 
-    
-
     mm.add("(max-width: 1023px)", () => {
         // Timeline
         const tl = gsap.timeline({
@@ -24,9 +22,9 @@ const animationsCoverParallax = (windowHeight, sectionTrigger, firstEl, secondEl
         })
 
         tl
-            .to(firstEl, { y: windowHeight * 2, ease: "none" }, 0)
-            .to(secondEl, { y: - windowHeight * .75, ease: "none" }, 0)
-            .to(thirdEl, { y: windowHeight * 2, ease: "none" }, 0)
+            .to(firstEl, { y: windowHeight * 1.125, ease: "none" }, 0)
+            .to(secondEl, { y: - windowHeight * .25, ease: "none" }, 0)
+            .to(thirdEl, { y: windowHeight * 1.125, ease: "none" }, 0)
       
     })
 
