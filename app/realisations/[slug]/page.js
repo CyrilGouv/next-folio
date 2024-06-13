@@ -9,6 +9,23 @@ import { getProjectBySlug } from "@/utils/projects/getProjectBySlug"
 import { projects } from "@/data/projects"
 
 
+export async function generateMetadata({ params }) {
+
+    // fetch data
+    const project = getProjectBySlug(params)
+
+    return {
+      title: `${project.name} • Cyril Gouv`,
+      description: project.description,
+      openGraph: {
+        title: project.name,
+        description: project.description,
+        images: [project.gallery[0]],
+      },
+    }
+}
+
+
 export default async function SinglePortfolio({ params }) {
 
     const { name, year, industry, description, gallery, technologies, testimonial, bgColor } = getProjectBySlug(params)
