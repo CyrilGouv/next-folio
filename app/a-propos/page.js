@@ -6,6 +6,16 @@ import SectionLists from "@/components/Blocks/Section/SectionLists"
 import Footer from "@/components/Layout/Footer/Footer"
 
 
+export const metadata = {
+    title: "À propos • Cyril Gouv",
+    description: "Développeur web indépendant passionné depuis 2018 et spécialiste en création de site web, design graphique et développement front-end à Biscarrosse.",
+    openGraph: {
+      title: "À propos • Cyril Gouv",
+      description: "Développeur web indépendant passionné depuis 2018 et spécialiste en création de site web, design graphique et développement front-end à Biscarrosse.",
+      images: ["/images/seo/cyrilgouv-01.png"]
+    }
+}
+
 const page = () => {
 
     const page = "about"
