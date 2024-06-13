@@ -1,6 +1,6 @@
 // INTRO TITLES
 export const homepageHeroText = "Créateur de sites et applications web sur-mesure dédiée à votre performance, votre visibilité et votre notoriété depuis 2018."
-export const homepageIntroTitle = "Développeur full stack, je combine stratégie, design et technologie pour concevoir des expériences uniques."
+export const homepageIntroTitle = "Développeur front-end, je combine stratégie, design et technologie pour concevoir des expériences uniques."
 export const aboutIntroTitle = "Whether you require help with strategy, web or product design, development, app creation, or innovative tech."
 
 

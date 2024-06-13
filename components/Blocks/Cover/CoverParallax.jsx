@@ -6,6 +6,7 @@ import animationsCoverReveal from "@/animations/cover/reveal"
 import animationsCoverParallax from "@/animations/cover/parallax"
 
 import styles from "./CoverParallax.module.scss"
+import Image from "next/image"
 
 
 const CoverParallax = () => {
@@ -48,68 +49,188 @@ const CoverParallax = () => {
             <div ref={ wrapperEl } className={ styles.cover__wrapper }>
                 <div ref={ firstLine } className={ styles.cover__line }>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line1/cover-line1-07.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line1/cover-line1-07.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line1/cover-line1-05.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line1/cover-line1-05.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line1/cover-line1-06.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line1/cover-line1-06.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line1/cover-line1-02.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line1/cover-line1-02.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line1/cover-line1-03.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line1/cover-line1-03.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line1/cover-line1-04.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line1/cover-line1-04.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line1/cover-line1-05.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line1/cover-line1-05.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                 </div>
                 <div ref={ middleLine } className={ styles.cover__line }>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line2/cover-line2-05.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line2/cover-line2-05.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line2/cover-line2-01.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line2/cover-line2-01.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line2/cover-line2-02.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line2/cover-line2-02.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line2/cover-line2-03.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line2/cover-line2-03.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line2/cover-line2-04.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line2/cover-line2-04.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line2/cover-line2-05.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line2/cover-line2-05.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                 </div>
                 <div ref={ lastLine } className={ styles.cover__line }>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line3/cover-line3-06.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line3/cover-line3-06.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line3/cover-line3-03.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line3/cover-line3-03.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line3/cover-line3-02.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line3/cover-line3-02.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line3/cover-line3-04.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line3/cover-line3-04.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line3/cover-line3-01.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line3/cover-line3-01.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line3/cover-line3-05.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line3/cover-line3-05.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                     <figure className={ styles.cover__figure }>
-                        <img className={ styles.cover__image } src="/images/cover/line3/cover-line3-02.webp" alt="Présentation d'un site réalisé pour un client" />
+                        <Image
+                            className={ styles.cover__image }
+                            src="/images/cover/line3/cover-line3-02.webp"
+                            alt="Présentation d'un site réalisé pour un client"
+                            width={ 1800 } 
+                            height={ 941 }
+                        />
                     </figure>
                 </div>
             </div>
