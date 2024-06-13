@@ -165,6 +165,7 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
+                            priority={ false }
                         />
                     </figure>
                 </div>

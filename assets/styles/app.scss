@@ -6,7 +6,10 @@ Fonts
 @font-face {
     font-family: "TT-Firs-Neue-Var-Roman";
     font-weight: normal;
-    src: url("../fonts/TT-Firs-Neue-Var-Roman.ttf") format('truetype');
+    src: url("../fonts/TT-Firs-Neue-Var-Roman.woff2") format("woff2"),
+         url("../fonts/TT-Firs-Neue-Var-Roman.woff") format("woff"),
+         url("../fonts/TT-Firs-Neue-Var-Roman.otf") format("opentype"),
+         url("../fonts/TT-Firs-Neue-Var-Roman.ttf") format('truetype');
 }
 
 /* 
