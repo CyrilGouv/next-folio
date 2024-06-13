@@ -37,7 +37,7 @@ const CoverColumns = () => {
                             src={ aboutCoverFirstImage.img }
                             alt={ aboutCoverFirstImage.alt }
                             fill
-                            priority={ false }
+                            priority
                             sizes="(min-width: 640px) 32.75vw, 42vw"
                         />
                     </figure>
@@ -49,7 +49,7 @@ const CoverColumns = () => {
                             src={ aboutCoverLastImage.img }
                             alt={ aboutCoverLastImage.alt }
                             fill
-                            priority={ false }
+                            priority
                             sizes="(min-width: 640px) 50vw, 54vw"
                         />
                     </figure>

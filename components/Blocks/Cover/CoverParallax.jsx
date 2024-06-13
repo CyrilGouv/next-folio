@@ -91,6 +91,7 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
+                            priority
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -100,6 +101,7 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
+                            priority
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -120,6 +122,7 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
+                            priority
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -129,6 +132,7 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
+                            priority
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -165,7 +169,6 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
-                            priority={ false }
                         />
                     </figure>
                 </div>
@@ -213,6 +216,7 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
+                            priority
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -222,6 +226,7 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
+                            priority
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
