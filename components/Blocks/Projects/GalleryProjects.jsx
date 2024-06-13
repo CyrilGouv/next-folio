@@ -21,7 +21,7 @@ const GalleryProjects = ({ images }) => {
                 )) }
 
                 <Cta
-                    ctaText="We understand that each client, project, and context is different. We adopt a flexible approach, allowing us to adapt and tailor our services to meet our client's needs."
+                    ctaText="Vous avez un projet web en tête ? Ne cherchez plus ! Contactez-moi dès aujourd'hui et laissez-moi transformer votre vision en réalité. Vous préférez d'abord explorer mes réalisations ? Continuez à visiter mon portfolio pour découvrir d'autres exemples de mon travail et voyez comment je peux faire briller votre projet."
                     btnText="Retour portfolio"
                     btnLink="/realisations"
                     className="mt--medium"

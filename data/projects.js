@@ -205,7 +205,7 @@ export const projects = [
             {
                 id: 0,
                 title: "Languages",
-                text: "JavaScript",
+                text: "JavaScript / PHP",
             },
             {
                 id: 1,
@@ -215,7 +215,7 @@ export const projects = [
             {
                 id: 2,
                 title: "CMS",
-                text: "Strapi",
+                text: "WordPress",
             },
             {
                 id: 3,
@@ -253,7 +253,7 @@ export const projects = [
             {
                 id: 0,
                 title: "Languages",
-                text: "JavaScript",
+                text: "JavaScript / PHP",
             },
             {
                 id: 1,
@@ -263,12 +263,12 @@ export const projects = [
             {
                 id: 2,
                 title: "CMS",
-                text: "Strapi",
+                text: "WordPress",
             },
             {
                 id: 3,
                 title: "Hébergement",
-                text: "Hostinger",
+                text: "OVH",
             }
         ]
     },
@@ -304,7 +304,7 @@ export const projects = [
             {
                 id: 1,
                 title: "CMS",
-                text: "WordPress",
+                text: "WordPress / Woocommerce",
             },
             {
                 id: 2,
@@ -346,20 +346,25 @@ export const projects = [
             {
                 id: 0,
                 title: "Languages",
-                text: "JavaScript",
+                text: "JavaScript / PHP",
             },
             {
                 id: 1,
                 title: "CMS",
-                text: "Strapi",
+                text: "WordPress",
             },
             {
                 id: 2,
+                title: "JS librairies",
+                text: "React/Next.js",
+            },
+            {
+                id: 3,
                 title: "Hébergement",
                 text: "Hostinger",
             },
             {
-                id: 3,
+                id: 4,
                 title: "Librairies",
                 text: "GSAP / Swiper",
             }
@@ -396,16 +401,21 @@ export const projects = [
             },
             {
                 id: 1,
+                title: "JS librairies",
+                text: "React/Next.js",
+            },
+            {
+                id: 2,
                 title: "CMS",
                 text: "WordPress",
             },
             {
-                id: 2,
+                id: 3,
                 title: "Hébergement",
-                text: "1&1 Ionos",
+                text: "Vercel / 1&1 Ionos",
             },
             {
-                id: 3,
+                id: 4,
                 title: "Librairies",
                 text: "GSAP / Swiper",
             }

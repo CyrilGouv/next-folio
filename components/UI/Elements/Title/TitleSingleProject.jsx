@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 import splitByWords from "@/utils/splitByWords"
-import revealByWords from "@/animations/text/revealByWords"
+import revealByWords from "@/animations/title/revealByWords"
 import animationsTitleArrow from "@/animations/title/arrow"
 import animationsTitleArrowReveal from "@/animations/title/arrowReveal"
 
@@ -22,7 +22,8 @@ const TitleSingleProject = ({ title }) => {
 
     // Animations
     useGSAP(() => {
-        revealByWords(titleEl.current, wordEls.current)
+        // revealByWords(titleEl.current, wordEls.current)
+        revealByWords(wordEls.current)
         animationsTitleArrow(arrowEl.current)
         animationsTitleArrowReveal(arrowEl.current)
     })
