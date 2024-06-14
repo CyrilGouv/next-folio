@@ -77,7 +77,7 @@ const TitlePage = ({ page }) => {
 
         case "testimonials":
             return (
-                <h1 className={ styles.title }>
+                <h1 className={ `${styles.title} ${styles.title__testimonials}` }>
                     <span className={ `${styles.title__line} ${styles.title__line__split}` }>
                         <span ref={ firstLine } className={ styles.title__line__word }>Avis</span>
                         <span className={ styles.title__line__right }>

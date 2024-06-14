@@ -42,7 +42,7 @@
         white-space: nowrap;
 
         &:first-of-type {
-           top: -226vw;
+           top: -200vw;
         }
 
         &:nth-of-type(2) {
@@ -50,7 +50,7 @@
         }
         
         &:last-of-type {
-           top: -226vw;
+           top: -200vw;
         }
     }
 
@@ -86,10 +86,10 @@
 
 /* 
 //==========================================================
-//  Responsive =>  > 380px
+//  Responsive =>  > 400px
 //==========================================================
 */
-@media (min-width: 380px) {
+@media (min-width: 400px) {
     .cover {
 
         &:first-of-type {
