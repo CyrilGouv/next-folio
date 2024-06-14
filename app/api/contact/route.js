@@ -7,12 +7,13 @@ export async function POST(request) {
     if (fullname && email && subject && budget && brief) {
 
         const transporter = nodemailer.createTransport({
-            port: process.env.EMAIL_PORT,
             host: process.env.EMAIL_HOST,
+            port: process.env.EMAIL_PORT,
             auth: {
               user : process.env.EMAIL_USERNAME,
               pass: process.env.EMAIL_PASSWORD,
             },
+            secure: false,
             secureConnection: false,
             tls: { ciphers: "SSLv3" },
         })
