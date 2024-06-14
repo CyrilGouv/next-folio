@@ -22,7 +22,6 @@ const TitleSingleProject = ({ title }) => {
 
     // Animations
     useGSAP(() => {
-        // revealByWords(titleEl.current, wordEls.current)
         revealByWords(wordEls.current)
         animationsTitleArrow(arrowEl.current)
         animationsTitleArrowReveal(arrowEl.current)
