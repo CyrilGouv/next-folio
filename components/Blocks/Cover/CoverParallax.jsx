@@ -20,7 +20,7 @@ const CoverParallax = () => {
     const lastLine = useRef(null)
 
     // States
-    const [windowHeight, setWindowHeight] = useState(window?.innerHeight || 0)
+    const [windowHeight, setWindowHeight] = useState(typeof window !== "undefined" && window?.innerHeight || 0)
 
     
 
@@ -40,7 +40,7 @@ const CoverParallax = () => {
 
     // Callbacks
     const watchWindowHeight = () => {
-        setWindowHeight(window.innerHeight)
+        setWindowHeight(window?.innerHeight)
     }
 
     return (
