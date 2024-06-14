@@ -1,5 +1,6 @@
 .text {
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
     font-size: clamp(3rem, 16.09vw, 12.05rem);
     line-height: 1;
     font-weight: bold;
