@@ -11,12 +11,12 @@ export const projectsHeroText = "Découvrez l'étendue de mon savoir-faire à tr
 // COVER ABOUT IMAGES
 export const aboutHeroText = "Développeur web indépendant passionné depuis 2018 et spécialiste en création de site web, design graphique et développement full stack."
 export const aboutCoverFirstImage = {
-    img: "/images/projects/fake/project-01.webp",
-    alt: "Représente un ordinateur"
+    img: "/images/about/about-cyril-01.webp",
+    alt: "Cyril Gouv c'est moi"
 }
 export const aboutCoverLastImage = {
     img: "/images/about/bg-about-alt-01.webp",
-    alt: "Cyril Gouv mon profil de développeur web"
+    alt: "mon setup de travail"
 }
 
 // TESTIMONIALS
