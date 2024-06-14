@@ -30,7 +30,7 @@ const CoverColumns = () => {
                 <div className={ styles.cover__wrapper }>
                     <figure className={ styles.cover__img }>
                         <div ref={ revealFirstEl } className={ styles.cover__reveal }></div>
-                        <Tags text="Ça, c'est moi !" />
+                        <Tags text="Ça, c'est moi !" className="text--small" />
                         <Image 
                             ref={ firstImageEl }
                             className={ styles.cover__img__inner } 
