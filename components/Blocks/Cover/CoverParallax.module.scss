@@ -92,17 +92,19 @@
 @media (min-width: 400px) {
     .cover {
 
-        &:first-of-type {
-            top: -236vw;
-         }
- 
-         &:nth-of-type(2) {
-             top: -4vw;
-         }
-         
-         &:last-of-type {
-            top: -236vw;
-         }
+        &__line {
+            &:first-of-type {
+                top: -236vw;
+             }
+     
+             &:nth-of-type(2) {
+                 top: -4vw;
+             }
+             
+             &:last-of-type {
+                top: -236vw;
+             }
+        }
 
     }
 }
