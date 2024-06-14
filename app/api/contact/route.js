@@ -13,7 +13,6 @@ export async function POST(request) {
               user : process.env.EMAIL_USERNAME,
               pass: process.env.EMAIL_PASSWORD,
             },
-            secure: false,
             secureConnection: false,
             tls: { ciphers: "SSLv3" },
         })

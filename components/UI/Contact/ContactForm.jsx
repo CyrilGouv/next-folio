@@ -186,27 +186,27 @@ const ContactForm = () => {
                     placeholder= "Je souhaite..." 
                     options={[
                         {
-                            value: "site vitrine",
+                            value: "Site vitrine",
                             text: "Créer un site vitrine"
                         },
                         {
-                            value: "e-commerce",
+                            value: "E-commerce",
                             text: "Créer un e-commerce"
                         },
                         {
-                            value: "sur-mesure",
+                            value: "Sur-mesure",
                             text: "Créer un site sur-mesure"
                         },
                         {
-                            value: "refonte",
+                            value: "Refonte",
                             text: "Refondre un site existant"
                         },
                         {
-                            value: "maintenance",
+                            value: "Maintenance",
                             text: "Une maintenance de mon site"
                         },
                         {
-                            value: "autres",
+                            value: "Autres",
                             text: "Autres choses"
                         }
                     ]}
