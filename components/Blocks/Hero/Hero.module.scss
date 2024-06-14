@@ -1,6 +1,5 @@
 .hero {
     height: var(--mainHeroHeight);
-    min-height: 765px;
 
     &__full {
         height: 100vh;
@@ -8,14 +7,12 @@
 
         .hero__wrapper {
             height: 100vh;
-            min-height: 765px;
         }
     }
 
     &__wrapper {
         position: relative;
         height: var(--mainHeroHeight);
-        min-height: 765px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -28,5 +25,28 @@
 
     &__title {
         padding-bottom: var(--paddingS);
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .hero {
+        min-height: 765px;
+    
+        &__full {
+            .hero__wrapper {
+                min-height: 765px;
+            }
+        }
+    
+        &__wrapper {
+            min-height: 765px;
+        }
     }
 }

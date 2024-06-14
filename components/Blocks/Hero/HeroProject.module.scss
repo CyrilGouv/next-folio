@@ -1,11 +1,9 @@
 .hero {
     height: var(--mainHeroHeight);
-    min-height: 765px;
 
     &__wrapper {
         position: relative;
         height: var(--mainHeroHeight);
-        min-height: 765px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -24,6 +22,23 @@
                 margin-right: 2vw;
                }
             }
+        }
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .hero {
+        min-height: 765px;
+    
+        &__wrapper {
+            min-height: 765px;
         }
     }
 }
