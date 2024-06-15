@@ -215,7 +215,7 @@ export const projects = [
             {
                 id: 2,
                 title: "CMS",
-                text: "WordPress",
+                text: "Strapi",
             },
             {
                 id: 3,
@@ -407,12 +407,12 @@ export const projects = [
             {
                 id: 2,
                 title: "CMS",
-                text: "WordPress",
+                text: "Strapi",
             },
             {
                 id: 3,
                 title: "Hébergement",
-                text: "Vercel / 1&1 Ionos",
+                text: "1&1 Ionos",
             },
             {
                 id: 4,
