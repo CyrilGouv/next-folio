@@ -3,7 +3,6 @@
 import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 import MenuFooter from "@/components/UI/Elements/Menu/MenuFooter"
-import Socials from "@/components/UI/Elements/Socials/Socials"
 import CtaFooter from "@/components/UI/Cta/CtaFooter"
 import TextUpperWide from "@/components/UI/Elements/Text/TextUpperWide"
 import animationsFooterScroll from "@/animations/footer/parallax"
