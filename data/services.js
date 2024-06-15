@@ -19,7 +19,7 @@ export const servicesItems = [
     {
         id: 3,
         title: "Headless CMS",
-        body: "J'apprécie particulièrement l’approche Headless WordPress couplée avec un frontend réalisé en Next.js. Cette méthode offre les meilleures performances en termes de rapidité. L’architecture découplée avec un Headless WordPress est également celle qui vous donne le plus de garanties en termes de sécurité. Enfin, les bénéfices de cette approche ont des retombées positives pour votre référencement, car votre site obtient d’excellents scores aux rapports Google Lighthouse.",
+        body: "J'apprécie particulièrement l’approche Headless CMS couplée avec un frontend réalisé en Next.js. Cette méthode offre les meilleures performances en termes de rapidité. L’architecture découplée avec Strapi ou même WordPress est également celle qui vous donne le plus de garanties en termes de sécurité. Enfin, les bénéfices de cette approche ont des retombées positives pour votre référencement, car votre site obtient d’excellents scores aux rapports Google Lighthouse.",
     },
     {
         id: 4,

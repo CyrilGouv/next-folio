@@ -155,11 +155,11 @@ const ContactForm = () => {
 
             <div className={ styles.form__header }>
                 <h2 className={ styles.form__header__title }>
-                    <span className={ styles.form__header__title__inner }>Fill the form</span>
+                    <span className={ styles.form__header__title__inner }>Remplir le formulaire</span>
                 </h2>
 
                 <p className={ styles.form__header__infos }>
-                    <span className={ styles.form__header__infos__inner }>* Required Fields</span>
+                    <span className={ styles.form__header__infos__inner }>* Champs requis</span>
                 </p>
             </div>
 
