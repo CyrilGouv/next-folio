@@ -30,7 +30,7 @@ const LegalesContent = ({ body }) => {
                         <TextReveal text="Hébergeur du site" />
                     </p>
                     <p className={ `${styles.content__text} text--large` }>
-                        <TextReveal text="Le site cyrilgouv.com est hébergé par : Netlify dont le siège est situé à l’adresse suivante : 44 Montgomery St STE 300, San Francisco, CA 94104 United States" />
+                        <TextReveal text="Le site cyrilgouv.com est hébergé par : Vercel, Inc dont le siège social est situé à l’adresse suivante : 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis." />
                     </p>
                 </div>
             ) 
