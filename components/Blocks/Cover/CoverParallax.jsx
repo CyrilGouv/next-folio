@@ -122,7 +122,6 @@ const CoverParallax = () => {
                             alt="Présentation d'un site réalisé pour un client"
                             width={ 1800 } 
                             height={ 941 }
-                            sizes="100vw, (min-width: 1400px) 1280px"
                             priority
                         />
                     </figure>
