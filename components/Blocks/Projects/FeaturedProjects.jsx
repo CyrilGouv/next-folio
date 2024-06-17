@@ -1,7 +1,7 @@
 import TitleSection from "@/components/UI/Elements/Title/TitleSection"
 import CardProject from "@/components/UI/Cards/CardProject"
 import Cta from "@/components/UI/Cta/Cta"
-import { projects } from "@/data/projects"
+import { getFeaturedProjects } from "@/utils/projects/getFeaturedProjects"
 
 import styles from "./FeaturedProjects.module.scss"
 
@@ -9,7 +9,7 @@ import styles from "./FeaturedProjects.module.scss"
 const FeaturedProjects = () => {
 
     // Get all featured projects
-    const featuredWorks = projects.filter(project => project.featured)
+    const featuredWorks = getFeaturedProjects()
 
     return (
         <section className={ `section ${styles.projects}` }>
