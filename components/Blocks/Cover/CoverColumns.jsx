@@ -38,7 +38,7 @@ const CoverColumns = () => {
                             alt={ aboutCoverFirstImage.alt }
                             fill
                             priority
-                            sizes="(min-width: 640px) 32.75vw, 42vw"
+                            sizes="42vw, (min-width: 640px) 32.75vw"
                         />
                     </figure>
                     <figure className={ styles.cover__img }>
@@ -50,7 +50,7 @@ const CoverColumns = () => {
                             alt={ aboutCoverLastImage.alt }
                             fill
                             priority
-                            sizes="(min-width: 640px) 50vw, 54vw"
+                            sizes="54vw, (min-width: 640px) 50vw, (min-width: 1400px) 47vw"
                         />
                     </figure>
                 </div>
