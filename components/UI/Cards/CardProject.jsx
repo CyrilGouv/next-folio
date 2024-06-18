@@ -62,7 +62,7 @@ const CardProject = ({ title, slug, image, year, layout, bgColor }) => {
                         src={ image }
                         alt={ `Projet crée par Cyril Gouv - ${title}` }
                         fill
-                        sizes="(min-width: 1024px) 50vw, 100vw"
+                        sizes="100vw, (min-width: 1024px) 50vw"
                         className={ styles.card__image }
                     />
 

@@ -54,7 +54,7 @@ const CoverParallax = () => {
                             src="/images/cover/line1/cover-line1-07.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -63,7 +63,7 @@ const CoverParallax = () => {
                             src="/images/cover/line1/cover-line1-05.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -72,7 +72,7 @@ const CoverParallax = () => {
                             src="/images/cover/line1/cover-line1-06.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -81,7 +81,7 @@ const CoverParallax = () => {
                             src="/images/cover/line1/cover-line1-02.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -90,7 +90,7 @@ const CoverParallax = () => {
                             src="/images/cover/line1/cover-line1-03.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                             priority
                         />
                     </figure>
@@ -100,7 +100,7 @@ const CoverParallax = () => {
                             src="/images/cover/line1/cover-line1-04.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                             priority
                         />
                     </figure>
@@ -110,7 +110,7 @@ const CoverParallax = () => {
                             src="/images/cover/line1/cover-line1-05.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                 </div>
@@ -121,7 +121,7 @@ const CoverParallax = () => {
                             src="/images/cover/line2/cover-line2-05.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                             priority
                         />
                     </figure>
@@ -131,7 +131,7 @@ const CoverParallax = () => {
                             src="/images/cover/line2/cover-line2-01.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                             priority
                         />
                     </figure>
@@ -141,7 +141,7 @@ const CoverParallax = () => {
                             src="/images/cover/line2/cover-line2-02.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -150,7 +150,7 @@ const CoverParallax = () => {
                             src="/images/cover/line2/cover-line2-03.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -159,7 +159,7 @@ const CoverParallax = () => {
                             src="/images/cover/line2/cover-line2-04.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -168,7 +168,7 @@ const CoverParallax = () => {
                             src="/images/cover/line2/cover-line2-05.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                             priority
                         />
                     </figure>
@@ -180,7 +180,7 @@ const CoverParallax = () => {
                             src="/images/cover/line3/cover-line3-06.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -189,7 +189,7 @@ const CoverParallax = () => {
                             src="/images/cover/line3/cover-line3-03.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -198,7 +198,7 @@ const CoverParallax = () => {
                             src="/images/cover/line3/cover-line3-02.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -207,7 +207,7 @@ const CoverParallax = () => {
                             src="/images/cover/line3/cover-line3-04.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                     <figure className={ styles.cover__figure }>
@@ -216,7 +216,7 @@ const CoverParallax = () => {
                             src="/images/cover/line3/cover-line3-01.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                             priority
                         />
                     </figure>
@@ -226,7 +226,7 @@ const CoverParallax = () => {
                             src="/images/cover/line3/cover-line3-05.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                             priority
                         />
                     </figure>
@@ -236,7 +236,7 @@ const CoverParallax = () => {
                             src="/images/cover/line3/cover-line3-02.webp"
                             alt="Présentation d'un site réalisé pour un client"
                             fill
-                            sizes="33vw"
+                            sizes="80vw, (min-width: 768px) 60vw, (min-width: 1024px) 56vw, (min-width: 1200px) 54vw, (min-width: 1400px) 52vw, (min-width: 1600px) 48vw"
                         />
                     </figure>
                 </div>
