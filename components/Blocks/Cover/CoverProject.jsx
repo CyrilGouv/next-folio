@@ -13,11 +13,10 @@ const CoverProject = ({ image, altText, className = null }) => {
                         className={ styles.cover__img } 
                         src={ image }
                         alt={ altText }
-                        width={ 1920 } 
-                        height={ 800 }    
+                        fill
+                        sizes="100vw" 
                     />
                 </div>
-                
             </div>
         </section>
     )
