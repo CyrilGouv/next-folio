@@ -3,8 +3,8 @@ export const servicesTextInfos = "Je vous offre une gamme complète de services 
 export const servicesItems = [
     {
         id: 0,
-        title: "UI Design",
-        body: "En plaçant l'humain au cœur de ma démarche et en m'appuyant sur des données concrètes, je vous accompagne dans la conception et l'amélioration de votre site web, application, logiciel ou plateforme. Mon approche est orientée business pour répondre aux véritables attentes de vos utilisateurs et offrir une expérience optimale.",
+        title: "Web Design",
+        body: "En plaçant l'utilisateur au cœur de ma démarche, je conçois des sites internet, des landing pages et des boutiques en ligne qui allient esthétique et efficacité. Mon approche est guidée par des données concrètes et une vision orientée business, afin de répondre aux véritables besoins de vos utilisateurs tout en valorisant votre marque. Chaque projet est pensé pour offrir une navigation fluide et intuitive, un design attrayant et une expérience engageante, de manière à capter l’attention dès le premier instant et à encourager l’engagement et la conversion.",
     },
     {
         id: 1,
