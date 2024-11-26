@@ -708,7 +708,7 @@ export const services = [
     {
         id: 61,
         pageTitle: "CYRILGOUV STUDIO — Création de votre site internet à Saint-Pourçain sur Besbre dans l'Allier (03)",
-        slug: "creation-site-internet-saint-pourçain-sur-besbre-allier-03",
+        slug: "creation-site-internet-saint-pourcain-sur-besbre-allier-03",
         localisation: "Saint-Pourçain-sur-Besbre",
         titleOpacity: "Je conçois des sites internet sur-mesure à Saint-Pourçain sur Besbre pour refléter l’unicité de votre activité.",
         aboutText: [
