@@ -13,7 +13,7 @@ import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 import styles from "./IntroContent.module.scss"
 
 
-const IntroContent = ({ page }) => {
+const IntroContent = ({ page, content = null }) => {
 
     // Elements
     const introBottom = useRef(null)
@@ -97,6 +97,39 @@ const IntroContent = ({ page }) => {
                         </div>
                     </div>
                 </>
+            )
+
+        case "services":
+            return (
+                <div className={ styles.intro__content }>
+                    <div>
+                        <Tags text="à propos" position="relative" animations={{ delay: .25 }} />
+                    </div>
+                    <div className={ styles.intro__content__wrapper }>
+                        { content.map((item, idx) => (
+                            <p key={ idx } className={ styles.intro__content__text }>
+                                <TextReveal text={ item } />
+                            </p>
+                        )) }
+                        <p className={ `${styles.intro__content__bottom} text--regular` }>
+                            <Line />
+
+                            <span 
+                                ref={ introBottom } 
+                                className={ styles.intro__content__bottom__text }
+                            >
+                                Faites confiance à mon savoir-faire pour améliorer votre présence en ligne et faire briller votre image de marque.
+                            </span>
+                        </p>
+
+                        <div 
+                            ref={ introCta } 
+                            className={ styles.intro__content__cta }
+                        >
+                            <Button text="En savoir plus" path="/a-propos" />
+                        </div>
+                    </div>
+                </div>
             )
     }
 }

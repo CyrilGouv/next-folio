@@ -1,0 +1,71 @@
+.hero {
+    height: var(--mainHeroHeight);
+
+    &__full {
+        height: 100vh;
+        min-height: 100vh;
+
+        .hero__wrapper {
+            height: 100vh;
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        height: var(--mainHeroHeight);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__title {
+        padding-bottom: var(--paddingM);
+    }
+}
+
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .hero {
+        min-height: 680px;
+    
+        &__full {
+            .hero__wrapper {
+                min-height: 680px;
+            }
+        }
+    
+        &__wrapper {
+            min-height: 680px;
+        }
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .hero {
+        min-height: 765px;
+    
+        &__full {
+            .hero__wrapper {
+                min-height: 765px;
+            }
+        }
+    
+        &__wrapper {
+            min-height: 765px;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    letter-spacing: -.25vw;
+    overflow: hidden;
+    padding-top: var(--paddingS);
+
+    &__word {
+        display: inline-block;
+        overflow: hidden;
+    
+        &__inner {
+            display: inline-block;
+            font-size: clamp(2rem, 5.5vw, 6.688rem);
+            line-height: 1.15;
+        }
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .title {
+        &__word {
+            &__inner {
+                line-height: 1;
+            }
+        }
+    }
+}

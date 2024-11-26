@@ -5,9 +5,9 @@ import { homepageIntroTitle, aboutIntroTitle } from "@/data/content"
 import styles from "./Intro.module.scss"
 
 
-const Intro = ({ page }) => {
+const Intro = ({ page, title = null, content = null }) => {
 
-    const pageTitle = page === "homepage" ? homepageIntroTitle :  page === "about" ? aboutIntroTitle : ""
+    const pageTitle = page === "homepage" ? homepageIntroTitle :  page === "about" ? aboutIntroTitle : page === "services" ? title : ""
     
     return (
         <section className={ styles.intro }>
@@ -15,7 +15,7 @@ const Intro = ({ page }) => {
                 { page !== "about" && (
                     <TitleIntro text={ pageTitle } />
                 ) }
-                <IntroContent page={ page } />
+                <IntroContent page={ page } content={ content } />
             </div>
         </section>
     )
