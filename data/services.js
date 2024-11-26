@@ -980,4 +980,103 @@ export const services = [
             "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
         ]
     },
+    {
+        id: 86,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet dans le département des Landes (40)",
+        slug: "creation-site-internet-departement-des-landes-40",
+        localisation: "Landes (40)",
+        titleOpacity: "Je conçois des sites internet sur-mesure dans les Landes pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans le département des Landes (40) ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
+    {
+        id: 87,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet dans le département de l'Allier (03)",
+        slug: "creation-site-internet-departement-de-l-allier-03",
+        localisation: "Allier (03)",
+        titleOpacity: "Je conçois des sites internet sur-mesure dans l'Allier pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans le département de l'Allier (03) ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
+    {
+        id: 88,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet dans le département de la Gironde (33)",
+        slug: "creation-site-internet-departement-gironde-33",
+        localisation: "Gironde (33)",
+        titleOpacity: "Je conçois des sites internet sur-mesure en Gironde pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans le département de la Gironde (33) ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
+    {
+        id: 89,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet dans le département de la Saône-et-Loire (71)",
+        slug: "creation-site-internet-departement-saone-et-loire-71",
+        localisation: "Saône-et-Loire (71)",
+        titleOpacity: "Je conçois des sites internet sur-mesure en Saône-et-Loire pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans le département de la Saône-et-Loire (71) ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
+    {
+        id: 90,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet dans la région de la Nouvelle-Aquitaine.",
+        slug: "creation-site-internet-region-nouvelle-aquitaine",
+        localisation: "Nouvelle-Aquitaine",
+        titleOpacity: "Je conçois des sites internet sur-mesure en Nouvelle-Aquitaine pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans la région de la Nouvelle-Aquitaine ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
+    {
+        id: 91,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet en Auvergne Rhône-Alpes.",
+        slug: "creation-site-internet-region-auvergne-rhone-alpes",
+        localisation: "Auvergne Rhône-Alpes",
+        titleOpacity: "Je conçois des sites internet sur-mesure en Auvergne Rhône-Alpes pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans la région Auvergne Rhône-Alpes ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
+    {
+        id: 92,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet dans le Bourbonnais.",
+        slug: "creation-site-internet-bourbonnais",
+        localisation: "Bourbonnais",
+        titleOpacity: "Je conçois des sites internet sur-mesure dans le Bourbonnais pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans le Bourbonnais ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
+    {
+        id: 93,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet dans le nord des Landes (40).",
+        slug: "creation-site-internet-nord-des-landes-40",
+        localisation: "Landes (40)",
+        titleOpacity: "Je conçois des sites internet sur-mesure dans le nord des Landes pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans le nord du département des Landes (40) ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
+    {
+        id: 94,
+        pageTitle: "CYRILGOUV STUDIO — Création de votre site internet dans le Sud-Gironde (33).",
+        slug: "creation-site-internet-sud-gironde-33",
+        localisation: "Sud-Gironde (33)",
+        titleOpacity: "Je conçois des sites internet sur-mesure dans le Sud-Gironde pour refléter l’unicité de votre activité.",
+        aboutText: [
+            "Que vous soyez dans le Sud-Gironde (33) ou même à distance, je suis là pour vous accompagner en stratégie, web design, développement ou création d’applications. Grâce à mon expertise et mon expérience, je propose des solutions interactives et uniques, pensées pour engager votre audience et refléter fidèlement l’identité de votre marque.",
+            "Ensemble, nous transformerons vos idées en réalités numériques percutantes. De la conception à la réalisation, je m’engage à créer des solutions sur mesure qui répondent à vos besoins tout en dépassant vos attentes, où que vous soyez.",
+        ]
+    },
 ]
