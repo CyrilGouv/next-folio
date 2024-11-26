@@ -9,11 +9,11 @@ import Footer from "@/components/Layout/Footer/Footer";
 
 
 export const metadata = {
-  title: "Cyril Gouv • Développeur front-end freelance",
-  description: "Créateur de sites et applications web sur-mesure dédiée à votre performance, votre visibilité et votre notoriété depuis 2018 à Biscarrosse.",
+  title: "Cyril Gouv — Création de sites internet modernes et sur-mesure à Biscarrosse",
+  description: "Créateur de sites internet et d’applications web modernes et sur-mesure, dédiés à votre performance, visibilité et notoriété depuis 2018 à Biscarrosse.",
   openGraph: {
-    title: "Cyril Gouv • Développeur front-end freelance",
-    description: "Créateur de sites et applications web sur-mesure dédiée à votre performance, votre visibilité et votre notoriété depuis 2018 à Biscarrosse.",
+    title: "Cyril Gouv — Création de site internet modernes et sur-mesure à Biscarrosse",
+    description: "Créateur de sites internet et d’applications web modernes et sur-mesure, dédiés à votre performance, visibilité et notoriété depuis 2018 à Biscarrosse.",
     images: ["/images/seo/cyrilgouv-01.png"]
   }
 }

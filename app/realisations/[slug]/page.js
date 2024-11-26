@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
     const project = getProjectBySlug(params)
 
     return {
-      title: `${project.name} • Cyril Gouv`,
+      title: `${project.name} — Cyril Gouv`,
       description: project.description,
       openGraph: {
         title: project.name,

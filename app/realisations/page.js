@@ -4,10 +4,10 @@ import Footer from "@/components/Layout/Footer/Footer"
 
 
 export const metadata = {
-  title: "Réalisations • Cyril Gouv",
+  title: "Réalisations — Cyril Gouv",
   description: "Découvrez l'étendue de mon savoir-faire à travers ces récentes collaborations clients détaillées.",
   openGraph: {
-    title: "Réalisations • Cyril Gouv",
+    title: "Réalisations — Cyril Gouv",
     description: "Découvrez l'étendue de mon savoir-faire à travers ces récentes collaborations clients détaillées.",
     images: ["/images/seo/cyrilgouv-02.png"]
   }
