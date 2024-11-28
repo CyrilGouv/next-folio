@@ -20,6 +20,9 @@ const LegalesContent = ({ body }) => {
                     <p className={ `${styles.content__text} text--large` }>
                         <TextReveal text="Adresse e-mail de contact : hello@cyrilgouv.com" />
                     </p>
+                    <p className={ `${styles.content__text} text--large` }>
+                        <TextReveal text="Siret : 842 855 025 00016" />
+                    </p>
                     <p className={ `${styles.content__text} ${styles.content__title} text--large text--opacity` }>
                         <TextReveal text="Création et réalisation" />
                     </p>
