@@ -1,4 +1,5 @@
 User-Agent: *
-Allow: /
+Disallow: /contact/confirmation
+Disallow: /contact/erreur
 
 Sitemap: https://cyrilgouv.com/sitemap.xml
