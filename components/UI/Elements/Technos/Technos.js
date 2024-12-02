@@ -1,7 +1,6 @@
 "use client"
 
 import { useRef } from "react"
-import Image from "next/image"
 import { useGSAP } from "@gsap/react"
 import { skillItems } from "@/data/skills"
 import opacityAndTransformY from "@/animations/image/opacityAndTransformY"

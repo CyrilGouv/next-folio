@@ -18,6 +18,7 @@
     &__text {
         margin-bottom: var(--paddingM);
         line-height: 1.5;
+        letter-spacing: normal;
 
         &:first-of-type {
             margin-bottom: var(--paddingS);
@@ -30,6 +31,10 @@
         .intro__content__wrapper {
             margin-left: 0;
             padding-bottom: var(--paddingXL);
+        }
+
+        .intro__content__title {
+            margin-bottom: var(--paddingS) !important;
         }
 
         .intro__content__text:last-of-type {

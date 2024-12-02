@@ -38,7 +38,7 @@ const TitlePage = ({ page }) => {
     switch(page) {
         case "homepage":
             return (
-                <h1 className={ styles.title }>
+                <div className={ `${styles.title} title--h1` }>
                     <span className={ styles.title__line }>
                         <span ref={ firstLine } className={ styles.title__line__word }>Créativité</span>
                     </span>
@@ -46,12 +46,12 @@ const TitlePage = ({ page }) => {
                         <span className={ `${styles.title__line__word} text--opacity` }>&</span>
                         <span className={ styles.title__line__word }>Innovation</span>
                     </span>
-                </h1>
+                </div>
             )
         
         case "works":
             return (
-                <h1 className={ styles.title }>
+                <div className={ `${styles.title} title--h1` }>
                     <span className={ styles.title__line }>
                         <span ref={ firstLine } className={ styles.title__line__word }>Portfolio</span>
                     </span>
@@ -59,12 +59,12 @@ const TitlePage = ({ page }) => {
                     <span className={ `${styles.title__line__word} ${styles.title__line__sub} text--opacity` }><sub>©</sub></span>
                         <span className={ styles.title__line__word }>18-24</span>
                     </span>
-                </h1>
+                </div>
             )
 
         case "about":
             return (
-                <h1 className={ styles.title }>
+                <div className={ `${styles.title} title--h1` }>
                     <span className={ styles.title__line }>
                         <span ref={ firstLine } className={ styles.title__line__word }>Design</span>
                     </span>
@@ -72,12 +72,12 @@ const TitlePage = ({ page }) => {
                         <span className={ `${styles.title__line__word} text--opacity` }>&</span>
                         <span className={ styles.title__line__word }>Code</span>
                     </span>
-                </h1>
+                </div>
             )
 
         case "testimonials":
             return (
-                <h1 className={ `${styles.title} ${styles.title__testimonials}` }>
+                <div className={ `${styles.title} title--h1 ${styles.title__testimonials}` }>
                     <span className={ `${styles.title__line} ${styles.title__line__split}` }>
                         <span ref={ firstLine } className={ styles.title__line__word }>Avis</span>
                         <span className={ styles.title__line__right }>
@@ -107,12 +107,12 @@ const TitlePage = ({ page }) => {
                         </svg>
                         <span className={ styles.title__line__word }>Clients</span>
                     </span>
-                </h1>
+                </div>
             )
 
         case "contact":
             return (
-                <h1 className={ styles.title }>
+                <div className={ `${styles.title} title--h1` }>
                     <span className={ `${styles.title__line} ${styles.title__line__split}` }>
                         <span ref={ firstLine } className={ styles.title__line__word }>Let's</span>
                         <span className={ styles.title__line__right }>
@@ -141,7 +141,7 @@ const TitlePage = ({ page }) => {
                         </svg>
                         <span className={ styles.title__line__word }>Talk !</span>
                     </span>
-                </h1>
+                </div>
             )
 
         case "confirmation":

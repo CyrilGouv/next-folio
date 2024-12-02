@@ -67,9 +67,9 @@ const IntroContent = ({ page, content = null }) => {
                 <>
                     <div className={ `${styles.intro__content} ${styles.intro__content__first}` }>
                         <div className={ styles.intro__content__wrapper }>
-                            <p className={ styles.intro__content__text }>
+                            <h2 className={ `${styles.intro__content__text} ${styles.intro__content__title}` }>
                                 <TextReveal text="En tant qu'indépendant passionné et développeur web depuis plusieurs années, je crée avec dévouement des sites internet à la fois accueillants et professionnels. Chaque projet est une nouvelle opportunité d'excellence où je mets en œuvre mon savoir-faire avec minutie et fierté, pour offrir à mes clients des réalisations à la hauteur de leurs attentes." />
-                            </p>
+                            </h2>
                             <p className={ styles.intro__content__text }>
                                 <TextReveal text="Fort d'un amour pour l'esthétisme, je conçois chacun de mes projets sur-mesure avec une attention particulière à la qualité sous toutes ses formes." />
                             </p>
@@ -82,9 +82,9 @@ const IntroContent = ({ page, content = null }) => {
                         </div>
 
                         <div className={ styles.intro__content__wrapper }>
-                            <p className={ styles.intro__content__text }>
+                            <h3 className={ styles.intro__content__text }>
                                 <TextReveal text="Pour mener à bien votre projet, je m'appuie sur un ensemble de technologies modernes et performantes :" />
-                            </p>
+                            </h3>
                             
                             <Technos />
 

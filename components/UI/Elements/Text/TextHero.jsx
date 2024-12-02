@@ -65,12 +65,12 @@ const TextHero = ({ text, layout = "default", image = false, video = false, loca
                         </video>
                     </figure>
                 ) }
-                <p 
+                <h1 
                     ref={ textEl } 
-                    className={ `${styles.text__inner} text--regular` }
+                    className={ `${styles.text__inner} title--p text--regular` }
                 >
                     { text }
-                </p>
+                </h1>
             </div>
         )
     }
@@ -91,12 +91,12 @@ const TextHero = ({ text, layout = "default", image = false, video = false, loca
                     </svg>
                     <span className={ styles.text__location__inner }>Biscarrosse, FR</span>
                 </p>
-                <p 
+                <h1 
                     ref={ textEl } 
-                    className={ `${styles.text__inner} text--regular` }
+                    className={ `${styles.text__inner} title--p text--regular` }
                 >
                     { text }
-                </p>
+                </h1>
             </div>
         )
     }
