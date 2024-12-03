@@ -9,7 +9,7 @@ export const projectsHeroText = "Découvrez l'étendue de mon savoir-faire à tr
 
 
 // COVER ABOUT IMAGES
-export const aboutHeroText = "Développeur web indépendant passionné depuis 2018 et spécialiste en création de site web, design graphique et développement full stack."
+export const aboutHeroText = "Développeur web indépendant passionné depuis 2018 et spécialiste en création de site web, design graphique et développement front-end."
 export const aboutCoverFirstImage = {
     img: "/images/about/about-cyril-01.webp",
     alt: "Cyril Gouv c'est moi"
