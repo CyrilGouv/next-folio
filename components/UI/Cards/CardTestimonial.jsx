@@ -45,7 +45,7 @@ const CardTestimonial = ({ count, name, avatar, company, body }) => {
                     </span>
                 </p>
 
-                <h2 className={ `${styles.card__body} text--large` }>
+                <h2 className={ `${styles.card__body} text--large` } aria-label={ body }>
                     <TextReveal text={ body } />
                 </h2>
 

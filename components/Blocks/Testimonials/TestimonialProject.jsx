@@ -38,7 +38,7 @@ const TestimonialProject = ({ testimonial }) => {
                             className={ styles.testimonial__avatar }
                         />
 
-                        <p className={ `${styles.testimonial__text} text--large` }>
+                        <p className={ `${styles.testimonial__text} text--large` } aria-label={ testimonial.text }>
                             <TextReveal text={ testimonial.text } />
                         </p>
 

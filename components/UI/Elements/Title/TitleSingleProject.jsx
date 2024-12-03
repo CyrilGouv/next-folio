@@ -29,7 +29,7 @@ const TitleSingleProject = ({ title }) => {
 
 
     return (
-        <h1 ref={ titleEl } className={ styles.title }>
+        <h1 ref={ titleEl } className={ styles.title } aria-label={ title }>
             <span ref={ arrowEl } className={ `${styles.title__arrow} text--opacity` }>
                 <svg version="1.1" viewBox="0 0 17 12" xmlns="http://www.w3.org/2000/svg">
                     <g fill="none" fillRule="evenodd">
@@ -44,6 +44,7 @@ const TitleSingleProject = ({ title }) => {
                 <span 
                     key={ `${word}-${idx}` }
                     className={ styles.title__word }
+                    aria-hidden="true"
                 >
                     <span 
                         ref={ el => wordEls.current.push(el) }

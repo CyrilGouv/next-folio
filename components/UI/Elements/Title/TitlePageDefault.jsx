@@ -25,11 +25,12 @@ const TitlePageDefault = ({ page, title }) => {
     switch(page) {
         case "services":
             return (
-                <h1 className={ styles.title }>
+                <h1 className={ styles.title } aria-label={ title }>
                     { words.map((word, idx) => (
                         <span 
                             key={ `${word}-${idx}` }
                             className={ styles.title__word }
+                            aria-hidden="true"
                         >
                             <span 
                                 ref={ el => wordEls.current.push(el) }

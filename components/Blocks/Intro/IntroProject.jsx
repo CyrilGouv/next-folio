@@ -13,7 +13,7 @@ const DescriptionProject = ({ description }) => {
                         type="outer"
                     />
                     
-                    <p className={ styles.description__text }>
+                    <p className={ styles.description__text } aria-label={ description }>
                         <TextReveal 
                             text={ description }
                         />

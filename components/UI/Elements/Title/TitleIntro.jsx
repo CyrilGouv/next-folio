@@ -27,13 +27,14 @@ const TitleIntro = ({ text, options = {} }) => {
     })
 
     return (
-        <div ref={ section } className={  `${styles.title} ${options?.className ? styles.title__alt : ""}` }>
-            <h2 className={ `${styles.title__text} ${options?.className ? options.className : "text--XLarge"}` }>
+        <div ref={ section } className={ `${styles.title} ${options?.className ? styles.title__alt : ""}` }>
+            <h2 className={ `${styles.title__text} ${options?.className ? options.className : "text--XLarge"}` } aria-label={ text }>
                 { words.map((word, idx) => {
                     return (
                         <span
                             key={ idx }
                             className={ styles.title__text__words }
+                            aria-hidden="true"
                         >
                             { word.map((letter, idx) => (
                                 <span

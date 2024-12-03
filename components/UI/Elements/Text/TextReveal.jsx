@@ -23,6 +23,7 @@ const TextReveal = ({ text, delay = 0.25 }) => {
         <span 
             ref={ section }
             className={ styles.text__reveal }
+            aria-hidden="true"
         >
             { words.map((word, idx) => (
                 <span

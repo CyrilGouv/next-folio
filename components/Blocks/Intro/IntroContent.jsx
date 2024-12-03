@@ -35,10 +35,10 @@ const IntroContent = ({ page, content = null }) => {
                         <Tags text="à propos" position="relative" animations={{ delay: .25 }} />
                     </div>
                     <div className={ styles.intro__content__wrapper }>
-                        <p className={ styles.intro__content__text }>
+                        <p className={ styles.intro__content__text } aria-label="Que vous ayez besoin d'aide en stratégie, web design, développement ou création d'applications, je possède l'expertise et l'expérience pour offrir des solutions interactives et uniques pour votre audience. Chaque projet est une opportunité de créer une expérience qui reflète fidèlement votre marque et engage vos clients de manière authentique.">
                             <TextReveal text="Que vous ayez besoin d'aide en stratégie, web design, développement ou création d'applications, je possède l'expertise et l'expérience pour offrir des solutions interactives et uniques pour votre audience. Chaque projet est une opportunité de créer une expérience qui reflète fidèlement votre marque et engage vos clients de manière authentique." />
                         </p>
-                        <p className={ styles.intro__content__text }>
+                        <p className={ styles.intro__content__text } aria-label="En travaillant ensemble, je transformerai vos idées en réalités numériques percutantes. De la conception à la réalisation, je m'engage à fournir des solutions sur mesure qui non seulement répondent à vos besoins, mais surpassent vos attentes.">
                             <TextReveal text="En travaillant ensemble, je transformerai vos idées en réalités numériques percutantes. De la conception à la réalisation, je m'engage à fournir des solutions sur mesure qui non seulement répondent à vos besoins, mais surpassent vos attentes." />
                         </p>
                         <p className={ `${styles.intro__content__bottom} text--regular` }>
@@ -67,10 +67,10 @@ const IntroContent = ({ page, content = null }) => {
                 <>
                     <div className={ `${styles.intro__content} ${styles.intro__content__first}` }>
                         <div className={ styles.intro__content__wrapper }>
-                            <h2 className={ `${styles.intro__content__text} ${styles.intro__content__title}` }>
+                            <h2 className={ `${styles.intro__content__text} ${styles.intro__content__title}` }  aria-label="En tant qu'indépendant passionné et développeur web depuis plusieurs années, je crée avec dévouement des sites internet à la fois accueillants et professionnels. Chaque projet est une nouvelle opportunité d'excellence où je mets en œuvre mon savoir-faire avec minutie et fierté, pour offrir à mes clients des réalisations à la hauteur de leurs attentes.">
                                 <TextReveal text="En tant qu'indépendant passionné et développeur web depuis plusieurs années, je crée avec dévouement des sites internet à la fois accueillants et professionnels. Chaque projet est une nouvelle opportunité d'excellence où je mets en œuvre mon savoir-faire avec minutie et fierté, pour offrir à mes clients des réalisations à la hauteur de leurs attentes." />
                             </h2>
-                            <p className={ styles.intro__content__text }>
+                            <p className={ styles.intro__content__text } aria-label="Fort d'un amour pour l'esthétisme, je conçois chacun de mes projets sur-mesure avec une attention particulière à la qualité sous toutes ses formes.">
                                 <TextReveal text="Fort d'un amour pour l'esthétisme, je conçois chacun de mes projets sur-mesure avec une attention particulière à la qualité sous toutes ses formes." />
                             </p>
                         </div>
@@ -82,7 +82,7 @@ const IntroContent = ({ page, content = null }) => {
                         </div>
 
                         <div className={ styles.intro__content__wrapper }>
-                            <h3 className={ styles.intro__content__text }>
+                            <h3 className={ styles.intro__content__text } aria-label="Pour mener à bien votre projet, je m'appuie sur un ensemble de technologies modernes et performantes :">
                                 <TextReveal text="Pour mener à bien votre projet, je m'appuie sur un ensemble de technologies modernes et performantes :" />
                             </h3>
                             
@@ -107,7 +107,7 @@ const IntroContent = ({ page, content = null }) => {
                     </div>
                     <div className={ styles.intro__content__wrapper }>
                         { content.map((item, idx) => (
-                            <p key={ idx } className={ styles.intro__content__text }>
+                            <p key={ idx } className={ styles.intro__content__text } aria-label={ item }>
                                 <TextReveal text={ item } />
                             </p>
                         )) }

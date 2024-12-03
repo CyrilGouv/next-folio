@@ -30,11 +30,12 @@ const CardList = ({ item }) => {
                 <span className={ `${styles.card__title__id} text--regular text--opacity`}>(0{ id + 1 })</span>
                 <span className={ styles.card__title__content }>{ title }</span> 
             </h4>
-            <p className={ `${styles.card__body} text--large` }>
+            <p className={ `${styles.card__body} text--large` } aria-label={ body }>
                 { words.map((word, idx) => (
                     <span 
                         key={ idx }
                         className={ styles.card__body__word }
+                        aria-hidden="true"
                     >
                         <span 
                             ref={ el => wordEls.current.push(el) } 
