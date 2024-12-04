@@ -9,10 +9,10 @@ export const projectsHeroText = "Découvrez l'étendue de mon savoir-faire à tr
 
 
 // COVER ABOUT IMAGES
-export const aboutHeroText = "Développeur web indépendant passionné depuis 2018 et spécialiste en création de site web, design graphique et développement front-end."
+export const aboutHeroText = "Développeur web indépendant à Biscarrosse depuis 2018, spécialiste en création de sites internet et en développement front-end."
 export const aboutCoverFirstImage = {
-    img: "/images/about/about-cyril-01.webp",
-    alt: "Cyril Gouv c'est moi"
+    img: "/images/about/developpement-web-biscarrosse-cyrilgouv.webp",
+    alt: "Développeur web indépendant à Biscarrosse - Cyril Gouv c'est moi"
 }
 export const aboutCoverLastImage = {
     img: "/images/about/bg-about-alt-01.webp",

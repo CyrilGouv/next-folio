@@ -7,11 +7,11 @@ import Footer from "@/components/Layout/Footer/Footer"
 
 
 export const metadata = {
-    title: "À propos — Cyril Gouv : Développeur web indépendant (free-lance) à Biscarrosse",
-    description: "Développeur web indépendant passionné depuis 2018 et spécialiste en création de site web, design graphique et développement front-end à Biscarrosse.",
+    title: "Développeur web indépendant à Biscarrosse — Cyril Gouv",
+    description: "Développeur web indépendant à Biscarrosse depuis 2018, je suis spécialisé dans la création de sites internet, le design graphique et le développement front-end. Alliez performance et esthétique pour vos projets web.",
     openGraph: {
-      title: "À propos — Cyril Gouv : Développeur web indépendant (free-lance) à Biscarrosse",
-      description: "Développeur web indépendant passionné depuis 2018 et spécialiste en création de site web, design graphique et développement front-end à Biscarrosse.",
+      title: "Développeur web indépendant à Biscarrosse — Cyril Gouv",
+      description: "Développeur web indépendant à Biscarrosse depuis 2018, je suis spécialisé dans la création de sites internet, le design graphique et le développement front-end. Alliez performance et esthétique pour vos projets web.",
       images: ["/images/seo/cyrilgouv-03.png"]
     }
 }

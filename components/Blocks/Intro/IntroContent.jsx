@@ -67,11 +67,14 @@ const IntroContent = ({ page, content = null }) => {
                 <>
                     <div className={ `${styles.intro__content} ${styles.intro__content__first}` }>
                         <div className={ styles.intro__content__wrapper }>
-                            <h2 className={ `${styles.intro__content__text} ${styles.intro__content__title}` }  aria-label="En tant qu'indépendant passionné et développeur web depuis plusieurs années, je crée avec dévouement des sites internet à la fois accueillants et professionnels. Chaque projet est une nouvelle opportunité d'excellence où je mets en œuvre mon savoir-faire avec minutie et fierté, pour offrir à mes clients des réalisations à la hauteur de leurs attentes.">
-                                <TextReveal text="En tant qu'indépendant passionné et développeur web depuis plusieurs années, je crée avec dévouement des sites internet à la fois accueillants et professionnels. Chaque projet est une nouvelle opportunité d'excellence où je mets en œuvre mon savoir-faire avec minutie et fierté, pour offrir à mes clients des réalisations à la hauteur de leurs attentes." />
+                            <h2 className={ `${styles.intro__content__text} ${styles.intro__content__title}` }  aria-label="Avec passion et expertise, je conçois des sites internet professionnels et sur-mesure pour répondre à vos besoins.">
+                                <TextReveal text="Avec passion et expertise, je conçois des sites internet professionnels et sur-mesure pour répondre à vos besoins." />
                             </h2>
-                            <p className={ styles.intro__content__text } aria-label="Fort d'un amour pour l'esthétisme, je conçois chacun de mes projets sur-mesure avec une attention particulière à la qualité sous toutes ses formes.">
-                                <TextReveal text="Fort d'un amour pour l'esthétisme, je conçois chacun de mes projets sur-mesure avec une attention particulière à la qualité sous toutes ses formes." />
+                            <p className={ styles.intro__content__text } aria-label="En tant qu'indépendant passionné et développeur web depuis plusieurs années, je m'engage à concevoir des sites internet accueillants, performants et adaptés à vos besoins. Chaque projet est une opportunité unique où je mets en œuvre mon savoir-faire et ma créativité pour proposer des solutions modernes et efficaces. Que vous soyez une entreprise locale à Biscarrosse ou un client à distance, mon objectif est de traduire vos idées en réalisations numériques concrètes.">
+                                <TextReveal text="En tant qu'indépendant passionné et développeur web depuis plusieurs années, je m'engage à concevoir des sites internet accueillants, performants et adaptés à vos besoins. Chaque projet est une opportunité unique où je mets en œuvre mon savoir-faire et ma créativité pour proposer des solutions modernes et efficaces. Que vous soyez une entreprise locale à Biscarrosse ou un client à distance, mon objectif est de traduire vos idées en réalisations numériques concrètes." />
+                            </p>
+                            <p className={ styles.intro__content__text } aria-label="Installé à Biscarrosse, je combine expertise technique et sensibilité esthétique pour offrir des créations sur-mesure. Du design visuel à la performance technique, chaque étape est réalisée avec minutie pour garantir une expérience utilisateur optimale. Ma démarche allie professionnalisme, passion et innovation pour répondre aux attentes les plus exigeantes.">
+                                <TextReveal text="Installé à Biscarrosse, je combine expertise technique et sensibilité esthétique pour offrir des créations sur-mesure. Du design visuel à la performance technique, chaque étape est réalisée avec minutie pour garantir une expérience utilisateur optimale. Ma démarche allie professionnalisme, passion et innovation pour répondre aux attentes les plus exigeantes." />
                             </p>
                         </div>
                     </div>
@@ -82,8 +85,8 @@ const IntroContent = ({ page, content = null }) => {
                         </div>
 
                         <div className={ styles.intro__content__wrapper }>
-                            <h3 className={ styles.intro__content__text } aria-label="Pour mener à bien votre projet, je m'appuie sur un ensemble de technologies modernes et performantes :">
-                                <TextReveal text="Pour mener à bien votre projet, je m'appuie sur un ensemble de technologies modernes et performantes :" />
+                            <h3 className={ styles.intro__content__text } aria-label="Pour mener à bien votre projet de site internet ou de développement web, je m'appuie sur un ensemble de technologies modernes et performantes :">
+                                <TextReveal text="Pour mener à bien votre projet de site internet ou de développement web, je m'appuie sur un ensemble de technologies modernes et performantes :" />
                             </h3>
                             
                             <Technos />
