@@ -49,3 +49,26 @@ export const menuBottomItems = [
         path: '/contact',
     },
 ]
+
+export const menuGeoItems = [
+    {
+        id: 0,
+        name: 'Agence web Parentis-en-Born',
+        path: '/services/creation-site-internet-parentis-en-born-landes-40',
+    },
+    {
+        id: 1,
+        name: 'Agence web Sanguinet',
+        path: '/services/creation-site-internet-sanguinet-landes-40',
+    },
+    {
+        id: 2,
+        name: 'Agence web Mimizan',
+        path: '/services/creation-site-internet-mimizan-landes-40',
+    },
+    {
+        id: 3,
+        name: 'Agence web Bassin d\'Arcachon',
+        path: '/services/creation-site-internet-bassin-arcachon-gironde-33',
+    },
+]

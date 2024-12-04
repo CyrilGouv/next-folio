@@ -3,10 +3,14 @@
     padding: 0;
     list-style: none;
 
+    &:first-of-type {
+        margin-right: 2rem;
+    }
+
 
     &__item {
         margin-bottom: .85rem;
-        font-size: clamp(15px, 1.5vw, 1.275rem);
+        font-size: clamp(13px, 1.5vw, 1.125rem);
 
         &__link {
             color: var(--lightThemeFontColor);
