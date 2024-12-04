@@ -31,7 +31,7 @@ const FeaturedProjects = () => {
                 </ul>
                 
                 <Cta 
-                    ctaText="Chaque projet est réalisé avec soin et inventivité. Plus qu’une simple volonté, c’est une vision commune que nous partageons. Découvrez mon portfolio et laissez-vous inspirer par les solutions créatives et personnalisées que j'ai développées pour mes clients."
+                    ctaText="Découvrez mes réalisations en création de sites internet pour TPE/PME à Biscarrosse et ailleurs. Chaque projet reflète ma passion pour le design sur-mesure et l’innovation digitale. Que vous soyez basé à Biscarrosse ou que vous ayez besoin d’un site web conçu à distance, je m’engage à fournir des solutions personnalisées qui répondent parfaitement à vos attentes."
                     btnText="Tous les projets"
                     btnLink="/realisations"
                 />

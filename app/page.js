@@ -9,11 +9,11 @@ import Footer from "@/components/Layout/Footer/Footer";
 
 
 export const metadata = {
-  title: "Cyril Gouv — Création de sites internet modernes et sur-mesure à Biscarrosse",
-  description: "Créateur de sites internet et d’applications web modernes et sur-mesure, dédiés à votre performance, visibilité et notoriété depuis 2018 à Biscarrosse.",
+  title: "Création site internet Biscarrosse — Cyril Gouv, des sites modernes et sur-mesure",
+  description: "Création de sites internet à Biscarrosse : offrez à votre entreprise un site moderne et sur-mesure. Boostez votre visibilité en ligne dès aujourd’hui avec Cyril Gouv.",
   openGraph: {
-    title: "Cyril Gouv — Création de site internet modernes et sur-mesure à Biscarrosse",
-    description: "Créateur de sites internet et d’applications web modernes et sur-mesure, dédiés à votre performance, visibilité et notoriété depuis 2018 à Biscarrosse.",
+    title: "Création site internet Biscarrosse — Cyril Gouv, des sites modernes et sur-mesure",
+    description: "Création de sites internet à Biscarrosse : offrez à votre entreprise un site moderne et sur-mesure. Boostez votre visibilité en ligne dès aujourd’hui avec Cyril Gouv.",
     images: ["/images/seo/cyrilgouv-01.png"]
   }
 }
