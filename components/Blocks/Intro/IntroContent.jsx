@@ -56,7 +56,7 @@ const IntroContent = ({ page, content = null }) => {
                             ref={ introCta } 
                             className={ styles.intro__content__cta }
                         >
-                            <Button text="En savoir plus" path="/a-propos" />
+                            <Button text="En savoir plus" path="/developpeur-web-biscarrosse" />
                         </div>
                     </div>
                 </div>

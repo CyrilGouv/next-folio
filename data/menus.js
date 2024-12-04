@@ -36,7 +36,7 @@ export const menuBottomItems = [
     {
         id: 2,
         name: 'À propos',
-        path: '/a-propos',
+        path: '/developpeur-web-biscarrosse',
     },
     {
         id: 3,
