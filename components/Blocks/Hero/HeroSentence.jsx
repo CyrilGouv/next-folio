@@ -6,17 +6,15 @@ import { homepageHeroText } from "@/data/content"
 import styles from "./HeroSentence.module.scss"
 
 
-const HeroSentence = ({ page, title, localisation }) => {
+const HeroSentence = ({ page, title, localisation, text }) => {
 
-    const textHero = page === "services" ? homepageHeroText : ""
-    
     return (
         <section className={ styles.hero }>
             <div className="container">
                 <div className={ styles.hero__wrapper }>
                     <div className={ styles.hero__title }>
                         <TextHero 
-                            text={ textHero } 
+                            text={ text } 
                             layout="services" 
                             localisation={ localisation } 
                         />

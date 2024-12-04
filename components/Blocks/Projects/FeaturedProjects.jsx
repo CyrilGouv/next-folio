@@ -6,7 +6,7 @@ import { getFeaturedProjects } from "@/utils/projects/getFeaturedProjects"
 import styles from "./FeaturedProjects.module.scss"
 
 
-const FeaturedProjects = () => {
+const FeaturedProjects = ({ ctaText = null }) => {
 
     // Get all featured projects
     const featuredWorks = getFeaturedProjects()
@@ -31,7 +31,7 @@ const FeaturedProjects = () => {
                 </ul>
                 
                 <Cta 
-                    ctaText="Découvrez mes réalisations en création de sites internet pour TPE/PME à Biscarrosse et ailleurs. Chaque projet reflète ma passion pour le design sur-mesure et l’innovation digitale. Que vous soyez basé à Biscarrosse ou que vous ayez besoin d’un site web conçu à distance, je m’engage à fournir des solutions personnalisées qui répondent parfaitement à vos attentes."
+                    ctaText={ ctaText ? ctaText : "Découvrez mes réalisations en création de sites internet pour TPE/PME à Biscarrosse et ailleurs. Chaque projet reflète ma passion pour le design sur-mesure et l’innovation digitale. Que vous soyez basé à Biscarrosse ou que vous ayez besoin d’un site web conçu à distance, je m’engage à fournir des solutions personnalisées qui répondent parfaitement à vos attentes." }
                     btnText="Tous les projets"
                     btnLink="/realisations"
                 />

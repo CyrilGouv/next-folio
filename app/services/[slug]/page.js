@@ -17,11 +17,11 @@ export async function generateMetadata({ params }) {
     const service = getServiceBySlug(params)
 
     return {
-      title: service.pageTitle,
-      description: service.pageTitle,
+      title: service?.meta?.title ? service.meta.title : service.pageTitle,
+      description: service?.meta?.description ? service.meta.description : service.pageTitle,
       openGraph: {
-        title: service.pageTitle,
-        description: service.pageTitle,
+        title: service?.meta?.title ? service.meta.title : service.pageTitle,
+        description: service?.meta?.description ? service.meta.description : service.pageTitle,
         images: ["/images/seo/cyrilgouv-01.png"]
       },
     }
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
 export default async function SingleService({ params }) {
 
     const page = "services"
-    const { pageTitle, localisation, titleOpacity, aboutText } = getServiceBySlug(params)
+    const { pageTitle, localisation, meta, titleOpacity, aboutText, projects, servicesItems } = getServiceBySlug(params)
 
     return (
         <>
@@ -39,6 +39,7 @@ export default async function SingleService({ params }) {
                 page={ page } 
                 title={ pageTitle } 
                 localisation={ localisation }
+                text={ meta.description }
             />
             <CoverParallax />
             <Intro 
@@ -46,9 +47,9 @@ export default async function SingleService({ params }) {
                 title={ titleOpacity }
                 content={ aboutText } 
             />
-            <FeaturedProjects />
+            <FeaturedProjects ctaText={ projects.ctaText } />
             <TextParallax text="Make you shine" layout="section" />
-            <SectionLists type="services" />
+            <SectionLists type="services" itemLists={ servicesItems } />
             <FeaturedTestimonials />
             <Footer />
         </>

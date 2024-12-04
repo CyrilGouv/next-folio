@@ -7,10 +7,10 @@ import { approachTextInfos, approachItems } from "@/data/approches"
 import styles from "./SectionLists.module.scss"
 
 
-const SectionLists = ({ type }) => {
+const SectionLists = ({ type, itemLists = null }) => {
     const tagText = type === "services" ? "services" : type === "approaches" ? "approches" : ""
     const textInfo = type === "services" ? servicesTextInfos : type === "approaches" ? approachTextInfos : ""
-    const items = type === "services" ? servicesItems : type === "approaches" ? approachItems : ""
+    const items = type === "services" && !itemLists ? servicesItems : type === "services" && itemLists ? itemLists : type === "approaches" ? approachItems : ""
 
     const classNames = type === "approaches" ? styles.lists__approaches : ""
 
