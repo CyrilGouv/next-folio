@@ -238,7 +238,108 @@ export const services = [
                 body: "Améliorez votre visibilité sur Google grâce à mes services d’optimisation SEO, pensés pour les entreprises du Bassin d'Arcachon. J’intègre les meilleures pratiques pour un site bien structuré, rapide et capable de convertir vos visiteurs en clients. Profitez d’une visibilité accrue et d’un site conçu pour réussir.",
             }
         ]
-    }
+    },
+    {
+        id: 4,
+        meta: {
+            title: "Agence web Cyril Gouv — Création de site internet à Bordeaux pour TPE/PME",
+            description: "À Bordeaux, Cyril Gouv, développeur web indépendant, conçoit des sites internet performants sur-mesure. Design moderne, SEO optimisé et solutions adaptées à vos besoins.",
+        },
+        pageTitle: "Création de site internet à Bordeaux — Mon expertise au service de votre projet web",
+        slug: "creation-site-internet-bordeaux-gironde-33",
+        localisation: "Bordeaux",
+        titleOpacity: "Une agence web indépendante pour répondre aux besoins des entreprises bordelaises ambitieuses.",
+        aboutText: [
+            "Que vous soyez une entreprise bordelaise, un entrepreneur ou une association, votre présence en ligne mérite une attention particulière.",
+            "En tant que développeur web passionné, je mets un point d'honneur à accompagner les entreprises bordelaises dans leurs projets digitaux. Que vous soyez à la recherche d’un site vitrine, d’une boutique en ligne ou d’une application web sur-mesure, mon expertise en design, développement et SEO vous garantit un résultat à la hauteur de vos ambitions.",
+            "Situé près de Bordeaux, je travaille en étroite collaboration avec mes clients pour concevoir des solutions uniques, pensées pour refléter leur image de marque tout en répondant aux attentes de leurs audiences. Chaque projet est une opportunité de mettre en avant les atouts de votre entreprise dans un environnement digital en constante évolution.",
+        ],
+        projects: {
+            ctaText: "Découvrez mes réalisations en création de sites internet pour les entreprises de Bordeaux et alentours. Chaque projet témoigne de ma passion pour le design sur-mesure et l’innovation digitale. Basé à proximité de Bordeaux, je m'engage à concevoir des solutions uniques, modernes et performantes, adaptées aux besoins spécifiques des entreprises locales."
+        },
+        servicesItems: [
+            {
+                id: 0,
+                title: "Web Design à Bordeaux",
+                body: "Un design soigné est essentiel pour captiver l’audience bordelaise exigeante. Je conçois des interfaces modernes, intuitives et adaptées à votre identité. Chaque projet est pensé pour valoriser votre entreprise tout en maximisant l’expérience utilisateur.",
+            },
+            {
+                id: 1,
+                title: "Création de site internet à Bordeaux",
+                body: "Je conçois des sites internet sur-mesure pour répondre aux besoins des entreprises bordelaises, qu’il s’agisse de vitrines, de boutiques en ligne ou de projets personnalisés. Mes solutions s’adaptent à votre budget et vos attentes pour un résultat esthétique et performant.",
+            },
+            {
+                id: 2,
+                title: "Sites WordPress à Bordeaux : Simples et flexibles",
+                body: "WordPress est une solution idéale pour les entreprises ou indépendants bordelais cherchant un site rapide à mettre en ligne, tout en respectant un budget maîtrisé. Je conçois des sites WordPress élégants et faciles à gérer, parfaitement adaptés aux besoins spécifiques du marché local de Bordeaux.",
+            },
+            {
+                id: 3,
+                title: "Sites JAMstack à Bordeaux : Rapides et performants",
+                body: "Pour les entreprises ambitieuses de Bordeaux, je propose des sites basés sur l’architecture JAMstack. Cette approche moderne garantit des performances exceptionnelles, une sécurité renforcée, et une optimisation SEO maximale. Parfait pour des projets innovants et durables dans une ville aussi dynamique que Bordeaux.",
+            },
+            {
+                id: 4,
+                title: "Refonte de site internet à Bordeaux",
+                body: "Votre site actuel ne reflète plus votre activité ? Je propose des services de refonte pour les entreprises bordelaises. De l’amélioration du design à l’optimisation des performances, je transforme votre site existant en un outil efficace pour développer votre présence en ligne et capter l’audience locale.",
+            },
+            {
+                id: 5,
+                title: "Optimisation SEO pour les entreprises de Bordeaux",
+                body: "Pour vous démarquer dans un environnement concurrentiel comme Bordeaux, votre site doit être bien référencé. J’intègre les meilleures pratiques SEO dès la conception pour améliorer votre visibilité et attirer des clients locaux ou régionaux.",
+            }
+        ]
+    },
+    {
+        id: 5,
+        meta: {
+            title: "Agence web Cyril Gouv — Création de site internet à Mont-de-Marsan dans les Landes (40)",
+            description: "Vous êtes à Mont-de-Marsan et cherchez à créer un site internet performant ? Cyril Gouv, développeur web indépendant, conçoit des sites sur-mesure adaptés à vos besoins.",
+        },
+        pageTitle: "Agence web à Mont-de-Marsan — Création de site internet dans les Landes (40)",
+        slug: "creation-site-internet-mont-de-marsan-landes-40",
+        localisation: "Mont-de-Marsan",
+        titleOpacity: "Besoin d’un site internet à votre image ? Je crée des sites sur-mesure pour les entreprises de Mont-de-Marsan.",
+        aboutText: [
+            "Basée près de Mont-de-Marsan, mon agence web accompagne les entreprises locales, indépendants et organisations dans leurs projets digitaux. Que vous cherchiez à créer un site internet performant ou à moderniser une plateforme existante, je mets à votre service une expertise reconnue en stratégie digitale, web design, développement et SEO. Mon objectif ? Concrétiser vos idées en solutions numériques qui engagent votre audience et valorisent votre marque.",
+            "En tant que développeur web passionné, je m'engage à transformer vos projets en expériences en ligne remarquables. Que vous soyez à Mont-de-Marsan ou dans les Landes (40), je conçois des sites sur-mesure, pensés pour refléter fidèlement votre identité tout en offrant une performance technique et un design innovant.",
+        ],
+        projects: {
+            ctaText: "Découvrez mes réalisations en création de sites internet pour TPE/PME à Mont-de-Marsan et dans les Landes. Chaque projet illustre mon engagement envers un design personnalisé et des performances optimales. Que vous soyez basé à Mont-de-Marsan ou que vous cherchiez une agence web pour vous accompagner à distance, je suis là pour répondre à vos besoins avec des solutions digitales uniques et adaptées."
+        },
+        servicesItems: [
+            {
+                id: 0,
+                title: "Web Design à Mont-de-Marsan",
+                body: "Un design captivant est essentiel pour marquer l’esprit de vos visiteurs dès leur arrivée. Basé près de Mont-de-Marsan, je conçois des interfaces modernes et intuitives qui valorisent votre image de marque. Chaque projet est pensé pour maximiser l’engagement utilisateur et les conversions.",
+            },
+            {
+                id: 1,
+                title: "Création de site internet à Mont-de-Marsan",
+                body: "Je propose des solutions sur mesure adaptées aux besoins des entreprises et entrepreneurs de Mont-de-Marsan. Que ce soit un site vitrine, une boutique en ligne, ou un projet entièrement personnalisé, je m’engage à livrer des plateformes esthétiques, performantes, et optimisées pour le SEO. Choisissez entre un site WordPress flexible ou une solution avancée avec JAMstack pour des résultats exceptionnels.",
+            },
+            {
+                id: 2,
+                title: "Sites WordPress à Mont-de-Marsan : Simples et flexibles",
+                body: "WordPress est une solution idéale pour les projets nécessitant une mise en ligne rapide et un budget maîtrisé. À Mont-de-Marsan, je conçois des sites WordPress élégants, fonctionnels et faciles à gérer, adaptés aux besoins des petites entreprises et des indépendants.",
+            },
+            {
+                id: 3,
+                title: "Sites JAMstack à Mont-de-Marsan : Rapides et performants",
+                body: "Pour les entreprises ambitieuses de Mont-de-Marsan, la technologie JAMstack offre une architecture web moderne, rapide, et ultra-sécurisée. Avec une optimisation SEO intégrée et un design sur-mesure, cette approche garantit des performances exceptionnelles et une expérience utilisateur de qualité.",
+            },
+            {
+                id: 4,
+                title: "Refonte de site internet à Mont-de-Marsan",
+                body: "Votre site actuel ne reflète plus votre activité ? Je propose un service de refonte sur mesure à Mont-de-Marsan pour moderniser votre plateforme. De l’amélioration du design à l’optimisation des performances, je transforme votre site en un outil efficace pour attirer de nouveaux clients.",
+            },
+            {
+                id: 5,
+                title: "Optimisation SEO à Mont-de-Marsan",
+                body: "Améliorez la visibilité de votre entreprise sur Google grâce à des pratiques SEO adaptées à Mont-de-Marsan. Que ce soit pour un nouveau site ou un site existant, je mets en œuvre des stratégies efficaces pour booster votre trafic et atteindre vos objectifs de croissance.",
+            }
+        ]
+    },
 ]
 
 // export const services = [
