@@ -7,7 +7,7 @@ export const projects = [
         src: "/images/projects/lefeenomenedurecrutement/featured/lefeenomenedurecrutement-featured.webp",
         year: 2023,
         industry: "Cabinet de recrutement",
-        bgColor: "#218c74",
+        bgColor: "#008170",
         featured: true,
         testimonial: {
             name: "Laurie-Anne Le Fée",
@@ -232,7 +232,7 @@ export const projects = [
         src: "/images/projects/idealpack/featured/idealpack-featured.webp",
         year: 2022,
         industry: "Emballage publicitaire",
-        bgColor: "#798E7B",
+        bgColor: "#5C8374",
         featured: false,
         testimonial: {
             name: "Michelle Tsadik",
@@ -280,7 +280,7 @@ export const projects = [
         src: "/images/projects/cheval-dor/featured/chevaldor-featured.webp",
         year: 2022,
         industry: "Sellerie",
-        bgColor: "#e1b12c",
+        bgColor: "#C87941",
         featured: true,
         testimonial: {
             name: "Caroline De Jean",
@@ -326,7 +326,7 @@ export const projects = [
         src: "/images/projects/yamitsu/featured/yamitsu-featured.webp",
         year: 2021,
         industry: "Restauration",
-        bgColor: "#F64B02",
+        bgColor: "#C70039",
         featured: false,
         testimonial: {
             name: "Mikaru Saijo",
@@ -378,7 +378,7 @@ export const projects = [
         src: "/images/projects/myfitmetz/featured/myfitmetz-featured.webp",
         year: 2022,
         industry: "Salle de remise en forme",
-        bgColor: "#FFCC00",
+        bgColor: "#000000",
         featured: false,
         gallery: [
             "/images/projects/myfitmetz/desktop/myfitmetz-01.webp",
