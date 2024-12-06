@@ -104,7 +104,7 @@ const TextHero = ({ text, layout = "default", image = false, video = false, loca
     // Render Services Location layout
     if(layout === "services" && localisation) {
         return (
-            <div ref={ sectionEl } className={ styles.text }>
+            <div ref={ sectionEl } className={ `${styles.text} ${styles.text__services}` }>
                 <p
                     ref={ locationEl }
                     className={ `${styles.text__inner} ${styles.text__location} text--regular text--opacity` }

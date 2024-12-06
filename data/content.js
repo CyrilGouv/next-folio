@@ -1,5 +1,5 @@
 // INTRO TITLES
-export const homepageHeroText = "Créateur de sites internet et d’applications web modernes et sur-mesure, dédiés à votre performance, visibilité et notoriété depuis 2018."
+export const homepageHeroText = "Créateur de sites internet modernes et sur-mesure à Biscarrosse dans les Landes, dédiés à booster votre visibilité et répondre à vos besoins professionnels."
 export const homepageIntroTitle = "Depuis 2018, je conçois des sites web modernes et personnalisés pour renforcer votre visibilité en ligne."
 export const aboutIntroTitle = "Whether you require help with strategy, web or product design, development, app creation, or innovative tech."
 

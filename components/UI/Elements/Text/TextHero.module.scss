@@ -7,6 +7,10 @@
         padding-bottom: var(--paddingS);
     }
 
+    &__services {
+        display: none;
+    }
+
     &__location {
         display: flex;
         align-items: center;
@@ -67,6 +71,18 @@
         width: 100%;
         letter-spacing: normal;
         font-weight: normal;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 380px
+//==========================================================
+*/
+@media (min-width: 380px) {
+    .text__services {
+        display: block;
     }
 }
 
