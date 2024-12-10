@@ -24,6 +24,9 @@ export async function generateMetadata({ params }) {
         description: service?.meta?.description ? service.meta.description : service.pageTitle,
         images: ["/images/seo/cyrilgouv-01.png"]
       },
+      alternates: {
+        canonical: `/services/${service.slug}`,
+      },
     }
 }
 

@@ -10,7 +10,10 @@ export const metadata = {
       title: "Contact — Cyril Gouv",
       description: "Même si vous avez simplement besoin de renseignements ou de conseils, je prendrai le temps de vous fournir une réponse pertinente et adaptée à vos besoins.",
       images: ["/images/seo/cyrilgouv-05.png"]
-    }
+    },
+    alternates: {
+        canonical: '/contact',
+    },
 }
 
 const page = () => {

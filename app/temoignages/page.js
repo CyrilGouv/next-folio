@@ -11,7 +11,10 @@ export const metadata = {
       title: "Témoignages — Cyril Gouv",
       description: "Qu’est-ce que mes clients disent de moi ? Parce qu'au bout du compte, c’est leur avis qui compte le plus.",
       images: ["/images/seo/cyrilgouv-04.png"]
-    }
+    },
+    alternates: {
+    canonical: '/temoignages',
+  },
 }
 
 const page = () => {

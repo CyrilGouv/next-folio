@@ -5,10 +5,7 @@ import "@/assets/styles/app.scss"
 
 
 export const metadata = {
-  metadataBase: new URL('https://cyrilgouv.com'),
-  alternates: {
-    canonical: '/',
-  },
+  metadataBase: new URL('https://cyrilgouv.com')
 }
 
 export default function RootLayout({ children }) {

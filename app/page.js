@@ -15,7 +15,10 @@ export const metadata = {
     title: "Création site internet Biscarrosse — Cyril Gouv, des sites modernes et sur-mesure",
     description: "Création de sites internet à Biscarrosse : offrez à votre entreprise un site moderne et sur-mesure. Boostez votre visibilité en ligne dès aujourd’hui avec Cyril Gouv.",
     images: ["/images/seo/cyrilgouv-01.png"]
-  }
+  },
+  alternates: {
+    canonical: '/',
+  },
 }
 
 export default function Home() {

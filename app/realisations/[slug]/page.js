@@ -22,6 +22,9 @@ export async function generateMetadata({ params }) {
         description: project.description,
         images: [project.gallery[0]],
       },
+      alternates: {
+        canonical: `/realisations/${project.slug}`,
+      },
     }
 }
 

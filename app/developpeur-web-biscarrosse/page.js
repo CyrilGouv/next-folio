@@ -12,7 +12,10 @@ export const metadata = {
       title: "Développeur web indépendant à Biscarrosse — Cyril Gouv",
       description: "Développeur web indépendant à Biscarrosse depuis 2018, je suis spécialisé dans la création de sites internet, le design graphique et le développement front-end. Alliez performance et esthétique pour vos projets web.",
       images: ["/images/seo/cyrilgouv-03.png"]
-    }
+    },
+    alternates: {
+        canonical: '/developpeur-web-biscarrosse',
+    },
 }
 
 const page = () => {
