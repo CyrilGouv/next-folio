@@ -1,15 +1,27 @@
 .cta {
-    width: 80%;
-    margin-top: calc(var(--paddingL) / 1.5);
+    width: 90%;
     margin-left: auto;
 
     &__full {
         width: 100% !important;
     }
 
+    &__title,
     &__text {
-        width: 90%;
+        line-height: 1.5;
+    }
+
+    &__title {
         margin-bottom: var(--paddingS);
+        font-size: max(1.25rem, 1.85vw);
+        letter-spacing: normal;
+    }
+
+    &__text {
+        margin-bottom: var(--paddingS);
+        font-size: max(1.125rem, 1.325vw);
+        opacity: .65;
+        
 
         &__inner {
             display: inline-block;
@@ -26,9 +38,7 @@
 */
 @media (min-width: 640px) {
     .cta {
-        &__text {
-            width: 80%;
-        }
+        width: 80%;
     }
 }
 
@@ -40,11 +50,6 @@
 */
 @media (min-width: 768px) {
     .cta {
-        margin-top: var(--paddingL);
-
-        &__text {
-            width: 73%;
-        }
     }
 }
 
@@ -57,10 +62,6 @@
 @media (min-width: 1024px) {
     .cta {
         width: 49.25%;
-        
-        &__text {
-            width: 71%;
-        }
     }
 }
 
@@ -72,9 +73,6 @@
 */
 @media (min-width: 1200px) {
     .cta {
-        &__text {
-            width: 69%;
-        }
     }
 }
 
@@ -86,10 +84,6 @@
 */
 @media (min-width: 1400px) {
     .cta {
-        width: 49%;
-
-        &__text {
-            width: 67%;
-        }
+        width: 49.5%;
     }
 }

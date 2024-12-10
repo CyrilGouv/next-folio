@@ -31,7 +31,8 @@
     }
 
     &__approaches {
-        padding-bottom: var(--paddingXL);
+        padding-top: var(--paddingL);
+        padding-bottom: var(--paddingL);
     }
 }
 
@@ -51,6 +52,11 @@
             margin-top: calc(var(--paddingL) / 1.5);
             width: 80%;
             margin-left: auto;
+        }
+
+        &__approaches {
+            padding-top: var(--paddingM);
+            padding-bottom: var(--paddingXL);
         }
     }
 }

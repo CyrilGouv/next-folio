@@ -10,27 +10,33 @@
         margin-top: var(--paddingM);
     }
 
-    &__text,
+    &__title,
     &__cta {
         font-size: max(1.25rem, 1.85vw);
     }
 
+    &__title,
     &__text {
         margin-bottom: var(--paddingM);
         line-height: 1.5;
         letter-spacing: normal;
 
+        &:last-of-type,
         &:first-of-type {
             margin-bottom: var(--paddingS);
         }
+    }
+
+    &__text {
+        font-size: max(1.125rem, 1.325vw);
+        opacity: .5;
     }
 
     &__first {
         padding-top: var(--paddingXL);
 
         .intro__content__wrapper {
-            margin-left: 0;
-            padding-bottom: var(--paddingXL);
+            padding-bottom: var(--paddingL);
         }
 
         .intro__content__title {
@@ -42,21 +48,16 @@
         }
     }
 
+    &__about {
+        padding-top: var(--paddingL);
+    }
+
     &__bottom {
         width: 90%;
 
         &__text {
             display: inline-block;
         }
-    }
-
-    &__cta {
-        margin-bottom: 0;
-        margin-top: var(--paddingXS);
-    }
-
-    &__last {
-        padding-bottom: var(--paddingXL);
     }
 }
 

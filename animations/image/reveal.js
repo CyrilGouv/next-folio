@@ -4,9 +4,9 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 
-const animationsImageReveal = (trigger, element, horizontale = false) => {
+const animationsImageReveal = (trigger, element, horizontale = false, transformOrigin = "0% 0%") => {
     if (!horizontale) {
-        gsap.set(element, { scaleY: 1, transformOrigin: "0% 0%" })
+        gsap.set(element, { scaleY: 1, transformOrigin: transformOrigin })
 
         gsap.to(
             element, 

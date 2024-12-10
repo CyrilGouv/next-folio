@@ -19,7 +19,7 @@ const TitleIntro = ({ text, options = {} }) => {
 
     useGSAP(() => {
         if(Object.keys(options).length === 0) {
-            revealLettersOpacity(section.current, lettersEls.current, true)
+            revealLettersOpacity(section.current, lettersEls.current, false)
 
         } else if(Object.keys(options).length > 0 && !options.pinned) {
             revealLettersOpacity(section.current, lettersEls.current, options.pinned)

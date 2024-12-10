@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 import { skillItems } from "@/data/skills"
-import opacityAndTransformY from "@/animations/image/opacityAndTransformY"
+import opacityAndTransformY from "@/animations/text/opacityAndTransformY"
 
 import styles from "./Technos.module.scss"
 
@@ -15,7 +15,7 @@ const Technos = () => {
 
   // Animations
   useGSAP(() => {
-    opacityAndTransformY(technosEl.current, technosEl.current.children, 50, .125)
+    opacityAndTransformY(technosEl.current, technosEl.current.children, 5, 0.85, 0.5, 0.5)
   })
 
   return (

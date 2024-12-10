@@ -7,7 +7,7 @@ import { animationsTagReveal } from "@/animations/tag/reveal"
 import styles from "./Tags.module.scss"
 
 
-const Tags = ({ text, position = "absolute", isActive = false, className = null , animations = {} }) => {
+const Tags = ({ text, position = "absolute", isActive = false, className = null , animations = {}, layout = null }) => {
 
     // Elements
     const tagWrapperEl = useRef(null)
@@ -19,7 +19,7 @@ const Tags = ({ text, position = "absolute", isActive = false, className = null 
     })
 
     return (
-        <div ref={ tagWrapperEl } className={ `${styles.tags} ${position === "relative" ? styles.tags__relative : ""} ${isActive ? styles.tags__active : ""}` }>
+        <div ref={ tagWrapperEl } className={ `${styles.tags} ${position === "relative" ? styles.tags__relative : ""} ${isActive ? styles.tags__active : ""} ${layout === "light" ? styles.tagsLight : ""}` }>
             <span className={ `${styles.tags__text} ${className ? className : "text--regular"}` }>
                 <span 
                     ref={ tagTextEl } 

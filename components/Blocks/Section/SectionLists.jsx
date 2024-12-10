@@ -30,6 +30,7 @@ const SectionLists = ({ type, itemLists = null }) => {
                                 <CardList 
                                     key={ item.id }
                                     item={ item } 
+                                    type={ type }
                                 />
                             )) }
                         </ul>

@@ -14,6 +14,7 @@
         margin: 0;
         padding: 0;
         overflow: hidden;
+        letter-spacing: normal;
 
         &__id {
             display: inline-block;
@@ -33,16 +34,8 @@
     &__body {
         padding-top: var(--paddingS);
         margin-bottom: 0;
-
-        &__word {
-            display: inline-block;
-            overflow: hidden;
-            line-height: 1;
-
-            &__inner {
-                display: inline-block;
-            }
-        }
+        font-size: max(1.125rem, 1.325vw);
+        opacity: .5;
     }
 
     &__line {

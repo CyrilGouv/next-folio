@@ -47,7 +47,7 @@ export default async function SingleService({ params }) {
                 title={ titleOpacity }
                 content={ aboutText } 
             />
-            <FeaturedProjects ctaText={ projects.ctaText } />
+            <FeaturedProjects titleOpacity={ projects.titleOpacity } ctaText={ projects.ctaText } />
             <TextParallax text="Make you shine" layout="section" />
             <SectionLists type="services" itemLists={ servicesItems } />
             <FeaturedTestimonials />

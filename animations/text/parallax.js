@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 
-const animationsTextParallax = (trigger, text, fromXPercent = 35, toXPercent = -65) => {
+const animationsTextParallax = (trigger, text, fromXPercent = 65, toXPercent = -65) => {
     gsap.set(text, { xPercent: fromXPercent })
 
     gsap.to(text, {

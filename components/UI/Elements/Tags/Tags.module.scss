@@ -12,6 +12,10 @@
     border-radius: 20px;
     transition: background-color .275s ease-out;
 
+    &.tagsLight {
+        background-color: var(--lightThemeFontColor);
+    }
+
     &__text {
         display: inline-block;
         text-transform: uppercase;
@@ -22,6 +26,10 @@
         &__inner {
             display: inline-block;
         }
+    }
+
+    &.tagsLight .tags__text {
+        color: var(--lightThemeBgColor);
     }
 
     &__relative {

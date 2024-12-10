@@ -1,9 +1,21 @@
 .testimonials {
-    padding-bottom: var(--paddingXL);
+    padding-bottom: var(--paddingL);
     
     &__wrapper {
         padding: 0;
         margin: 0;
         list-style: none;
     }   
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .testimonials {
+        padding-bottom: var(--paddingXL);  
+    }
 }

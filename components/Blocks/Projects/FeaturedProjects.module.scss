@@ -1,10 +1,122 @@
 .projects {
+    background-color: var(--lightThemeBgColor);
+    color: var(--lightThemeFontColor);
+    padding: var(--paddingL) 0;
+
+    --padding: 0px;
+
+    .overlay {
+        position: absolute;
+        pointer-events: none;
+        inset: 0;
+        background-color: var(--darkThemeBgColor);
+        opacity: 0;
+        z-index: 9;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &__more {
+            width: 90%;
+            margin-left: auto;
+            margin-top: var(--paddingM);
+
+            &__wrapper {
+                width: 100%;
+            }
+        }
+    }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: var(--paddingL) 0 0 0;
+        margin: var(--paddingM) 0 0 0;
         padding: 0;
         list-style: none;
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .projects {
+        padding: var(--paddingM) 0 var(--paddingL);
+        --padding: 225px;
+
+        &__title {
+            &__more {
+                width: 80%;
+            }
+        }
+    }
+}
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .projects {
+        --padding: 250px;
+
+        &__title {
+            &__more {
+                width: 64%;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+}
+
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .projects {
+        &__title {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+
+            &__more {
+                width: 50%;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .projects {
+        &__title {
+            &__more {
+                width: 49.5%;
+    
+                &__wrapper {
+                    width: 70%;
+                }
+            }
+        }
     }
 }

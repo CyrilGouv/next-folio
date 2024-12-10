@@ -2,10 +2,12 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    padding-bottom: var(--paddingM);
 
     &__item {
         position: relative;
         font-size: max(1.25rem, 1.85vw);
+        opacity: .5;
         line-height: 1.5;
     }
 }

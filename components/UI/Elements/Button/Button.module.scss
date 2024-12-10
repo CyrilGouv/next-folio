@@ -105,6 +105,39 @@
             }
         }
     }   
+
+    &.buttonLight {
+        border: 1px solid var(--lightThemeFontColor);
+        color: var(--lightThemeFontColor);
+
+        &:before {
+            background-color: var(--lightThemeFontColor);
+        }
+
+        &:hover {
+            color: var(--lightThemeBgColor);
+        }
+    
+        .button__circle {
+            &__inner {
+                background-color: var(--lightThemeFontColor);
+            }
+        }
+
+        &__active,
+        &:hover {
+            .button__circle {
+
+                &__inner {
+                    background-color: var(--lightThemeBgColor);
+                }
+
+                svg {
+                    fill: var(--lightThemeFontColor);
+                }
+            }
+        }  
+    }
 }
 
 

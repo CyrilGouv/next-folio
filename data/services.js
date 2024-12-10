@@ -54,6 +54,7 @@ export const services = [
             "En tant que professionnel passionné, je m’engage à transformer vos idées en réalisations numériques percutantes. De la conception à la mise en ligne, chaque site internet créé pour Parentis-en-Born ou ses environs est pensé pour refléter fidèlement votre identité tout en offrant une expérience utilisateur optimale. Où que vous soyez, travaillons ensemble pour dépasser vos attentes et atteindre vos objectifs en ligne.",
         ],
         projects: {
+            titleOpacity: "Découvrez toutes mes autres réalisations en création de sites internet pour TPE/PME à Parentis-en-Born et ailleurs.",
             ctaText: "Découvrez mes réalisations en création de sites internet pour TPE/PME à Parentis-en-Born et dans les Landes. Chaque projet témoigne de ma passion pour le design sur-mesure et l’innovation digitale. Que vous soyez basé à Parentis-en-Born ou que vous cherchiez une agence web capable de répondre à vos besoins à distance, je m’engage à concevoir des solutions uniques et performantes, parfaitement adaptées à vos attentes."
         },
         servicesItems: [
@@ -104,6 +105,7 @@ export const services = [
             "De la conception à la mise en ligne, chaque site internet que je réalise à proximité de Sanguinet est conçu pour refléter fidèlement votre identité tout en offrant une navigation fluide et une expérience utilisateur optimale. Travaillons ensemble pour transformer vos idées en un site web qui dépasse vos attentes et répond parfaitement à vos objectifs.",
         ],
         projects: {
+            titleOpacity: "Découvrez toutes mes autres réalisations en création de sites internet pour TPE/PME à Sanguinet et ailleurs.",
             ctaText: "Découvrez mes réalisations en création de sites internet pour TPE/PME à Sanguinet et dans les Landes. Chaque projet reflète ma passion pour l’innovation digitale et le design sur-mesure. Que vous soyez à Sanguinet ou que vous cherchiez une agence web capable de travailler à distance, je m’engage à concevoir des solutions uniques, adaptées à vos attentes."
         },
         servicesItems: [
@@ -154,6 +156,7 @@ export const services = [
             "En tant que professionnel expérimenté, je m’efforce de transformer vos idées en réalisations numériques efficaces et esthétiques. Chaque site que je développe à proximité de Mimizan est conçu pour refléter fidèlement votre identité, engager votre audience, et vous permettre d’atteindre vos objectifs en ligne.",
         ],
         projects: {
+            titleOpacity: "Découvrez toutes mes autres réalisations en création de sites internet pour TPE/PME à Mimizan et ailleurs.",
             ctaText: "Découvrez mes créations de sites internet pour les entreprises et indépendants de Mimizan et des environs. Chaque projet reflète ma passion pour le design sur-mesure et l’innovation digitale. Que vous soyez à Mimizan ou que vous recherchiez une agence web pouvant travailler à distance, je m’engage à concevoir des solutions uniques et performantes adaptées à vos besoins."
         },
         servicesItems: [
@@ -204,6 +207,7 @@ export const services = [
             "Chaque projet est pensé pour refléter votre identité et offrir une expérience utilisateur optimale. Que vous soyez sur le Bassin d'Arcachon ou ailleurs, je suis à vos côtés pour concevoir des sites esthétiques, performants et stratégiquement efficaces.",
         ],
         projects: {
+            titleOpacity: "Découvrez toutes mes autres réalisations en création de sites internet pour TPE/PME sur le Bassin d'Arcachon et ailleurs.",
             ctaText: "Découvrez mes réalisations en création de sites internet pour TPE, PME et indépendants sur le Bassin d'Arcachon et ses environs. Chaque projet est conçu avec passion, en mettant en avant l’innovation digitale et le design sur-mesure. Basé près du Bassin d'Arcachon, je m’engage à concevoir des solutions uniques et performantes adaptées à vos attentes."
         },
         servicesItems: [
@@ -255,6 +259,7 @@ export const services = [
             "Situé près de Bordeaux, je travaille en étroite collaboration avec mes clients pour concevoir des solutions uniques, pensées pour refléter leur image de marque tout en répondant aux attentes de leurs audiences. Chaque projet est une opportunité de mettre en avant les atouts de votre entreprise dans un environnement digital en constante évolution.",
         ],
         projects: {
+            titleOpacity: "Découvrez toutes mes autres réalisations en création de sites internet pour TPE/PME à Bordeaux et ailleurs.",
             ctaText: "Découvrez mes réalisations en création de sites internet pour les entreprises de Bordeaux et alentours. Chaque projet témoigne de ma passion pour le design sur-mesure et l’innovation digitale. Basé à proximité de Bordeaux, je m'engage à concevoir des solutions uniques, modernes et performantes, adaptées aux besoins spécifiques des entreprises locales."
         },
         servicesItems: [
@@ -305,6 +310,7 @@ export const services = [
             "En tant que développeur web passionné, je m'engage à transformer vos projets en expériences en ligne remarquables. Que vous soyez à Mont-de-Marsan ou dans les Landes (40), je conçois des sites sur-mesure, pensés pour refléter fidèlement votre identité tout en offrant une performance technique et un design innovant.",
         ],
         projects: {
+            titleOpacity: "Découvrez toutes mes autres réalisations en création de sites internet pour TPE/PME à Mont-de-Marsan et ailleurs.",
             ctaText: "Découvrez mes réalisations en création de sites internet pour TPE/PME à Mont-de-Marsan et dans les Landes. Chaque projet illustre mon engagement envers un design personnalisé et des performances optimales. Que vous soyez basé à Mont-de-Marsan ou que vous cherchiez une agence web pour vous accompagner à distance, je suis là pour répondre à vos besoins avec des solutions digitales uniques et adaptées."
         },
         servicesItems: [

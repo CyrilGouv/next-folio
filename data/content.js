@@ -15,8 +15,8 @@ export const aboutCoverFirstImage = {
     alt: "Développeur web indépendant à Biscarrosse - Cyril Gouv c'est moi"
 }
 export const aboutCoverLastImage = {
-    img: "/images/about/bg-about-alt-01.webp",
-    alt: "mon setup de travail"
+    img: "/images/about/developpeur-web-frelelance-biscarrosse-cyrilgouv-02.webp",
+    alt: "mon setup de travail pour mon activité de développeur web indépendant à Biscarrosse - Cyril Gouv"
 }
 
 // TESTIMONIALS

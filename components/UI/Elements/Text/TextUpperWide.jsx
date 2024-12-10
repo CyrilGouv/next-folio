@@ -19,7 +19,9 @@ const TextUpperWide = ({ text, type }) => {
 
     // Animations
     useGSAP(() => {
-        animationsRevealFooterText(textEl.current, textEl.current.children)
+        if (type === "link") {
+            animationsRevealFooterText(textEl.current, textEl.current.children)
+        }
     })
 
     if(type === "link") {

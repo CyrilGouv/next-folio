@@ -8,7 +8,7 @@ const animationsCardList = (trigger, title, text, line) => {
     // Gsap settings
     gsap.set(title.children[0], { autoAlpha: 0, yPercent: 100 })
     gsap.set(title.children[1], { yPercent: 100 })
-    gsap.set(text, { yPercent: 100 })
+    gsap.set(text, { autoAlpha: 0, yPercent: 10 })
     gsap.set(line, { scaleX: 0 })
 
     // Create gsap timeline && run animation on scroll when itemContentEl is reached
@@ -23,8 +23,8 @@ const animationsCardList = (trigger, title, text, line) => {
     tl
         .to(title.children[0], { yPercent: 0, autoAlpha: .35, duration: 1.5, ease: "expo.out" })
         .to(title.children[1], { yPercent: 0, duration: 1, ease: "expo.out" }, "-=.95")
-        .to(text, { yPercent: 0, duration: .725, stagger: 0.025, ease: "power3.out" }, "-=.65")
-        .to(line, { scaleX: 1, duration: 1.125, ease: "expo.out" }, "-=.5")
+        .to(text, { autoAlpha: .5, yPercent: 0, duration: .5, ease: "power1.out" }, "-=.6")
+        .to(line, { scaleX: 1, duration: 1.125, ease: "expo.out" }, "-=.65")
 }
 
 export default animationsCardList

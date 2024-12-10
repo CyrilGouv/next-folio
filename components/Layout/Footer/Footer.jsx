@@ -20,6 +20,7 @@ const Footer = () => {
         animationsFooterScroll(footer.current)
     })
 
+    // Render
     return (
         <footer ref={ footer } className={ styles.footer }>
             <div className={ styles.footer__top }>

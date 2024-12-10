@@ -1,3 +1,39 @@
 .intro {
+    padding-bottom: var(--paddingL);
     overflow: hidden;
+
+    --padding: 0px;
+
+    .overlay {
+        position: absolute;
+        pointer-events: none;
+        inset: 0;
+        background-color: var(--darkThemeBgColor);
+        opacity: 0;
+        z-index: 9;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 640px
+//==========================================================
+*/
+@media (min-width: 640px) {
+    .intro {
+        --padding: 225px;
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .intro {
+        --padding: 250px;
+    }
 }

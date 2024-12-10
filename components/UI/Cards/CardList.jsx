@@ -8,7 +8,7 @@ import animationsCardList from "@/animations/card/cardList"
 import styles from "./CardList.module.scss"
 
 
-const CardList = ({ item }) => {
+const CardList = ({ item, type = "default" }) => {
     // Props
     const { id, title, body } = item
     
@@ -17,35 +17,31 @@ const CardList = ({ item }) => {
 
     // Elements
     const titleEl = useRef(null)
-    const wordEls = useRef([])
+    const bodyEl = useRef(null)
     const lineEl = useRef(null)
 
+    // Animations
     useGSAP(() => {
-        animationsCardList(titleEl.current, titleEl.current, wordEls.current, lineEl.current)
+        animationsCardList(titleEl.current, titleEl.current, bodyEl.current, lineEl.current)
     })
 
+    // Render
     return (
         <li className={ styles.card }>
-            <h4 ref={ titleEl } className={ `${styles.card__title} text--large` }>
-                <span className={ `${styles.card__title__id} text--regular text--opacity`}>(0{ id + 1 })</span>
-                <span className={ styles.card__title__content }>{ title }</span> 
-            </h4>
-            <p className={ `${styles.card__body} text--large` } aria-label={ body }>
-                { words.map((word, idx) => (
-                    <span 
-                        key={ idx }
-                        className={ styles.card__body__word }
-                        aria-hidden="true"
-                    >
-                        <span 
-                            ref={ el => wordEls.current.push(el) } 
-                            className={ styles.card__body__word__inner }
-                        >
-                            { word }
-                            &nbsp;
-                        </span>
-                    </span>
-                )) }
+            { type === "services" && (
+                <h4 ref={ titleEl } className={ `${styles.card__title} text--large` }>
+                    <span className={ `${styles.card__title__id} text--regular text--opacity`}>(0{ id + 1 })</span>
+                    <span className={ styles.card__title__content }>{ title }</span> 
+                </h4>
+            ) }
+            { type === "approaches" && (
+                <h3 ref={ titleEl } className={ `${styles.card__title} text--large` }>
+                    <span className={ `${styles.card__title__id} text--regular text--opacity`}>(0{ id + 1 })</span>
+                    <span className={ styles.card__title__content }>{ title }</span> 
+                </h3>
+            ) }
+            <p ref={ bodyEl } className={ styles.card__body }>
+                { body }
             </p>
 
             <span ref={ lineEl } className={ styles.card__line }></span>

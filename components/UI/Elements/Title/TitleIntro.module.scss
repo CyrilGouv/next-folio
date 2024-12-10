@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    padding: var(--paddingL) 0;
 
     &__alt {
         height: auto;

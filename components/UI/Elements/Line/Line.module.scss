@@ -7,6 +7,11 @@
     opacity: .35;
     transform-origin: 0% 0%;
 
+    &.lineDark {
+        background-color: var(--lightThemeFontColor);
+        opacity: 1;
+    }
+
     &__outer {
         margin-bottom: 0;
     }

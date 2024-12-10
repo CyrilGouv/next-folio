@@ -26,7 +26,7 @@ const revealLettersOpacity = (section, letters, pinned = false) => {
         gsap.to(letters, {
             scrollTrigger: {
                 trigger: section,
-                start: "top bottom",
+                start: "top center",
                 end: "center center",
                 scrub: true,
                 invalidateOnRefresh: true,

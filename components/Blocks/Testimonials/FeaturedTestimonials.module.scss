@@ -1,8 +1,9 @@
 .testimonials {
     overflow: hidden;
+    padding-top: var(--paddingL);
 
     &__title {
-        padding-bottom: calc(var(--paddingL) / 1.5);
+        padding-bottom: var(--paddingM);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -28,9 +29,9 @@
 */
 @media (min-width: 640px) {
     .testimonials {
-        &__title {
-            padding-bottom: var(--paddingL);
+        padding-top: var(--paddingXL);
 
+        &__title {
             &__more {
                 width: 80%;
             }

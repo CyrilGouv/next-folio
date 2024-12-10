@@ -42,6 +42,48 @@ const TitlePageDefault = ({ page, title }) => {
                     )) }
                 </h1>
             )
+        
+        case "about":
+            return (
+                <h2 className={ `${styles.title} ${styles.title__about}` } aria-label={ title }>
+                    <span className={ styles.title__spacer }></span>
+                    { words.map((word, idx) => (
+                        <span 
+                            key={ `${word}-${idx}` }
+                            className={ styles.title__word }
+                            aria-hidden="true"
+                        >
+                            <span 
+                                ref={ el => wordEls.current.push(el) }
+                                className={ styles.title__word__inner }
+                            >
+                                { word }&nbsp;
+                            </span>
+                        </span>
+                    )) }
+                </h2>
+                )
+
+        case "testimonials":
+            return (
+                <h2 className={ `${styles.title} ${styles.title__about}` } aria-label={ title }>
+                    <span className={ styles.title__spacer }></span>
+                    { words.map((word, idx) => (
+                        <span 
+                            key={ `${word}-${idx}` }
+                            className={ styles.title__word }
+                            aria-hidden="true"
+                        >
+                            <span 
+                                ref={ el => wordEls.current.push(el) }
+                                className={ styles.title__word__inner }
+                            >
+                                { word }&nbsp;
+                            </span>
+                        </span>
+                    )) }
+                </h2>
+                )
     }
   
 }

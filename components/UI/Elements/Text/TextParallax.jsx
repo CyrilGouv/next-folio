@@ -3,11 +3,12 @@
 import { useRef } from "react"
 import { useGSAP } from "@gsap/react"
 
-import styles from "./TextParallax.module.scss"
 import animationsTextParallax from "@/animations/text/parallax"
 
+import styles from "./TextParallax.module.scss"
 
-const TextParallax = ({ text, layout = "default" }) => {
+
+const TextParallax = ({ page = null, text, layout = "default" }) => {
 
     // Elements
     const sectionEl = useRef(null)

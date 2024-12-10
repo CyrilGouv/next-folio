@@ -7,7 +7,7 @@ import animationsLineReveal from "@/animations/line/reveal"
 import styles from "./Line.module.scss"
 
 
-const Line = ({ type = null }) => {
+const Line = ({ type = null, layout = null }) => {
 
     // Elements
     const line = useRef(null)
@@ -23,7 +23,7 @@ const Line = ({ type = null }) => {
     return (
         <span 
             ref={ line } 
-            className={ `${styles.line} ${clx}` }
+            className={ `${styles.line} ${clx} ${layout === "light" ? styles.lineDark : ""}` }
         />
     )
 }

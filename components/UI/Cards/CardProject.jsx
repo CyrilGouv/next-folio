@@ -35,7 +35,7 @@ const CardProject = ({ title, slug, image, year, layout, bgColor }) => {
     })
 
     useEffect(() => {
-        if(isActive) {
+        if(isActive && layout !== 'featured') {
             document.documentElement.style.setProperty("--darkThemeBgColor", bgColor)
             document.documentElement.style.setProperty("--lightThemeFontColor", bgColor)
 
@@ -46,7 +46,7 @@ const CardProject = ({ title, slug, image, year, layout, bgColor }) => {
     }, [isActive])
 
     return (
-        <li className={ styles.card }>
+        <li className={ `${styles.card} ${layout === 'featured' ? styles.cardDark : ''}` }>
             <Link
                 onMouseEnter={ () => setIsActive(true) }
                 onMouseLeave={ () => setIsActive(false) }

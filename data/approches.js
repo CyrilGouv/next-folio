@@ -1,4 +1,4 @@
-export const approachTextInfos = "Découvrez en détail mon processus de travail, composé de seulement 6 étapes clés." 
+export const approachTextInfos = "Découvrez en détail mon processus de travail, composé de seulement 7 étapes clés." 
 
 export const approachItems = [
     {

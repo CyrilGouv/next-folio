@@ -7,6 +7,14 @@
     overflow: hidden;
     padding-top: var(--paddingS);
 
+    &__about {
+        margin-top: var(--paddingS);
+    }
+
+    &__spacer {
+        display: none;
+    }
+
     &__word {
         display: inline-block;
         overflow: hidden;
@@ -32,6 +40,97 @@
             &__inner {
                 line-height: 1;
             }
+        }
+
+        &__about {
+            margin-top: -8.5vw;
+        }
+
+        &__spacer {
+            display: inline-block;
+            width: 42vw;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 768px
+//==========================================================
+*/
+@media (min-width: 768px) {
+    .title {
+        &__about {
+            margin-top: -8vw;
+        }
+
+        &__spacer {
+            width: 36vw;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1024px
+//==========================================================
+*/
+@media (min-width: 1024px) {
+    .title {
+        &__about {
+            margin-top: -7.75vw;
+        }
+
+        &__spacer {
+            width: 29vw;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1200px
+//==========================================================
+*/
+@media (min-width: 1200px) {
+    .title {
+        &__about {
+            margin-top: -7.5vw;
+        }
+
+        &__spacer {
+            width: 26vw;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1400px
+//==========================================================
+*/
+@media (min-width: 1400px) {
+    .title {
+        &__spacer {
+            width: 22vw;
+        }
+    }
+}
+
+
+/* 
+//==========================================================
+//  Responsive =>  > 1600px
+//==========================================================
+*/
+@media (min-width: 1600px) {
+    .title {
+        &__spacer {
+            width: 21vw;
         }
     }
 }
