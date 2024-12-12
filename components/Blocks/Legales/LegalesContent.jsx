@@ -38,26 +38,53 @@ const LegalesContent = ({ body }) => {
                 </div>
             ) 
 
-        case "confidentialite":
+        case "Conditions d’Utilisation":
             return (
                 <div className={ styles.content }>
-                    <p className={ `${styles.content__text} text--large` } aria-label="Conformément aux dispositions de l’article 5 du Règlement européen 2016/679, la collecte et le traitement des données des utilisateurs du site respectent les principes suivants">
-                        <TextReveal text="Conformément aux dispositions de l’article 5 du Règlement européen 2016/679, la collecte et le traitement des données des utilisateurs du site respectent les principes suivants" />
+                    <p className={ `${styles.content__text} text--large` } aria-label="Ce site (https://cyrilgouv.com) est accessible en différents langages web (HTML, HTML5, JavaScript, CSS, etc.). Pour un meilleur confort d’utilisation et un graphisme plus agréable, nous vous recommandons d’utiliser des navigateurs modernes comme Google Chrome, Opera, Brave, Mozilla Firefox, Safari, etc...">
+                        <TextReveal text="Ce site (https://cyrilgouv.com) est accessible en différents langages web (HTML, HTML5, JavaScript, CSS, etc.). Pour un meilleur confort d’utilisation et un graphisme plus agréable, nous vous recommandons d’utiliser des navigateurs modernes comme Google Chrome, Opera, Brave, Mozilla Firefox, Safari, etc..." />
                     </p>
-                    <p className={ `${styles.content__text} text--large` } aria-label="Licéité, loyauté et transparence : les données ne peuvent être collectées et traitées qu’avec le consentement de l’utilisateur propriétaire des données. A chaque fois que des données à caractère personnel seront collectées, il sera indiqué à l’utilisateur que ses données sont collectées, et pour quelles raisons ses données sont collectées.">
-                        <TextReveal text="Licéité, loyauté et transparence : les données ne peuvent être collectées et traitées qu’avec le consentement de l’utilisateur propriétaire des données. A chaque fois que des données à caractère personnel seront collectées, il sera indiqué à l’utilisateur que ses données sont collectées, et pour quelles raisons ses données sont collectées." />
+                    <p className={ `${styles.content__text} text--large` } aria-label="Nous mettons tout en œuvre pour fournir des informations fiables et régulièrement mises à jour. Toutefois, des erreurs ou omissions peuvent survenir. Si vous constatez une anomalie, merci de nous le signaler par email à hello@cyrilgouv.com.">
+                        <TextReveal text="Nous mettons tout en œuvre pour fournir des informations fiables et régulièrement mises à jour. Toutefois, des erreurs ou omissions peuvent survenir. Si vous constatez une anomalie, merci de nous le signaler par email à hello@cyrilgouv.com." />
                     </p>
-                    <p className={ `${styles.content__text} text--large` } aria-label="Finalités limitées : la collecte et le traitement des données sont exécutés pour répondre à un ou plusieurs objectifs déterminés dans les présentes mentions légales.">
-                        <TextReveal text="Finalités limitées : la collecte et le traitement des données sont exécutés pour répondre à un ou plusieurs objectifs déterminés dans les présentes mentions légales." />
+                </div>
+            )
+
+        case "Absence de Cookies":
+            return (
+                <div className={ styles.content }>
+                    <p className={ `${styles.content__text} text--large` } aria-label="Le site https://cyrilgouv.com n’utilise pas de cookies. Aucun fichier n’est enregistré sur votre ordinateur lors de votre navigation sur ce site.">
+                        <TextReveal text="Le site https://cyrilgouv.com n’utilise pas de cookies. Aucun fichier n’est enregistré sur votre ordinateur lors de votre navigation sur ce site." />
                     </p>
-                    <p className={ `${styles.content__text} text--large` } aria-label="Minimisation de la collecte et du traitement des données : seules les données nécessaires à la bonne exécution des objectifs poursuivis par le site sont collectées.">
-                        <TextReveal text="Minimisation de la collecte et du traitement des données : seules les données nécessaires à la bonne exécution des objectifs poursuivis par le site sont collectées." />
+                </div>
+            )
+
+        case "Liens Hypertextes":
+            return (
+                <div className={ styles.content }>
+                    <p className={ `${styles.content__text} text--large` } aria-label="Le site internet cyrilgouv.com peut contenir des liens vers d’autres ressources disponibles sur Internet. Cependant, nous ne contrôlons pas ces sites externes et ne pouvons être tenus responsables de leur contenu ou de leur fonctionnement.">
+                        <TextReveal text="Le site internet cyrilgouv.com peut contenir des liens vers d’autres ressources disponibles sur Internet. Cependant, nous ne contrôlons pas ces sites externes et ne pouvons être tenus responsables de leur contenu ou de leur fonctionnement." />
                     </p>
-                    <p className={ `${styles.content__text} text--large` } aria-label="Conservation des données réduites dans le temps : les données sont conservées pour une durée limitée, dont l’utilisateur est informé. Si la durée de conservation ne peut être communiquée à l’utilisateur.">
-                        <TextReveal text="Conservation des données réduites dans le temps : les données sont conservées pour une durée limitée, dont l’utilisateur est informé. Si la durée de conservation ne peut être communiquée à l’utilisateur." />
+                </div>
+            )
+
+        case "Données Personnelles":
+            return (
+                <div className={ styles.content }>
+                    <p className={ `${styles.content__text} text--large` } aria-label="Le site cyrilgouv.com ne collecte aucune donnée personnelle lors de votre navigation. Toutefois, si vous choisissez de nous contacter via notre formulaire de contact, les informations que vous communiquez seront uniquement utilisées pour répondre à votre demande et ne seront pas partagées avec des tiers.">
+                        <TextReveal text="Le site cyrilgouv.com ne collecte aucune donnée personnelle lors de votre navigation. Toutefois, si vous choisissez de nous contacter via notre formulaire de contact, les informations que vous communiquez seront uniquement utilisées pour répondre à votre demande et ne seront pas partagées avec des tiers." />
                     </p>
-                    <p className={ `${styles.content__text} text--large` } aria-label="Intégrité et confidentialité des données collectées et traitées : le responsable du traitement des données s’engage à garantir l’intégrité et la confidentialité des données collectées.">
-                        <TextReveal text="Intégrité et confidentialité des données collectées et traitées : le responsable du traitement des données s’engage à garantir l’intégrité et la confidentialité des données collectées." />
+                    <p className={ `${styles.content__text} text--large` } aria-label="Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression de vos données. Pour l’exercer, veuillez nous contacter à hello@cyrilgouv.com.">
+                        <TextReveal text="Conformément à la loi Informatique et Libertés du 6 janvier 1978 modifiée, vous disposez d’un droit d’accès, de rectification et de suppression de vos données. Pour l’exercer, veuillez nous contacter à hello@cyrilgouv.com." />
+                    </p>
+                </div>
+            )
+
+        case "Litiges":
+            return (
+                <div className={ styles.content }>
+                    <p className={ `${styles.content__text} text--large` } aria-label="Les présentes conditions d’utilisation sont régies par la loi française. En cas de litige, la compétence exclusive est attribuée aux tribunaux du ressort du siège social de l’éditeur du site.">
+                        <TextReveal text="Les présentes conditions d’utilisation sont régies par la loi française. En cas de litige, la compétence exclusive est attribuée aux tribunaux du ressort du siège social de l’éditeur du site." />
                     </p>
                 </div>
             )

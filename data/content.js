@@ -39,6 +39,22 @@ export const mentionsContent = [
     },
     {
         id: 1,
-        text: "confidentialite",
+        text: "Conditions d’Utilisation",
+    },
+    {
+        id: 2,
+        text: "Absence de Cookies",
+    },
+    {
+        id: 3,
+        text: "Liens Hypertextes",
+    },
+    {
+        id: 4,
+        text: "Données Personnelles",
+    },
+    {
+        id: 5,
+        text: "Litiges",
     },
 ]
